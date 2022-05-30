@@ -68,10 +68,7 @@ Ngā mihi nui!
 ![Bash](https://img.shields.io/badge/GNU_Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 
 ### 💬 Discord
-<br>
-<a href="https://discord.com/users/192181901065322496">
-  <img src="https://lanyard-profile-readme.vercel.app/api/192181901065322496?idleMessage=Twiddling my thumbs..." align="middle" />
-</a>
+[![James#0021](https://lanyard.cnrad.dev/api/192181901065322496?idleMessage=Twiddling%20my%20thumbs...)](https://discord.com/users/192181901065322496)
 
 ### 📈 Statistics
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=react&hide_border=true)
