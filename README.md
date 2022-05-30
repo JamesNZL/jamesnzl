@@ -35,6 +35,7 @@ Ngā mihi nui!
 ###### Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Browserify](https://img.shields.io/badge/Browserify-3C6991?style=for-the-badge)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563d7c?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ###### Backend
