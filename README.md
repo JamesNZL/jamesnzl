@@ -1,16 +1,74 @@
-### Hi there 👋
+## 👋 Tēnā koe! I'm `JamesNZL`.
 
-<!--
-**JamesNZL/jamesnzl** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Kia ora! I'm a Part II Computer Systems Engineering student at The University of Auckland. I'm interested in all things tech, from embedded microsystems to full-stack web development. I'm passionate about youth development, and leaving things in a better state than I found them.
 
-Here are some ideas to get you started:
+- 📍 Auckland, New Zealand
+- 🎓 Computer Systems Engineering @ The University of Auckland
+- 🤝 New Zealand Cadet Forces
+- 📧 [`james@jamesnzl.xyz`](mailto:james@jamesnzl.xyz)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🪀 Some Things I've Played With
+
+###### Languages & Markup
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-306998?style=for-the-badge&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/C-1B75B3?style=for-the-badge&logo=c&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-004B87?style=for-the-badge)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E44D26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-264DE4?style=for-the-badge&logo=css3&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
+
+###### Embedded Systems and Electronics
+![Arduino](https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white)
+![LTspice](https://img.shields.io/badge/LTspice-8E0A26?style=for-the-badge)
+![EasyEDA](https://img.shields.io/badge/EasyEDA-5588ff?style=for-the-badge)
+
+###### Frontend
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563d7c?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+###### Backend
+![MongoDB](https://img.shields.io/badge/MongoDB-00684A?style=for-the-badge&logo=mongodb&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+
+###### APIs
+![Discord.js](https://img.shields.io/badge/Discord.js-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
+![Chromium](https://img.shields.io/badge/Chromium-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
+
+###### Platforms & Services
+![Vultr](https://img.shields.io/badge/Vultr-007BFC?style=for-the-badge&logo=vultr&logoColor=white)
+![Linode](https://img.shields.io/badge/Linode-00B050?style=for-the-badge&logo=linode&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F48120?style=for-the-badge&logo=cloudflare&logoColor=white)
+
+###### Tools
+![Git](https://img.shields.io/badge/Git-F05133?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![BitBucket](https://img.shields.io/badge/BitBucket-0052CC?style=for-the-badge&logo=bitbucket&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![gulp](https://img.shields.io/badge/gulp-CF4647?style=for-the-badge&logo=gulp&logoColor=white)
+![Insomnia](https://img.shields.io/badge/Insomnia-4000BF?style=for-the-badge&logo=insomnia&logoColor=white)
+![Replit](https://img.shields.io/badge/Replit-56676E?style=for-the-badge&logo=replit&logoColor=white)
+![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
+![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
+![Powershell](https://img.shields.io/badge/Powershell-2671BE?style=for-the-badge&logo=powershell&logoColor=white)
+![Bash](https://img.shields.io/badge/GNU_Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+
+### 💬 Discord
+<br>
+<a href="https://discord.com/users/192181901065322496">
+  <img src="https://lanyard-profile-readme.vercel.app/api/192181901065322496?idleMessage=Twiddling my thumbs..." align="middle" />
+</a>
+
+### 📈 Statistics
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=react&hide_border=true)
+<br>
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=react&&layout=compact&hide_border=true)
