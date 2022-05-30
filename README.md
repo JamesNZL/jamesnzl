@@ -2,11 +2,13 @@
 
 Kia ora! I'm a Part II Computer Systems Engineering student at The University of Auckland. I'm interested in all things tech, from embedded microsystems to full-stack web development. I'm passionate about youth development, and leaving things in a better state than I found them.
 
-- 📍 Auckland, New Zealand
+- 📍 Tāmaki Makaurau, Aotearoa
 - 🎓 Computer Systems Engineering @ The University of Auckland
 - 🥇 [First in Course Award](https://cdn.auckland.ac.nz/assets/Scholarships/regulations/first-in-course-award.pdf) for [`ENGGEN 131: Introduction to Engineering Computation and Software Development`](https://courseoutline.auckland.ac.nz/dco/course/ENGGEN/131/1210)
 - 🤝 New Zealand Cadet Forces
 - 📧 [`james@jamesnzl.xyz`](mailto:james@jamesnzl.xyz)
+
+Ngā mihi nui!
 
 ### 🪀 Some Things I've Played With
 
@@ -27,6 +29,7 @@ Kia ora! I'm a Part II Computer Systems Engineering student at The University of
 ###### Embedded Systems and Electronics
 ![Arduino](https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white)
 ![LTspice](https://img.shields.io/badge/LTspice-8E0A26?style=for-the-badge)
+![Microchip Studio](https://img.shields.io/badge/Microchip_Studio-EE3233?style=for-the-badge)
 ![EasyEDA](https://img.shields.io/badge/EasyEDA-5588ff?style=for-the-badge)
 
 ###### Frontend
