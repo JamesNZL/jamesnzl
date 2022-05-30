@@ -4,6 +4,7 @@ Kia ora! I'm a Part II Computer Systems Engineering student at The University of
 
 - 📍 Auckland, New Zealand
 - 🎓 Computer Systems Engineering @ The University of Auckland
+- 🥇 [First in Course Award](https://cdn.auckland.ac.nz/assets/Scholarships/regulations/first-in-course-award.pdf) for [`ENGGEN 131: Introduction to Engineering Computation and Software Development`](https://courseoutline.auckland.ac.nz/dco/course/ENGGEN/131/1210)
 - 🤝 New Zealand Cadet Forces
 - 📧 [`james@jamesnzl.xyz`](mailto:james@jamesnzl.xyz)
 
