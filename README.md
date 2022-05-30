@@ -76,4 +76,4 @@ Ngā mihi nui!
 ### 📈 Statistics
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=react&hide_border=true)
 <br>
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=react&&layout=compact&hide_border=true)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=react&layout=compact&hide_border=true)
