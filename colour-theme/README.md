@@ -1,4 +1,6 @@
-# Colour Theme
+# My Colour Theme
+
+![Logo](https://raw.githubusercontent.com/JamesNZL/jamesnzl/main/colour-theme/assets/icon.png)
 
 > A darker, mellower Monokai.
 
@@ -6,5 +8,5 @@ My custom VS Code colour theme, heavily inspired by [Monokai Pro](https://market
 
 # Screenshots
 
-![TypeScript](assets/typescript.jpg)
-![HTML](assets/html.jpg)
+![TypeScript](https://raw.githubusercontent.com/JamesNZL/jamesnzl/main/colour-theme/assets/typescript.jpg))
+![HTML](https://raw.githubusercontent.com/JamesNZL/jamesnzl/main/colour-theme/assets/html.jpg)
