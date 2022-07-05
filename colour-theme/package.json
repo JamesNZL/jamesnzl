@@ -2,7 +2,7 @@
     "name": "colour-theme",
     "displayName": "JamesNZL",
     "description": "James' Colour Theme, based off Monokai Pro.",
-    "icon": "assets/icon.jpg",
+    "icon": "assets/icon.png",
     "version": "0.0.1",
     "repository": {
         "type": "git",
