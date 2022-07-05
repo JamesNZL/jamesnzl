@@ -36,7 +36,7 @@
             "tag": true
         },
         "scripts": {
-            "postbump": "vsce package -o releases && git add releases"
+            "postbump": "vsce package -o releases && vsce package -o releases/colour-theme-latest.vsix && git add releases"
         },
         "bumpFiles": [
             {
