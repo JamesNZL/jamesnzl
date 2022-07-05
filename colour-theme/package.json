@@ -26,5 +26,27 @@
     },
     "devDependencies": {
         "standard-version": "^9.5.0"
+    },
+    "scripts": {
+        "release": "standard-version --sign --commit-all --path .",
+        "publish": "git push --follow-tags origin main"
+    },
+    "standard-version": {
+        "skip": {
+            "tag": true
+        },
+        "scripts": {
+            "postbump": "vsce package -o releases && git add releases"
+        },
+        "bumpFiles": [
+            {
+                "filename": "package.json",
+                "type": "json"
+            },
+            {
+                "filename": "package-lock.json",
+                "type": "json"
+            }
+        ]
     }
 }
