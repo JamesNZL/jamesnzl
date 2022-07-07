@@ -115,7 +115,7 @@
 			"type": "prompt"
 		}
 	],
-	"console_title_template": "{{ .Folder }}",
+	"console_title_template": "{{ .HostName }} {{ .Folder }}",
 	"osc99": true,
 	"transient_prompt": {
 		"background": "transparent",
