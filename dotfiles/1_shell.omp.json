@@ -108,7 +108,7 @@
 						"always_enabled": true
 					},
 					"style": "plain",
-					"template": " \ue286 ",
+					"template": " \u276f ",
 					"type": "exit"
 				}
 			],
