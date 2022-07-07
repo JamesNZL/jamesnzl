@@ -121,4 +121,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-eval "$(oh-my-posh --init --shell bash --config ~/1_shell.omp.json)"
+eval "$(oh-my-posh --init --shell bash --config ~/jamesnzl.omp.json)"
