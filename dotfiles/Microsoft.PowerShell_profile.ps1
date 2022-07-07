@@ -40,8 +40,8 @@ Register-ArgumentCompleter -CommandName ssh, scp, sftp -Native -ScriptBlock {
     | ForEach-Object { [CompletionResult]::new((&$generateCompletionText($_)), $_, [CompletionResultType]::ParameterValue, $_) }
 }
 
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\1_shell.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\jamesnzl.omp.json" | Invoke-Expression
 Import-Module -Name Terminal-Icons
 
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\1_shell.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\jamesnzl.omp.json" | Invoke-Expression
 Import-Module -Name Terminal-Icons
