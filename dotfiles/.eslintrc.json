@@ -26,6 +26,19 @@
 				"eslint:recommended",
 				"plugin:@typescript-eslint/recommended"
 			]
+		},
+		{
+			"files": "**/*.tsx",
+			"rules": {
+				"indent": [
+					"error",
+					2
+				],
+				"semi": [
+					"error",
+					"never"
+				]
+			}
 		}
 	],
 	"rules": {
