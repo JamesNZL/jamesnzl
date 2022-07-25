@@ -1133,7 +1133,10 @@
 			}
 		},
 		{
-			"scope": "markup.raw",
+			"scope": [
+				"markup.raw",
+				"markup.inline.raw"
+			],
 			"settings": {
 				"foreground": "#FC9867"
 			}
