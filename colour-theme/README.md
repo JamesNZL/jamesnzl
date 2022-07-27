@@ -8,5 +8,5 @@ My custom VS Code colour theme, heavily inspired by [Monokai Pro](https://market
 
 # Screenshots
 
-![TypeScript](https://raw.githubusercontent.com/JamesNZL/jamesnzl/main/colour-theme/assets/typescript.jpg))
+![TypeScript](https://raw.githubusercontent.com/JamesNZL/jamesnzl/main/colour-theme/assets/typescript.jpg)
 ![HTML](https://raw.githubusercontent.com/JamesNZL/jamesnzl/main/colour-theme/assets/html.jpg)
