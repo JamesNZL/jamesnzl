@@ -30,6 +30,7 @@ Ngā mihi nui!
 ![Arduino](https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white)
 ![LTspice](https://img.shields.io/badge/LTspice-8E0A26?style=for-the-badge)
 ![Microchip Studio](https://img.shields.io/badge/Microchip_Studio-EE3233?style=for-the-badge)
+![Proteus VSM](https://img.shields.io/badge/Proteus_VSM-1C79B3?style=for-the-badge)
 ![EasyEDA](https://img.shields.io/badge/EasyEDA-5588ff?style=for-the-badge)
 
 ###### Frontend
