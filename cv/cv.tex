@@ -16,6 +16,7 @@
 \usepackage{anyfontsize}
 \usepackage{xcolor}
 \usepackage{tabularx}
+\usepackage{multicol}
 
 %-------------------------------------------------- SETTINGS HERE --------------------------------------------------
 % Header settings
@@ -53,9 +54,9 @@
 
 % Define colours
 \definecolor{primary}{HTML}{000000}
-\definecolor{secondary}{HTML}{0D47A1}
+\definecolor{secondary}{HTML}{08A8E6}
 \definecolor{accent}{HTML}{263238}
-\definecolor{links}{HTML}{1565C0}
+\definecolor{links}{HTML}{0871E6}
 
 %------------------------------------------------------------------------------------------------------------------- 
 
@@ -101,6 +102,11 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=4.5mm]}
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
+% Itemized list for the bullet points under an entry, if necessary
+\newcommand{\resumeItemListStartColumns}[2][-0.5]{\vspace*{#1\multicolsep}
+\begin{multicols}{#2}\begin{itemize}[leftmargin=4.5mm]}
+\newcommand{\resumeItemListEndColumns}[1][-0.5]{\end{itemize}\end{multicols}\vspace*{#1\multicolsep}}
+
 % Resume item
 \renewcommand{\labelitemii}{\bulletstyle}
 \newcommand{\resumeItem}[1]{
@@ -145,6 +151,10 @@
   \item[]\small{
     #1 \vspace{-6pt}
   }\\
+}
+
+\newcommand{\resumeIt}[1]{
+	\textit{\color{accent}#1}
 }
 
 % Double column header
@@ -200,7 +210,7 @@
 \resumeEntryStart
 \resumeEntryE{I’m chasing opportunities to grow my love for everything from analogue electronics to full-stack web development.}
 
-\resumeEntryP{I love active problem-solving, and tinkering around with an ever-evolving project until it's exactly right. I enjoy learning \& seeing how technology can be applied to make effective solutions that improve human lives—whether through software, hardware, or a beautiful combination of both.}
+\resumeEntryP{I love active problem-solving, and tinkering around with an ever-evolving project until it's exactly right. I enjoy learning \& seeing how technology can be applied to make effective solutions that improve human lives---whether through software, hardware, or a beautiful combination of both.}
 
 \resumeEntryP{I'm a driven, reliable team player with proven leadership skills, and a knack for effective communication. I’m always looking to learn new things and grow as a person—and I apply this mindset to everything I do.}
 \resumeEntryEnd
@@ -210,31 +220,51 @@
 \section{\faAngleDoubleUp}{Skills Summary}
 
 \resumeEntryStart
-\resumeEntryS{Problem Solving} {
-	I’m a natural problem solver, with an aptitude to apply my strong logical thinking to challenging situations. I like to leave things in a better state than I found them, by working methodically through the knowns and unknowns to arrive at an optimal solution.
-
-	I constantly apply my problem solving skills to improve processes in my Cadet Unit, including the creation of a personnel development and goal-setting framework and the implementation of a digital workspace to consolidate data, administration, and procedures into a single source of truth.
+\resumeEntryS{Problem Solving}{}
+\resumeItemListStart
+\resumeItem{
+	\resumeIt{I’m a natural problem solver, and apply my strong logical thinking to challenging situations. I leave things better than I found them, working methodically to arrive at an optimal solution.}
 }
-
-\resumeEntryS{Communication Skills} {
-	I’m passionate about effective communication and mentoring. I’ve been involved in Peer Tutoring at high school for English, Science, and Maths, and have been helping very appreciative first-years with understanding difficult, technical concepts by delivering intuitive explanations.
-
-	I’ve acquired experience in presentation skills, public speaking, and confidence through development courses I’ve attended with the New Zealand Cadet Forces, and I’ve practiced those skills in speeches during school assemblies, group presentations, in my current role as an Officer Cadet, and when coaching my high school lacrosse team.
+\resumeItem{
+	I've created a personnel development framework, and implemented a digital workspace to consolidate data, administration, and procedures into a single source of truth.
 }
+\resumeItemListEnd
 
-\resumeEntryS{Leadership} {
-	I’ve developed and applied my leadership skills in all aspects of my life, including being a Prefect and Deputy House Captain at high school, a Cadet Warrant Officer Class Two in the New Zealand Cadet Forces, and taking on various leadership roles in school and University groups such as leading the House Haka in Years 11—13.
-
-	I’m passionate about intent-based leadership and understanding each member’s strengths and weaknesses—I strongly believe the whole is greater than the sum of its parts.
-
-	Under my leadership, my platoon was awarded Top Platoon at an Army Cadet exercise comprising over 100 cadets, and I separately awarded the exercise’s Leadership Award. I was also appointed as the Regimental Sergeant Major for a highly successful Combined Recruit Common Training Course with units from across the Upper North Island.
+\resumeEntryS{Communication Skills}{}
+\resumeItemListStart
+\resumeItem{
+	\resumeIt{I’m an effective communicator with an aptitude for breaking down challenging concepts.}
 }
-
-\resumeEntryS{Teamwork} {
-	I strive to be an asset to any team, and try to morph into whatever role is in demand. I’m often counted on for my punctuality and reliability, as I don’t make promises that I can’t keep.
-
-	I’ve learnt to appreciate the importance of teamwork and collective buy-in through my time on my high school Premier Lacrosse and Premier Target Shooting teams, and have experienced first-hand that mā pango, mā whero ka oti ai te mahi—many hands do indeed make light work.
+\resumeItem{
+	I help appreciative first-years by delivering intuitive explanations for difficult, technical concepts, and I tutored English, Maths, and Science at high school.
 }
+\resumeItem{
+	I’ve acquired experience in presentation skills, public speaking, and self-confidence through my New Zealand Cadet Forces development courses.
+}
+\resumeItemListEnd
+
+\resumeEntryS{Leadership}{}
+\resumeItemListStart
+\resumeItem{
+	\resumeIt{I’m passionate about intent-based leadership and understanding each member’s strengths and weaknesses---I strongly believe the whole is greater than the sum of its parts.}
+}
+\resumeItem{
+	I was a Prefect and Deputy House Captain at high school, a Cadet Warrant Officer Class Two in the NZCF, and led the House Haka in Years 11--13.
+}
+\resumeItem{
+	I was appointed to be the Regimental Sergeant Major for a highly successful Recruit Training Course with units from across the Upper North Island.
+}
+\resumeItemListEnd
+
+\resumeEntryS{Teamwork}{}
+\resumeItemListStart
+\resumeItem{
+	\resumeIt{I strive to be an asset to any team, and try to morph into whatever role is in demand. I’m often counted on for my punctuality and reliability---I don’t make promises I can’t keep.}
+}
+\resumeItem{
+	I was a member of my high school's Premier Lacrosse and Premier Target Shooting teams, and know the importance of teamwork and collective buy-in.
+}
+\resumeItemListEnd
 \resumeEntryEnd
 
 % Experience Summary
@@ -260,7 +290,7 @@
 {The University of Auckland}{}
 \resumeItemListStart
 \resumeItem {Specialising in Computer Systems Engineering}
-\resumeItem {Cumulative GPA: 8.2/9.0 (A)}
+\resumeItem {Cumulative GPA of 8.2/9.0 (A)}
 \resumeItemListEnd
 \resumeEntryEnd
 
@@ -273,16 +303,10 @@
 {Course Cadet Staff}{Jul 2021}
 {New Zealand Cadet Forces}{Auckland, NZ}
 \resumeItemListStart
-\resumeItem {Appointed as Cadet Staff for the Northern Area Junior Non-Commissioned Officer’s Course \texttt{04/21}. In this role, I acted as a mentor and role model to course students, aided Directing Staff in training delivery, student assessment, and welfare management, and helped maintain morale and esprit de corps for the duration of the course.}
-\resumeItem {I applied my skills in instructional technique and leadership to deliver a sharp Final Parade for the Reviewing Officer and students’ parents.}
-\resumeItemListEnd
-\resumeEntryE{Key Tools and Skills}
-\resumeItemListStart
-\resumeItem {Leadership}
-\resumeItem {Initiative}
-\resumeItem {Communication}
-\resumeItem {Motivation}
-\resumeItem {Reliability}
+\resumeItem {A mentor and role model to the course of 50+ students}
+\resumeItem {Aided Directing Staff in training delivery, student assessment, and welfare management}
+\resumeItem {Maintained morale and esprit de corps}
+\resumeItem {Applied my instructional technique and leadership skills to deliver a 'very efficient Final Parade'}
 \resumeItemListEnd
 \resumeEntryEnd
 
@@ -290,17 +314,8 @@
 \resumeEntryTD
 {Freelance Software Developer}{2020 -- 2021}
 \resumeItemListStart
-\resumeItem {Ad-hoc work focussing primarily on back-end development with JavaScript, Node.js, and MongoDB. I was hired to build a custom Discord bot tailored to streamline digital order management and processing.}
-\resumeItemListEnd
-\resumeEntryE{Key Tools and Skills}
-\resumeItemListStart
-\resumeItem {Git and GitHub}
-\resumeItem {JavaScript, Node.js}
-\resumeItem {MongoDB}
-\resumeItem {Virtual Private Servers}
-\resumeItem {SSH, Bash, Unix CLI}
-\resumeItem {Problem Solving}
-\resumeItem {Communication}
+\resumeItem {Back-end development with JavaScript, Node.js, and MongoDB}
+\resumeItem {Built a custom Discord bot tailored to streamline digital order management and processing}
 \resumeItemListEnd
 \resumeEntryEnd
 
@@ -310,12 +325,12 @@
 
 \resumeEntryStart
 \resumeEntryTD
-{TypeScript and JavaScript}{}
+{TypeScript/JavaScript}{}
 \resumeItemListStart
-\resumeItem {Learnt through extensive hobby and open-source projects in both front-end browser and back-end Node.js applications.}
-\resumeItem {Used pure TypeScript to create a cross-browser extension that interacts with browser APIs, performs fetch requests and API calls, implements authorisation with OAuth2, with a dynamic user-friendly UI created without a front-end framework.}
-\resumeItem {Created a Discord bot in Node.js with MongoDB as a database, with comprehensive JSDoc documentation.}
-\resumeItem {Experience with both object-oriented and functional patterns. Familiar and proficient with async/await, Promises, and callbacks.}
+\resumeItem {Front-end browser and back-end Node.js applications}
+\resumeItem {Object-oriented and functional patterns}
+\resumeItem {async/await, Promises, and callbacks}
+\resumeItem {Serverless functions with Next.js and Cloudflare Workers}
 \resumeItemListEnd
 \resumeEntryEnd
 
@@ -323,19 +338,10 @@
 \resumeEntryTD
 {C/C++}{}
 \resumeItemListStart
-\resumeItem {Familiarity with Arduino-flavoured C++, as well as standard C.}
-\resumeItem {Learnt through high school Control Technology and University Engineering courses.}
-\resumeItem {Currently using C to develop firmware drivers for an ATmega328PB embedded system, as part of COMPSYS 209: Analogue and Embedded Software Design.}
-\resumeItem {Previously used Arduino C++ in High School projects including my Year 13 project with basic sensor reading and peripheral control functionality.}
-\resumeItemListEnd
-\resumeEntryEnd
-
-\resumeEntryStart
-\resumeEntryTD
-{HTML and CSS}{}
-\resumeItemListStart
-\resumeItem {Learnt through high school Digital Technologies Programming and practical hands-on experience.}
-\resumeItem {Experience with building responsive, modern, semantic websites, UIs, and browser extensions such as [jamesnzl.xyz/notion-assignment-import](https://jamesnzl.xyz/notion-assignment-import).}
+\resumeItem {Familiarity with Arduino-flavoured C++ and standard C}
+\resumeItem {Learnt through high school Control Technology and University Engineering courses}
+\resumeItem {Currently using C to develop firmware drivers for an ATmega328PB}
+\resumeItem {Used Arduino C++ for simple sensor reading and peripheral control functionality}
 \resumeItemListEnd
 \resumeEntryEnd
 
@@ -343,9 +349,9 @@
 \resumeEntryTD
 {Git/GitHub}{}
 \resumeItemListStart
-\resumeItem {High proficiency and familiarity with Git version/source control and GitHub project management.}
-\resumeItem {Practice with using feature branches, pull requests, issues, and GitHub Actions.}
-\resumeItem {I elect to follow the Conventional Commits specification, and have over 3000 contributions accrued over the past 4 years.}
+\resumeItem {Git version/source control and GitHub project management}
+\resumeItem {Usage of feature branches, pull requests, issues, and GitHub Actions}
+\resumeItem {3000+ contributions accrued over the past 4 years}
 \resumeItemListEnd
 \resumeEntryEnd
 
@@ -363,21 +369,18 @@
 {notion-assignment-import}{2022}
 {\href{https://jamesnzl.xyz/notion-assignment-import}{jamesnzl.xyz/notion-assignment-import}}{}
 \resumeItemListStart
-\resumeItem {A cross-browser extension that loads Canvas assignments into a Notion database, with over 60 users in two months.}
-\resumeItem {Implemented in pure TypeScript.}
-\resumeItem {I've built my confidence in full usage of Git/GitHub—usage of feature branches, pull requests, GitHub Actions, and Dependabot.}
-\resumeItem {I've experimented with a variety of tools, including Gulp, Browserify \& ESBuild, Sass, and PostCSS.}
-\resumeItem {I’ve learnt more about APIs, HTTP and HTTP clients, and OAuth2.}
-\resumeItem {I've enjoyed the constant iteration of designing a better, more user-friendly UI/UX to achieve a beautiful end state.}
+\resumeItem {Cross-browser extension that loads Canvas assignments into a Notion database}
+\resumeItem {60+ users in under two months}
+\resumeItem {Variety of tools including Gulp, Browserify \& ESBuild, Sass, and PostCSS}
+\resumeItem {Learnt more about APIs, HTTP and HTTP clients, and OAuth2}
 \resumeItemListEnd
-\resumeEntryE{Key Tools and Skills}
-\resumeItemListStart
+\resumeItemListStartColumns{3}
 \resumeItem {Git and GitHub}
 \resumeItem {TypeScript, HTML}
 \resumeItem {Sass and PostCSS}
 \resumeItem {Gulp, Browserify, and ESBuild}
 \resumeItem {Insomnia}
-\resumeItemListEnd
+\resumeItemListEndColumns
 \resumeEntryEnd
 
 \resumeEntryStart
@@ -385,31 +388,16 @@
 {Smart Energy Monitor}{2022}
 {\href{https://uoa-ece209.github.io}{uoa-ece209.github.io}}{The University of Auckland}
 \resumeItemListStart
-\resumeItem {A smart energy monitor I am currently designing in a group of four, involving analogue circuit design, signal conditioning, using an ATmega328PB, writing firmware drivers, serial communication, and Bluetooth communication.}
+\resumeItem {Smart energy monitor I am currently designing in a group of four}
+\resumeItem {Involves analogue circuit \& PCB design, signal conditioning, using an ATmega328PB, writing firmware drivers, serial communication, and Bluetooth communication}
 \resumeItemListEnd
-\resumeEntryE{Key Tools and Skills}
-\resumeItemListStart
+\resumeItemListStartColumns{3}
 \resumeItem {Git and GitHub}
 \resumeItem {LTspice}
 \resumeItem {Microchip Studio}
 \resumeItem {Proteus VSM}
-\resumeItemListEnd
-\resumeEntryEnd
-
-\resumeEntryStart
-\resumeEntryTSDL
-{Automatic Peg Cleaner}{2020}
-{\href{https://jamesnzl.xyz/13cte}{jamesnzl.xyz/13cte}}{Westlake Boys' High School}
-\resumeItemListStart
-\resumeItem {My self-directed Year 13 Control Technology project, achieving Excellence in 3 Internal standards.}
-\resumeItem {I’ve learnt more about embedded systems, MOSFETs, capacitors, diodes, circuit and PCB design, 3D modelling, 3D printing, and firmware development by applying them to a practical project.}
-\resumeItemListEnd
-\resumeEntryE{Key Tools and Skills}
-\resumeItemListStart
-\resumeItem {Arduino}
-\resumeItem {AutoCAD}
-\resumeItem {EasyEDA}
-\resumeItemListEnd
+\resumeItem {Altium Designer}
+\resumeItemListEndColumns
 \resumeEntryEnd
 
 \resumeEntryStart
@@ -417,20 +405,17 @@
 {Pronto}{2020 -- 2021}
 {\href{https://aucklandarmycadets.github.io/Pronto/}{aucklandarmycadets.github.io/Pronto}}{City of Auckland Cadet Unit}
 \resumeItemListStart
-\resumeItem {A full-featured Discord bot to streamline processes and simplify lives in my Cadet Unit.}
-\resumeItem {Written in JavaScript (Node.js) with Discord.js, and uses MongoDB as a database.}
-\resumeItem {I've learnt about back-end development with Node.js, using document databases with MongoDB, writing comprehensive documentation with JSDoc, and hosting/deploying on a Virtual Private Server.}
-\resumeItem {I've used Cloud Computing services including DigitalOcean, Linode, Vultr, and currently Oracle Cloud, using SSH for basic Unix sysadmin tasks to host the bot.}
-\resumeItem {I've grown my confidence with the Unix CLI, and using the terminal to perform tasks.}
+\resumeItem {Full-featured Discord bot to streamline Unit procedures}
+\resumeItem {Comprehensive codebase documentation with JSDoc}
+\resumeItem {Experimenting with Cloud Computing services including DigitalOcean, Linode, Vultr, and currently Oracle Cloud}
 \resumeItemListEnd
-\resumeEntryE{Key Tools and Skills}
-\resumeItemListStart
+\resumeItemListStartColumns{3}
 \resumeItem {JavaScript, Node.js}
 \resumeItem {MongoDB}
 \resumeItem {JSDoc}
 \resumeItem {Virtual Private Servers}
 \resumeItem {SSH, Bash, Unix CLI}
-\resumeItemListEnd
+\resumeItemListEndColumns
 \resumeEntryEnd
 
 \resumeEntryStart
@@ -438,20 +423,21 @@
 {Unit Website}{2022}
 {\href{https://github.com/aucklandarmycadets/aucklandarmycadets}{github.com/aucklandarmycadets/aucklandarmycadets}}{City of Auckland Cadet Unit}
 \resumeItemListStart
-\resumeItem {A modern, performant website to overhaul my Cadet Unit's online presence.}
-\resumeItem {Built with Next.js and Vercel with Notion as a CMS, and forked from an open-source project.}
-\resumeItem {I've gained experience in reading and extending someone else's codebase for my own needs.}
-\resumeItem {I've acquired familiarity with React through Next.js, and written serverless functions with both Next.js and Cloudflare Workers.}
-\resumeItem {I've created my own basic CDN and image proxy with Cloudflare Workers, to cache Notion's ephemeral images and optimise performance.}
-\resumeItem {I've acquired experience in managing DNS records, administering Google Search Console, and enhancing SEO.}
+\resumeItem {A modern, performant website to overhaul my Cadet Unit's online presence}
+\resumeItem {Serverless functions with both Next.js and Cloudflare Workers}
+\resumeItem {Created my own CDN to cache Notion's ephemeral images and optimise performance}
+\resumeItem {Experience in managing DNS records, administering Google Search Console, and enhancing SEO}
 \resumeItemListEnd
-\resumeEntryE{Key Tools and Skills}
-\resumeItemListStart
+\resumeItemListStartColumns{3}
 \resumeItem {Next.js (and React) with Vercel}
-\resumeItem {CSS}
-\resumeItem {Serverless functions with Next.js and Cloudflare Workers}
-\resumeItem {DNS Records, Google Search Console, SEO}
-\resumeItemListEnd
+\resumeItem {Serverless functions}
+\resumeItem {DNS Records, SEO}
+\resumeItemListEndColumns
+\resumeEntryEnd
+
+\resumeEntryStart
+\resumeEntryS
+{Other Projects}{More projects can be found on my \href{https://github.com/jamesnzl}{GitHub} profile.}
 \resumeEntryEnd
 
 % Achievements
@@ -467,14 +453,17 @@
 
 \resumeEntryStart
 \resumeEntryTD{Pre-2021}{}
-\resumeItemListStart
-\resumeItem {Prefect and Deputy House Captain}
-\resumeItem {First in Level 3 Calculus}
-\resumeItem {First in Level 2 Physics}
-\resumeItem {First in Level 2 Programming}
-\resumeItem {Bayonet of Honour - Awarded for extraordinary and committed service or contributions to the City of Auckland Cadet Unit or wider organisation.}
-\resumeItem {Top of Course (NZCF Senior Non-Commissioned Officer's Course) Award - Awarded to the student that gains the highest aggregate marks in all modules of the course and consistently displays and exemplifies the ethos and values of a SNCO in the NZCF.}
-\resumeItemListEnd
+\begin{multicols}{2}
+	\resumeItemListStart
+	\resumeItem {School Prefect and Deputy House Captain}
+	\resumeItem {Bayonet of Honour}
+	\resumeItem {Top of Course Award - \resumeIt{NZCF Senior Non-Commissioned Officer's Course}}
+	\resumeItem {First in Level 3 Calculus}
+	\resumeItem {First in Level 2 Physics}
+	\resumeItem {First in Level 2 Programming}
+	\item[]
+	\resumeItemListEnd
+\end{multicols}
 \resumeEntryEnd
 
 % Interests
@@ -482,16 +471,28 @@
 \section{\faUserCircle}{Interests}
 
 \resumeEntryStart
-\resumeEntryP{
-	I'm passionate about youth development, and have a deep love for the outdoors. I'm an Officer Cadet in the New Zealand Cadet Forces, following on from five years as a cadet with 17 months as a Cadet Warrant Officer Class Two.
+\resumeEntryS
+{Youth Development}
+{
+	I'm passionate about youth development, and I'm currently an Officer Cadet in the New Zealand Cadet Forces. This follows from five years as a cadet, including 17 months as a Cadet Warrant Officer Class Two.
 }
 
-\resumeEntryP{
-	I find immense satisfaction in teaching and mentoring other people—crafting coherent, intuitive explanations for difficult and technical concepts, and seeing the all-rewarding lightbulb moment.
+\resumeEntryS
+{Outdoors}
+{
+	I have a deep love for the outdoors, and find it an amazing outlet to recharge my batteries.
 }
 
-\resumeEntryP{
-	I care deeply about Te Ao Māori, understanding and engaging with the indigenous culture and language of Aotearoa New Zealand.
+\resumeEntryS
+{Teaching}
+{
+	I find immense satisfaction in teaching and mentoring other people---crafting coherent, intuitive explanations for difficult and technical concepts and seeing the all-rewarding lightbulb moment.
+}
+
+\resumeEntryS
+{Te Ao Māori}
+{
+	I care deeply about Te Ao Māori, and enjoy engaging with the indigenous culture \& language of Aotearoa New Zealand.
 }
 \resumeEntryEnd
 
@@ -505,7 +506,7 @@
 {\href{mailto:james.green@cadetforces.org.nz}{james.green@cadetforces.org.nz} or +64 21 101 8020}{City of Auckland Cadet Unit}
 
 \resumeEntryP{
-	James has been a significant mentor, and has guided my development whilst a member of the NZCF.
+	James has been a significant mentor to me, and has heavily guided my development whilst a member of the NZCF.
 }
 \resumeEntryEnd
 
