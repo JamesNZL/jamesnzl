@@ -1,0 +1,479 @@
+\documentclass[11pt,a4paper]{article}[leftmargin=*]
+
+\usepackage[empty]{fullpage}
+\usepackage{enumitem}
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec}
+  \usepackage[xetex]{hyperref}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[pdftex]{hyperref}
+\fi
+\usepackage{fontawesome5}
+\usepackage[sfdefault,light]{FiraSans}
+\usepackage{anyfontsize}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{multicol}
+
+%-------------------------------------------------- SETTINGS HERE --------------------------------------------------
+% Header settings
+\def \fullname {James Bao}
+\def \subtitle {}
+
+\def \emailicon {\faAt}
+\def \emaillink {mailto:james@jamesnzl.xyz}
+\def \emailtext {james@jamesnzl.xyz}
+
+\def \phoneicon {\faMobile}
+\def \phonetext {+64 22 410 1580}
+
+\def \addressicon {\faHome}
+\def \addresstext {Auckland, New Zealand}
+
+\def \linkedinicon {\faLinkedin}
+\def \linkedinlink {https://www.linkedin.com/in/jamesnzl/}
+\def \linkedintext {/JamesNZL}
+
+\def \githubicon {\faGithub}
+\def \githublink {https://github.com/jamesnzl}
+\def \githubtext {/JamesNZL}
+
+\def \websiteicon {\faGlobe}
+\def \websitelink {https://jamesnzl.xyz/}
+\def \websitetext {jamesnzl.xyz}
+
+\def \headertype {\doublecol} % \singlecol or \doublecol
+
+% Misc settings
+\def \entryspacing {-0pt}
+
+\def \bulletstyle {\faAngleRight}
+
+% Define colours
+\definecolor{primary}{HTML}{000000}
+\definecolor{secondary}{HTML}{08A8E6}
+\definecolor{accent}{HTML}{263238}
+\definecolor{halfbold}{HTML}{465C67}
+\definecolor{links}{HTML}{0871E6}
+
+%------------------------------------------------------------------------------------------------------------------- 
+
+% Defines to make listing easier
+\def \email {\hspace{0.06em}\emailicon \hspace{3pt}\href{\emaillink}{\emailtext}}
+\def \phone {\hspace{0.24em}\phoneicon \hspace{3pt}{ \phonetext}}
+\def \address {\addressicon \hspace{3pt}{\addresstext}}
+\def \linkedin {\linkedinicon \hspace{3pt}\href{\linkedinlink}{\linkedintext}}
+\def \github {\githubicon \hspace{3pt}\href{\githublink}{\githubtext}}
+\def \website {\websiteicon \hspace{3pt}\href{\websitelink}{\websitetext}}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.1in}
+
+% Define the link colours
+\hypersetup{
+    colorlinks=true,
+    urlcolor=links,
+}
+
+% Set the margin alignment 
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-------------------------
+% Custom commands
+
+% Sections
+\renewcommand{\section}[2]{\vspace{5pt}
+  \colorbox{secondary}{\color{white}\raggedbottom\normalsize\textbf{{#1}{\hspace{7pt}#2}}}
+}
+
+% Entry start and end, for spacing
+\newcommand{\resumeEntryStart}{\begin{itemize}[leftmargin=2.5mm]}
+\newcommand{\resumeEntryEnd}{\end{itemize}\vspace{\entryspacing}}
+
+% Itemized list for the bullet points under an entry, if necessary
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=4.5mm]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+% Itemized list for the bullet points under an entry, if necessary
+\newcommand{\resumeItemListStartColumns}[2][-0.5]{\vspace*{#1\multicolsep}
+\begin{multicols}{#2}\begin{itemize}[leftmargin=4.5mm]}
+\newcommand{\resumeItemListEndColumns}[1][-0.5]{\end{itemize}\end{multicols}\vspace*{#1\multicolsep}}
+
+% Resume item
+\renewcommand{\labelitemii}{\bulletstyle}
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Entry with title, subheading, date(s), and location
+\newcommand{\resumeEntryTSDL}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabularx}{0.97\textwidth}{X@{\hspace{60pt}}r}
+      \textbf{\color{primary}#1} & {\firabook\color{accent}\small#2} \\
+      \textit{\color{accent}\small#3} & \textit{\color{accent}\small#4} \\
+    \end{tabularx}\vspace{-6pt}
+}
+
+% Entry with title and date(s)
+\newcommand{\resumeEntryTD}[2]{
+  \vspace{-1pt}\item[]
+    \begin{tabularx}{0.97\textwidth}{X@{\hspace{60pt}}r}
+      \textbf{\color{primary}#1} & {\firabook\color{accent}\small#2} \\
+    \end{tabularx}\vspace{-6pt}
+}
+
+% Entry for special (skills)
+\newcommand{\resumeEntryS}[2]{
+  \item[]\small{
+    \textbf{\color{primary}#1 }{ #2 \vspace{-6pt}}
+  }
+}
+
+% Entry for special (emphasis)
+\newcommand{\resumeEntryE}[1]{
+  \item[]\small{
+    \textit{\color{accent}\small#1 \vspace{-6pt}}
+  }\\
+}
+
+% Entry for special (paragraph)
+\newcommand{\resumeEntryP}[1]{
+  \item[]\small{
+    #1 \vspace{-6pt}
+  }\\
+}
+
+\newcommand{\resumeIt}[1]{\textit{\color{accent}#1}}
+
+\newcommand{\resumeBf}[1]{\small\textbf{\color{halfbold}#1}}
+
+% Double column header
+\newcommand{\doublecol}[6]{
+  \begin{tabularx}{\textwidth}{Xr}
+    {
+      \begin{tabular}[c]{l}
+        \fontsize{35}{45}\selectfont{\color{primary}{{\textbf{\fullname}}}} \\
+        {\textit{\subtitle}} % You could add a subtitle here
+      \end{tabular}
+    } & {
+      \begin{tabular}[c]{l@{\hspace{1.5em}}l}
+        {\small#4} & {\small#1} \\
+        {\small#5} & {\small#2} \\
+        {\small#6} & {\small#3}
+      \end{tabular}
+    }
+  \end{tabularx}
+}
+
+% Single column header
+\newcommand{\singlecol}[6]{
+  \begin{tabularx}{\textwidth}{Xr}
+    {
+      \begin{tabular}[b]{l}
+        \fontsize{35}{45}\selectfont{\color{primary}{{\textbf{\fullname}}}} \\
+        {\textit{\subtitle}} % You could add a subtitle here
+      \end{tabular}
+    } & {
+      \begin{tabular}[c]{l}
+        {\small#1} \\
+        {\small#2} \\
+        {\small#3} \\
+        {\small#4} \\
+        {\small#5} \\
+        {\small#6}
+      \end{tabular}
+    }
+  \end{tabularx}
+}
+
+\begin{document}
+
+% Header
+
+\headertype{\linkedin}{\github}{\website}{\email}{\phone}{\address} % Set the order of items here
+\vspace{-10pt} % Set a negative value to push the body up, and the opposite
+
+% Career Objective
+
+\section{\faCrosshairs}{Career Objective}
+
+\resumeEntryStart
+\resumeEntryE{I am \resumeBf{chasing opportunities} to grow my love for \resumeBf{software} and \resumeBf{full-stack web development}.}
+
+\resumeEntryP{I love active problem-solving, and \resumeBf{tinkering} around with an ever-evolving project until it is exactly right. I enjoy learning \& seeing how technology can be applied to \resumeBf{improve human lives}.}
+
+\resumeEntryP{I am a driven, reliable team player with proven leadership skills and a knack for effective communication. I am always looking to learn new things and grow as a person—and I apply this mindset to everything I do.}
+\resumeEntryEnd
+
+% Skills Summary
+
+\section{\faAngleDoubleUp}{Skills Summary}
+
+\resumeEntryStart
+\resumeEntryS{Problem Solving}{}
+\resumeItemListStart
+\resumeItem{
+  I \resumeBf{apply} my strong \resumeBf{logical thinking} to challenging situations, and leave things \resumeBf{better than I found them}.
+}
+\resumeItemListEnd
+
+\resumeEntryS{Communication Skills}{}
+\resumeItemListStart
+\resumeItem{
+  I am an effective communicator with an aptitude for \resumeBf{breaking down challenging concepts}.
+}
+\resumeItemListEnd
+
+\resumeEntryS{Leadership}{}
+\resumeItemListStart
+\resumeItem{
+  I am passionate about intent-based leadership and \resumeBf{understanding} each member's \resumeBf{strengths and weaknesses}.
+}
+\resumeItemListEnd
+
+\resumeEntryS{Teamwork}{}
+\resumeItemListStart
+\resumeItem{
+  I strive to \resumeBf{be an asset} to any team. I am known for my reliability---\resumeBf{I do not make promises I cannot keep}.
+}
+\resumeItemListEnd
+\resumeEntryEnd
+
+\section{\faGraduationCap}{Education}
+
+\resumeEntryStart
+\resumeEntryTSDL
+{Bachelor of Engineering (Honours)}{2021 -- 2024}
+{The University of Auckland}{}
+\resumeItemListStartColumns[0.5]{2}
+\resumeItem {Specialising in \resumeBf{Computer Systems} Engineering}
+\resumeItem {Cumulative GPA of 8.2/9.0 (A)}
+\resumeItemListEndColumns
+\resumeEntryEnd
+
+% Detailed Experience
+
+\section{\faBriefcase}{Experience}
+
+\resumeEntryStart
+\resumeEntryTSDL
+{Course Cadet Staff}{Jul 2021}
+{New Zealand Cadet Forces}{Auckland, NZ}
+
+\resumeItemListStart
+\resumeItem {Selected to staff the Northern Area Junior Non-Commissioned Officer's Course \texttt{04/21}}
+\resumeItem {A mentor and \resumeBf{role model} to the course of 50+ students}
+\resumeItem {Aided Directing Staff in \resumeBf{training delivery}, student assessment, and welfare management}
+\resumeItemListEnd
+\resumeEntryEnd
+
+\resumeEntryStart
+\resumeEntryTD
+{Freelance Software Developer}{2020 -- 2021}
+\resumeItemListStart
+\resumeItem {Back-end development with JavaScript, \resumeBf{Node.js}, and \resumeBf{MongoDB}}
+\resumeItem {Built a custom Discord bot tailored to streamline \resumeBf{digital order management} and processing}
+\resumeItemListEnd
+\resumeEntryEnd
+
+% Technical Skills
+
+\section{\faCogs}{Technical Skills}
+
+\resumeEntryStart
+\resumeEntryTD
+{TypeScript/JavaScript}{}
+\resumeItemListStart
+\resumeItem {Front-end \resumeBf{browser} and back-end \resumeBf{Node.js} applications}
+\resumeItem {Object-oriented and functional patterns}
+\resumeItem {\resumeBf{async/await}, Promises, and callbacks}
+\resumeItem {\resumeBf{Serverless functions} with Next.js and Cloudflare Workers}
+\resumeItemListEnd
+\resumeEntryEnd
+
+\resumeEntryStart
+\resumeEntryTD
+{Git/GitHub}{}
+\resumeItemListStart
+\resumeItem {Git version/source control and GitHub project management}
+\resumeItem {Usage of \resumeBf{feature branches}, pull requests, issues, and GitHub Actions}
+\resumeItem {\resumeBf{3000+ contributions} accrued over the past \resumeBf{4 years}}
+\resumeItemListEnd
+\resumeEntryEnd
+
+\resumeEntryStart
+\resumeEntryS
+{Other Languages}{I also have experience in \resumeBf{C/C++}, \resumeBf{Python}, \resumeBf{Java}, and \resumeBf{MATLAB}.}
+\resumeEntryEnd
+
+% ! Force page break
+\pagebreak
+
+% Project Experience
+
+\section{\faFlask}{Project Experience}
+
+\resumeEntryStart
+\resumeEntryTSDL
+{notion-assignment-import}{2022}
+{\href{https://jamesnzl.xyz/notion-assignment-import}{jamesnzl.xyz/notion-assignment-import}}{}
+\resumeItemListStart
+\resumeItem {\resumeBf{Cross-browser} extension that loads Canvas assignments into a Notion database}
+\resumeItem {\resumeBf{60+ users} in under \resumeBf{two months}}
+\resumeItem {Variety of tools including \resumeBf{Gulp}, Browserify \& ESBuild, \resumeBf{Sass}, and PostCSS}
+\resumeItem {Learnt more about \resumeBf{APIs}, HTTP and HTTP clients, and \resumeBf{OAuth2}}
+\resumeItemListEnd
+\resumeItemListStartColumns{3}
+\resumeItem {Git and GitHub}
+\resumeItem {TypeScript, HTML}
+\resumeItem {Sass and PostCSS}
+\resumeItem {Gulp, Browserify, and ESBuild}
+\resumeItem {Insomnia}
+\resumeItemListEndColumns
+\resumeEntryEnd
+
+\resumeEntryStart
+\resumeEntryTSDL
+{Pronto}{2020 -- 2021}
+{\href{https://aucklandarmycadets.github.io/Pronto/}{aucklandarmycadets.github.io/Pronto}}{City of Auckland Cadet Unit}
+\resumeItemListStart
+\resumeItem {Full-featured Discord bot to \resumeBf{streamline} Unit \resumeBf{procedures}}
+\resumeItem {Comprehensive \resumeBf{codebase documentation} with \resumeBf{JSDoc}}
+\resumeItem {Experimenting with \resumeBf{Cloud Computing} services including DigitalOcean, Linode, Vultr, and currently \resumeBf{Oracle Cloud}}
+\resumeItemListEnd
+\resumeItemListStartColumns{3}
+\resumeItem {JavaScript, Node.js}
+\resumeItem {MongoDB}
+\resumeItem {JSDoc}
+\resumeItem {Virtual Private Servers}
+\resumeItem {SSH, Bash, Unix CLI}
+\resumeItemListEndColumns
+\resumeEntryEnd
+
+\resumeEntryStart
+\resumeEntryTSDL
+{Unit Website}{2022}
+{\href{https://github.com/aucklandarmycadets/aucklandarmycadets}{github.com/aucklandarmycadets/aucklandarmycadets}}{City of Auckland Cadet Unit}
+\resumeItemListStart
+\resumeItem {A \resumeBf{modern, performant website} to overhaul my Cadet Unit's online presence}
+\resumeItem {Serverless functions with both \resumeBf{Next.js} and \resumeBf{Cloudflare Workers}}
+\resumeItem {Created my \resumeBf{own CDN} to cache Notion's ephemeral images and \resumeBf{optimise performance}}
+\resumeItem {Experience in managing \resumeBf{DNS records}, administering Google Search Console, and enhancing \resumeBf{SEO}}
+\resumeItemListEnd
+\resumeItemListStartColumns{3}
+\resumeItem {Next.js (and React) with Vercel}
+\resumeItem {Serverless functions}
+\resumeItem {DNS Records, SEO}
+\resumeItemListEndColumns
+\resumeEntryEnd
+
+\resumeEntryStart
+\resumeEntryS
+{Other Projects}{More projects can be found on my \resumeBf{\href{https://github.com/jamesnzl}{GitHub} profile}.}
+\resumeEntryEnd
+
+% Achievements
+
+\section{\faTrophy}{Achievements}
+
+\resumeEntryStart
+\resumeEntryTD{2021}{}
+\resumeItemListStart
+\resumeItem {\resumeBf{First in Course Award} for ENGGEN 131: Introduction to Engineering Computation and \resumeBf{Software Development}}
+\resumeItemListEnd
+\resumeEntryEnd
+
+\resumeEntryStart
+\resumeEntryTD{Pre-2021}{}
+\begin{multicols}{2}
+  \resumeItemListStart
+  \resumeItem {School Prefect and Deputy House Captain}
+  \resumeItem {Bayonet of Honour}
+  \resumeItem {Top of Course Award - \resumeIt{NZCF Senior Non-Commissioned Officer's Course}}
+  \resumeItem {First in Level 3 Calculus}
+  \resumeItem {First in Level 2 Physics}
+  \resumeItem {First in Level 2 Programming}
+  \item[]
+  \resumeItemListEnd
+\end{multicols}
+\resumeEntryEnd
+
+% Interests
+
+\section{\faUserCircle}{Interests}
+
+\resumeEntryStart
+\resumeEntryS
+{Youth Development}
+{
+  I am passionate about youth development, and I am currently an Officer Cadet in the New Zealand Cadet Forces. This follows from five years as a cadet, including 17 months as a Cadet Warrant Officer Class Two.
+}
+
+\resumeEntryS
+{Outdoors}
+{
+  I have a deep love for the outdoors, and find it an amazing outlet to recharge my batteries.
+}
+
+\resumeEntryS
+{Teaching}
+{
+  I find immense satisfaction in teaching and mentoring other people---crafting coherent, intuitive explanations for difficult and technical concepts and seeing the all-rewarding lightbulb moment.
+}
+
+\resumeEntryS
+{Te Ao Māori}
+{
+  I care deeply about Te Ao Māori, and enjoy engaging with the indigenous culture \& language of Aotearoa New Zealand.
+}
+\resumeEntryEnd
+
+% ! Force page break
+\pagebreak
+
+% References
+
+\section{\faUserCheck}{References}
+
+\resumeEntryStart
+\resumeEntryTSDL
+{Captain James Green, NZCF}{Cadet Unit Commander}
+{\href{mailto:james.green@cadetforces.org.nz}{james.green@cadetforces.org.nz} or +64 21 101 8020}{City of Auckland Cadet Unit}
+
+\resumeEntryP{
+  James has been a \resumeBf{significant mentor} to me, and has heavily \resumeBf{guided} my development whilst a member of the NZCF.
+}
+\resumeEntryEnd
+
+\resumeEntryStart
+\resumeEntryTSDL
+{Rebecca O'Gram}{Associate Principal}
+{\href{mailto:rog@westlake.school.nz}{rog@westlake.school.nz}}{Westlake Boys' High School}
+
+\resumeEntryP{
+  Rebecca was my Year 13 Calculus teacher, and is one of the \resumeBf{most influential} teachers I have ever had.
+}
+\resumeEntryEnd
+
+\resumeEntryStart
+\resumeEntryTSDL
+{Matua Johnny Waititi}{Te Kaihautū o Te Puna}
+{\href{mailto:jwa@westlake.school.nz}{jwa@westlake.school.nz} or +64 20 410 53400}{Westlake Boys' High School}
+
+\resumeEntryP{
+  Matua Johnny was my Te Reo Māori \resumeBf{kaiako} \& subsequent \resumeBf{form teacher}, and is another teacher that has played a massively pivotal role in my life.
+}
+\resumeEntryEnd
+
+\end{document}
