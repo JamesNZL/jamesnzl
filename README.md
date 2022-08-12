@@ -6,7 +6,7 @@ Kia ora! I'm a Part II Computer Systems Engineering student at The University of
 - 🎓 Computer Systems Engineering @ The University of Auckland
 - 🤝 New Zealand Cadet Forces
 - 📧 [`james@jamesnzl.xyz`](mailto:james@jamesnzl.xyz)
-- 📄 [Curriculum Vitae](./cv/cv.pdf)
+- 📄 View my [Curriculum Vitae](./cv/cv.pdf)
 
 Ngā mihi nui!
 
