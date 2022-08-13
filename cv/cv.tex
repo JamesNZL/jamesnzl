@@ -106,7 +106,7 @@
 % Itemized list for the bullet points under an entry, if necessary
 \newcommand{\resumeItemListStartColumns}[2][-0.5]{\vspace*{#1\multicolsep}
 \begin{multicols}{#2}\begin{itemize}[leftmargin=4.5mm]}
-\newcommand{\resumeItemListEndColumns}[1][-0.5]{\end{itemize}\end{multicols}\vspace*{#1\multicolsep}}
+\newcommand{\resumeItemListEndColumns}[1][-1]{\end{itemize}\end{multicols}\vspace*{#1\multicolsep}}
 
 % Resume item
 \renewcommand{\labelitemii}{\bulletstyle}
@@ -344,7 +344,6 @@
 \resumeItemListStart
 \resumeItem {\resumeBf{Cross-browser} extension that loads Canvas assignments into a Notion database}
 \resumeItem {\resumeBf{60+ users} in under \resumeBf{two months}}
-\resumeItem {Variety of tools including \resumeBf{Gulp}, Browserify \& ESBuild, \resumeBf{Sass}, and PostCSS}
 \resumeItem {Learnt more about \resumeBf{APIs}, HTTP and HTTP clients, and \resumeBf{OAuth2}}
 \resumeItemListEnd
 \resumeItemListStartColumns{3}
@@ -397,9 +396,7 @@
 {\href{https://github.com/aucklandarmycadets/aucklandarmycadets}{github.com/aucklandarmycadets/aucklandarmycadets}}{City of Auckland Cadet Unit}
 \resumeItemListStart
 \resumeItem {A \resumeBf{modern, performant website} to overhaul my Cadet Unit's online presence}
-\resumeItem {Serverless functions with both \resumeBf{Next.js} and \resumeBf{Cloudflare Workers}}
 \resumeItem {Created my \resumeBf{own CDN} to cache Notion's ephemeral images and \resumeBf{optimise performance}}
-\resumeItem {Experience in managing \resumeBf{DNS records}, administering Google Search Console, and enhancing \resumeBf{SEO}}
 \resumeItemListEnd
 \resumeItemListStartColumns{3}
 \resumeItem {Next.js (and React) with Vercel}
@@ -418,25 +415,20 @@
 \section{\faTrophy}{Achievements}
 
 \resumeEntryStart
-\resumeEntryTD{2021}{}
+\item[]
 \resumeItemListStart
 \resumeItem {\resumeBf{First in Course Award} for ENGGEN 131: Introduction to Engineering Computation and \resumeBf{Software Development}}
 \resumeItemListEnd
-\resumeEntryEnd
 
-\resumeEntryStart
-\resumeEntryTD{Pre-2021}{}
-\begin{multicols}{2}
-  \resumeItemListStart
-  \resumeItem {Bayonet of Honour}
-  \resumeItem {Cadet Warrant Officer Class Two}
-  \resumeItem {Top of Course Award\\\resumeIt{NZCF Senior Non-Commissioned Officer's Course}}
-  \resumeItem {School Prefect and Deputy House Captain}
-  \resumeItem {First in Level 3 Calculus}
-  \resumeItem {First in Level 2 Physics}
-  \resumeItem {First in Level 2 Programming}
-  \resumeItemListEnd
-\end{multicols}
+\resumeItemListStartColumns{2}
+\resumeItem {Bayonet of Honour}
+\resumeItem {Cadet Warrant Officer Class Two}
+\resumeItem {Top of Course Award\\\resumeIt{NZCF Senior Non-Commissioned Officer's Course}}
+\resumeItem {School Prefect and Deputy House Captain}
+\resumeItem {First in Level 3 Calculus}
+\resumeItem {First in Level 2 Physics}
+\resumeItem {First in Level 2 Programming}
+\resumeItemListEndColumns
 \resumeEntryEnd
 
 % Interests
@@ -468,9 +460,6 @@
   I am an Officer Cadet in the New Zealand Cadet Forces. I was previously a cadet for 5 years, including 17 months as a Cadet Warrant Officer Class Two.
 }
 \resumeEntryEnd
-
-% ! Force page break
-\pagebreak
 
 % References
 
