@@ -50,7 +50,8 @@
 % Misc settings
 \def \entryspacing {-0pt}
 
-\def \bulletstyle {\faAngleRight\hspace{-4.5pt}}
+\def \bulletstylei {\faAngleRight\hspace{-4.5pt}}
+\def \bulletstyleii {\faCaretRight\hspace{-4.5pt}}
 
 % Define colours
 \definecolor{primary}{HTML}{000000}
@@ -109,10 +110,10 @@
 \newcommand{\resumeItemListEndColumns}[1][-1]{\end{itemize}\end{multicols}\vspace*{#1\multicolsep}}
 
 % Resume item
-\renewcommand{\labelitemii}{\bulletstyle}
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
+\renewcommand{\labelitemii}{\bulletstylei}
+\newcommand{\resumeItem}[2][\bulletstylei]{
+  \item[\small#1]\small{
+    {#2 \vspace{-2pt}}
   }
 }
 
@@ -347,11 +348,11 @@
 \resumeItem {Learnt more about \resumeBf{APIs}, HTTP and HTTP clients, and \resumeBf{OAuth2}}
 \resumeItemListEnd
 \resumeItemListStartColumns{3}
-\resumeItem {Git and GitHub}
-\resumeItem {TypeScript, HTML}
-\resumeItem {Sass and PostCSS}
-\resumeItem {Gulp, Browserify, and ESBuild}
-\resumeItem {Insomnia}
+\resumeItem[\bulletstyleii] {Git and GitHub}
+\resumeItem[\bulletstyleii] {TypeScript, HTML}
+\resumeItem[\bulletstyleii] {Sass and PostCSS}
+\resumeItem[\bulletstyleii] {Gulp, Browserify, and ESBuild}
+\resumeItem[\bulletstyleii] {Insomnia}
 \resumeItemListEndColumns
 \resumeEntryEnd
 
@@ -365,11 +366,11 @@
 \resumeItem {Experimenting with \resumeBf{Cloud Computing} services including DigitalOcean, Linode, Vultr, and currently \resumeBf{Oracle Cloud}}
 \resumeItemListEnd
 \resumeItemListStartColumns{3}
-\resumeItem {JavaScript, Node.js}
-\resumeItem {MongoDB}
-\resumeItem {JSDoc}
-\resumeItem {Virtual Private Servers}
-\resumeItem {SSH, Bash, Unix CLI}
+\resumeItem[\bulletstyleii] {JavaScript, Node.js}
+\resumeItem[\bulletstyleii] {MongoDB}
+\resumeItem[\bulletstyleii] {JSDoc}
+\resumeItem[\bulletstyleii] {Virtual Private Servers}
+\resumeItem[\bulletstyleii] {SSH, Bash, Unix CLI}
 \resumeItemListEndColumns
 \resumeEntryEnd
 
@@ -384,9 +385,9 @@
 \resumeItem {Experience in managing \resumeBf{DNS records}, administering Google Search Console, and enhancing \resumeBf{SEO}}
 \resumeItemListEnd
 \resumeItemListStartColumns{3}
-\resumeItem {Next.js (and React) with Vercel}
-\resumeItem {Serverless functions}
-\resumeItem {DNS Records, SEO}
+\resumeItem[\bulletstyleii] {Next.js (and React) with Vercel}
+\resumeItem[\bulletstyleii] {Serverless functions}
+\resumeItem[\bulletstyleii] {DNS Records, SEO}
 \resumeItemListEndColumns
 \resumeEntryEnd
 

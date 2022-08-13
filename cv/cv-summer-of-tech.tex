@@ -50,7 +50,8 @@
 % Misc settings
 \def \entryspacing {-0pt}
 
-\def \bulletstyle {\faAngleRight\hspace{-4.5pt}}
+\def \bulletstylei {\faAngleRight\hspace{-4.5pt}}
+\def \bulletstyleii {\faCaretRight\hspace{-4.5pt}}
 
 % Define colours
 \definecolor{primary}{HTML}{000000}
@@ -109,10 +110,10 @@
 \newcommand{\resumeItemListEndColumns}[1][-1]{\end{itemize}\end{multicols}\vspace*{#1\multicolsep}}
 
 % Resume item
-\renewcommand{\labelitemii}{\bulletstyle}
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
+\renewcommand{\labelitemii}{\bulletstylei}
+\newcommand{\resumeItem}[2][\bulletstylei]{
+  \item[\small#1]\small{
+    {#2 \vspace{-2pt}}
   }
 }
 
@@ -223,7 +224,7 @@
 \resumeEntryStart
 \resumeEntryS{Problem Solving}{}
 \resumeItemListStart
-\resumeItem{
+\resumeItem[\bulletstyleii]{
   \resumeIt{I am a natural problem solver, and \resumeBf{apply} my strong \resumeBf{logical thinking} to challenging situations. I leave things \resumeBf{better than I found them}, working methodically to arrive at an optimal solution.}
 }
 \resumeItem{
@@ -233,7 +234,7 @@
 
 \resumeEntryS{Communication Skills}{}
 \resumeItemListStart
-\resumeItem{
+\resumeItem[\bulletstyleii]{
   \resumeIt{I am an effective communicator with an aptitude for \resumeBf{breaking down challenging concepts}.}
 }
 \resumeItem{
@@ -246,7 +247,7 @@
 
 \resumeEntryS{Leadership}{}
 \resumeItemListStart
-\resumeItem{
+\resumeItem[\bulletstyleii]{
   \resumeIt{I am passionate about intent-based leadership and \resumeBf{understanding} each member's \resumeBf{strengths and weaknesses}---I strongly believe the whole is greater than the sum of its parts.}
 }
 \resumeItem{
@@ -259,7 +260,7 @@
 
 \resumeEntryS{Teamwork}{}
 \resumeItemListStart
-\resumeItem{
+\resumeItem[\bulletstyleii]{
   \resumeIt{I strive to \resumeBf{be an asset} to any team, and try to morph into whatever role is in demand. I am often counted on for my punctuality and reliability---\resumeBf{I do not make promises I cannot keep}.}
 }
 \resumeItem{
@@ -381,11 +382,11 @@
 \resumeItem {Learnt more about \resumeBf{APIs}, HTTP and HTTP clients, and \resumeBf{OAuth2}}
 \resumeItemListEnd
 \resumeItemListStartColumns{3}
-\resumeItem {Git and GitHub}
-\resumeItem {TypeScript, HTML}
-\resumeItem {Sass and PostCSS}
-\resumeItem {Gulp, Browserify, and ESBuild}
-\resumeItem {Insomnia}
+\resumeItem[\bulletstyleii] {Git and GitHub}
+\resumeItem[\bulletstyleii] {TypeScript, HTML}
+\resumeItem[\bulletstyleii] {Sass and PostCSS}
+\resumeItem[\bulletstyleii] {Gulp, Browserify, and ESBuild}
+\resumeItem[\bulletstyleii] {Insomnia}
 \resumeItemListEndColumns
 \resumeEntryEnd
 
@@ -398,11 +399,11 @@
 \resumeItem {Involves analogue \resumeBf{circuit \& PCB} design, signal conditioning, using an \resumeBf{ATmega328PB}, writing \resumeBf{firmware} drivers, serial communication, and Bluetooth communication}
 \resumeItemListEnd
 \resumeItemListStartColumns{3}
-\resumeItem {Git and GitHub}
-\resumeItem {LTspice}
-\resumeItem {Microchip Studio}
-\resumeItem {Proteus VSM}
-\resumeItem {Altium Designer}
+\resumeItem[\bulletstyleii] {Git and GitHub}
+\resumeItem[\bulletstyleii] {LTspice}
+\resumeItem[\bulletstyleii] {Microchip Studio}
+\resumeItem[\bulletstyleii] {Proteus VSM}
+\resumeItem[\bulletstyleii] {Altium Designer}
 \resumeItemListEndColumns
 \resumeEntryEnd
 
@@ -419,11 +420,11 @@
 \resumeItem {Experimenting with \resumeBf{Cloud Computing} services including DigitalOcean, Linode, Vultr, and currently \resumeBf{Oracle Cloud}}
 \resumeItemListEnd
 \resumeItemListStartColumns{3}
-\resumeItem {JavaScript, Node.js}
-\resumeItem {MongoDB}
-\resumeItem {JSDoc}
-\resumeItem {Virtual Private Servers}
-\resumeItem {SSH, Bash, Unix CLI}
+\resumeItem[\bulletstyleii] {JavaScript, Node.js}
+\resumeItem[\bulletstyleii] {MongoDB}
+\resumeItem[\bulletstyleii] {JSDoc}
+\resumeItem[\bulletstyleii] {Virtual Private Servers}
+\resumeItem[\bulletstyleii] {SSH, Bash, Unix CLI}
 \resumeItemListEndColumns
 \resumeEntryEnd
 
@@ -438,9 +439,9 @@
 \resumeItem {Experience in managing \resumeBf{DNS records}, administering Google Search Console, and enhancing \resumeBf{SEO}}
 \resumeItemListEnd
 \resumeItemListStartColumns{3}
-\resumeItem {Next.js (and React) with Vercel}
-\resumeItem {Serverless functions}
-\resumeItem {DNS Records, SEO}
+\resumeItem[\bulletstyleii] {Next.js (and React) with Vercel}
+\resumeItem[\bulletstyleii] {Serverless functions}
+\resumeItem[\bulletstyleii] {DNS Records, SEO}
 \resumeItemListEndColumns
 \resumeEntryEnd
 

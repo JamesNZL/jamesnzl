@@ -50,7 +50,8 @@
 % Misc settings
 \def \entryspacing {-0pt}
 
-\def \bulletstyle {\faAngleRight\hspace{-4.5pt}}
+\def \bulletstylei {\faAngleRight\hspace{-4.5pt}}
+\def \bulletstyleii {\faCaretRight\hspace{-4.5pt}}
 
 % Define colours
 \definecolor{primary}{HTML}{000000}
@@ -109,10 +110,10 @@
 \newcommand{\resumeItemListEndColumns}[1][-1]{\end{itemize}\end{multicols}\vspace*{#1\multicolsep}}
 
 % Resume item
-\renewcommand{\labelitemii}{\bulletstyle}
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
+\renewcommand{\labelitemii}{\bulletstylei}
+\newcommand{\resumeItem}[2][\bulletstylei]{
+  \item[\small#1]\small{
+    {#2 \vspace{-2pt}}
   }
 }
 
@@ -335,11 +336,11 @@
 \resumeItem {Involves analogue \resumeBf{circuit \& PCB} design, signal conditioning, using an \resumeBf{ATmega328PB}, writing \resumeBf{firmware} drivers, serial communication, and Bluetooth communication}
 \resumeItemListEnd
 \resumeItemListStartColumns{3}
-\resumeItem {Git and GitHub}
-\resumeItem {LTspice}
-\resumeItem {Microchip Studio}
-\resumeItem {Proteus VSM}
-\resumeItem {Altium Designer}
+\resumeItem[\bulletstyleii] {Git and GitHub}
+\resumeItem[\bulletstyleii] {LTspice}
+\resumeItem[\bulletstyleii] {Microchip Studio}
+\resumeItem[\bulletstyleii] {Proteus VSM}
+\resumeItem[\bulletstyleii] {Altium Designer}
 \resumeItemListEndColumns
 \resumeEntryEnd
 
@@ -352,9 +353,9 @@
 \resumeItem {Learnt about \resumeBf{embedded systems}, MOSFETs, capacitors, diodes, \resumeBf{circuit and PCB design}, 3D modelling, 3D printing, and \resumeBf{firmware development} through \resumeBf{practical application}}
 \resumeItemListEnd
 \resumeItemListStartColumns{3}
-\resumeItem {Arduino}
-\resumeItem {AutoCAD}
-\resumeItem {EasyEDA}
+\resumeItem[\bulletstyleii] {Arduino}
+\resumeItem[\bulletstyleii] {AutoCAD}
+\resumeItem[\bulletstyleii] {EasyEDA}
 \resumeItemListEndColumns
 \resumeEntryEnd
 
