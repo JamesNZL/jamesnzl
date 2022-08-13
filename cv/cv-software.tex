@@ -11,7 +11,7 @@
   \usepackage[T1]{fontenc}
   \usepackage[pdftex]{hyperref}
 \fi
-\usepackage{fontawesome5}
+\usepackage[fixed]{fontawesome5}
 \usepackage[sfdefault,light]{FiraSans}
 \usepackage{anyfontsize}
 \usepackage{xcolor}
@@ -30,7 +30,7 @@
 \def \phoneicon {\faMobile}
 \def \phonetext {+64 22 410 1580}
 
-\def \addressicon {\faHome}
+\def \addressicon {\faMapMarker*}
 \def \addresstext {Auckland, New Zealand}
 
 \def \linkedinicon {\faLinkedin}
@@ -62,8 +62,8 @@
 %------------------------------------------------------------------------------------------------------------------- 
 
 % Defines to make listing easier
-\def \email {\hspace{0.06em}\emailicon \hspace{3pt}\href{\emaillink}{\emailtext}}
-\def \phone {\hspace{0.24em}\phoneicon \hspace{3pt}{ \phonetext}}
+\def \email {\emailicon \hspace{3pt}\href{\emaillink}{\emailtext}}
+\def \phone {\phoneicon \hspace{3pt}{ \phonetext}}
 \def \address {\addressicon \hspace{3pt}{\addresstext}}
 \def \linkedin {\linkedinicon \hspace{3pt}\href{\linkedinlink}{\linkedintext}}
 \def \github {\githubicon \hspace{3pt}\href{\githublink}{\githubtext}}
@@ -92,7 +92,7 @@
 
 % Sections
 \renewcommand{\section}[2]{\vspace{5pt}
-  \colorbox{secondary}{\color{white}\raggedbottom\normalsize\textbf{{#1}{\hspace{7pt}#2}}}
+  \colorbox{secondary}{\color{white}\raggedbottom\normalsize\textbf{{#1}{\hspace{2pt}#2}}}
 }
 
 % Entry start and end, for spacing
