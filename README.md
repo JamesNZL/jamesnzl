@@ -27,8 +27,9 @@ Ngā mihi nui!
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
 
-###### Embedded Systems and Electronics
+###### Electronics & Embedded Systems
 ![Arduino](https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white)
+![ATmega328PB](https://img.shields.io/badge/ATmega328PB-ed1b2d?style=for-the-badge)
 ![LTspice](https://img.shields.io/badge/LTspice-8E0A26?style=for-the-badge)
 ![Microchip Studio](https://img.shields.io/badge/Microchip_Studio-EE3233?style=for-the-badge)
 ![Proteus VSM](https://img.shields.io/badge/Proteus_VSM-1C79B3?style=for-the-badge)
