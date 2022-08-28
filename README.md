@@ -33,6 +33,7 @@ Ngā mihi nui!
 ![LTspice](https://img.shields.io/badge/LTspice-8E0A26?style=for-the-badge)
 ![Microchip Studio](https://img.shields.io/badge/Microchip_Studio-EE3233?style=for-the-badge)
 ![Proteus VSM](https://img.shields.io/badge/Proteus_VSM-1C79B3?style=for-the-badge)
+![Altium Designer](https://img.shields.io/badge/Altium_Designer-A5915F?style=for-the-badge&logo=altiumdesigner&logoColor=white)
 ![EasyEDA](https://img.shields.io/badge/EasyEDA-5588ff?style=for-the-badge)
 
 ###### Frontend
