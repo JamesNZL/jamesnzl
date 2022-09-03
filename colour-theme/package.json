@@ -1,6 +1,7 @@
 {
     "name": "colour-theme",
     "displayName": "JamesNZL",
+    "publisher": "JamesNZL",
     "description": "A darker, mellower Monokai.",
     "icon": "assets/icon.png",
     "version": "0.0.6",
@@ -28,9 +29,8 @@
         "standard-version": "^9.5.0"
     },
     "scripts": {
-        "release": "standard-version --sign --commit-all --path . && npm run install-ext",
-        "publish": "git push --follow-tags origin main",
-        "install-ext": "code --install-extension releases/colour-theme-latest.vsix"
+        "release": "standard-version --sign --commit-all --path .",
+        "publish": "git push --follow-tags origin main && vsce publish"
     },
     "standard-version": {
         "skip": {
