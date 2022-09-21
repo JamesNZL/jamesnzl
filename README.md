@@ -3,7 +3,8 @@
 Kia ora! I'm a Part II Computer Systems Engineering student at The University of Auckland. I'm interested in all things tech, from analogue electronics to full-stack web development. I'm passionate about youth development, and leaving things in a better state than I found them.
 
 - 📍 Tāmaki Makaurau, Aotearoa
-- 🎓 Computer Systems Engineering @ The University of Auckland
+- 🎓 Computer Systems Engineering @ [The University of Auckland](https://www.auckland.ac.nz/en/engineering/about-the-faculty/electrical-computer-and-software-engineering.html)
+- 🏢 Embedded Software Engineer Intern @ [Windcave](https://www.windcave.com/)
 - 🤝 New Zealand Cadet Forces
 - 📧 Email me at [`james@jamesnzl.xyz`](mailto:james@jamesnzl.xyz)
 - 🌏 Connect with me on [LinkedIn](https://www.linkedin.com/in/jamesnzl/)
