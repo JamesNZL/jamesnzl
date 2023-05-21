@@ -92,7 +92,13 @@
 						"home_icon": "home",
 						"style": "agnoster_full"
 					}
-				},
+				}
+			]
+		},
+		{
+			"type": "prompt",
+			"alignment": "left",
+			"segments": [
 				{
 					"type": "exit",
 					"style": "plain",
@@ -100,12 +106,13 @@
 					"foreground_templates": [
 						"{{ if gt .Code 0 }}#ef5350{{ end }}"
 					],
-					"template": " ~ ",
+					"template": "~ ",
 					"properties": {
 						"always_enabled": true
 					}
 				}
-			]
+			],
+			"newline": true
 		}
 	],
 	"osc99": true
