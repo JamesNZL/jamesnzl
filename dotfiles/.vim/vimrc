@@ -1,0 +1,5 @@
+set number
+set nocompatible
+syntax on
+set background=dark
+colorscheme jamesnzl
