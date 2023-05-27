@@ -48,3 +48,20 @@ endif
 " statusline indicates insert or normal mode
 set showmode showcmd
 
+" use system clipboard
+" https://anuragpeshne.github.io/essays/vim/7.html
+noremap y "*y
+noremap yy "*yy
+noremap Y "*y$
+noremap <leader>x "*x
+noremap <leader>d "*d
+noremap <leader>D "*D
+noremap <leader>dd "*dd
+noremap p "*p
+noremap P "*P
+
+noremap x "_x
+noremap d "_d
+noremap D "_D
+noremap dd "_dd
+
