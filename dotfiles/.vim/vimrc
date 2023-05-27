@@ -1,3 +1,8 @@
+if exists('g:vscode')
+    " VSCode extension
+else
+    " ordinary vim
+
     set relativenumber
 set number
 set nocompatible
@@ -8,11 +13,18 @@ set background=dark
     " highlight matching parens, braces, brackets, etc
     set showmatch
 
+    set hidden
+
     set autoindent
     set smartindent
     set shiftwidth=4
 
+    if !has('nvim')
 colorscheme jamesnzl
+
+        " make scrolling and painting fast
+        " ttyfast kept for vim compatibility but not needed for nvim
+        set ttyfast lazyredraw
 
 	nnoremap <A-j> :m .+1<CR>==
 	nnoremap <A-k> :m .-2<CR>==
@@ -29,3 +41,6 @@ colorscheme jamesnzl
 	endw
 
 	set ttimeout ttimeoutlen=50
+    endif
+
+endif
