@@ -65,3 +65,5 @@ noremap d "_d
 noremap D "_D
 noremap dd "_dd
 
+nnoremap <esc><esc> :noh<return><esc>
+
