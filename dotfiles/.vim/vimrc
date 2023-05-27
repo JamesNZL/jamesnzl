@@ -8,6 +8,10 @@ set background=dark
     " highlight matching parens, braces, brackets, etc
     set showmatch
 
+    set autoindent
+    set smartindent
+    set shiftwidth=4
+
 colorscheme jamesnzl
 
 	nnoremap <A-j> :m .+1<CR>==
