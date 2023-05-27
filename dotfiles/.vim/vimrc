@@ -44,3 +44,7 @@ colorscheme jamesnzl
     endif
 
 endif
+
+" statusline indicates insert or normal mode
+set showmode showcmd
+
