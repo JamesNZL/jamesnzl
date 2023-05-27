@@ -45,6 +45,8 @@ colorscheme jamesnzl
 
 endif
 
+set ignorecase smartcase
+
 " statusline indicates insert or normal mode
 set showmode showcmd
 
