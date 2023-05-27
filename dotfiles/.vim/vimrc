@@ -1,8 +1,13 @@
     set relativenumber
 set number
 set nocompatible
+
 syntax on
 set background=dark
+
+    " highlight matching parens, braces, brackets, etc
+    set showmatch
+
 colorscheme jamesnzl
 
 	nnoremap <A-j> :m .+1<CR>==
