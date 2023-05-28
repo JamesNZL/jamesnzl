@@ -96,6 +96,6 @@ Ngā mihi nui!
 [![James#0021](https://lanyard.cnrad.dev/api/192181901065322496?idleMessage=Twiddling%20my%20thumbs...)](https://discord.com/users/192181901065322496)
 
 ### 📈 Statistics
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=react&layout=compact&langs_count=12&hide_border=true&hide=tex)  
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=react&hide_border=true&hide_rank=true)  
+![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=react&layout=compact&langs_count=12&hide_border=true&hide=tex)  
+![GitHub stats](https://github-readme-stats-sigma-sable.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=react&hide_border=true&hide_rank=true)  
 ![GitHub streak stats](https://github-readme-streak-stats.herokuapp.com?user=jamesnzl&theme=react&hide_border=true&date_format=j%20M%5B%20Y%5D)
