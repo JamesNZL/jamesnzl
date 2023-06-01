@@ -136,6 +136,11 @@ Plug 'unblevable/quick-scope'       " Plug
 
 Plug 'machakann/vim-sandwich'
 
+Plug 'tpope/vim-repeat'
+
+Plug 'ggandor/leap.nvim'
+Plug 'ggandor/flit.nvim'
+
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
@@ -147,3 +152,8 @@ highlight QuickScopePrimary gui=underline cterm=underline
 highlight QuickScopeSecondary gui=bold cterm=bold
 
 runtime macros/sandwich/keymap/surround.vim
+
+if has('nvim')
+  lua require('leap').add_default_mappings()
+  lua require('flit').setup { labeled_modes = "nv" }
+endif
