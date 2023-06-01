@@ -134,6 +134,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'unblevable/quick-scope'       " Plug
 
+Plug 'machakann/vim-sandwich'
+
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
@@ -143,3 +145,5 @@ call plug#end()
 
 highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
 highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
+
+runtime macros/sandwich/keymap/surround.vim
