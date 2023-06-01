@@ -1,1 +1,5 @@
 .vscode/settings.json
+
+dotfiles/.vim/autoload
+dotfiles/.vim/.netrwhist
+dotfiles/.vim/.vimrc.swp
