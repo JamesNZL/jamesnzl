@@ -144,6 +144,6 @@ call plug#end()
 "   syntax off            " Disable syntax highlighting
 
 highlight QuickScopePrimary gui=underline cterm=underline
-highlight QuickScopeSecondary gui=underline cterm=underline
+highlight QuickScopeSecondary gui=bold cterm=bold
 
 runtime macros/sandwich/keymap/surround.vim
