@@ -96,6 +96,9 @@ noremap y "*y
 noremap yy "*yy
 noremap Y "*y$
 noremap <leader>x "*x
+noremap <leader>c "*c
+noremap <leader>C "*C
+noremap <leader>cc "*cc
 noremap <leader>d "*d
 noremap <leader>D "*D
 noremap <leader>dd "*dd
@@ -103,6 +106,9 @@ noremap p "*p
 noremap P "*P
 
 noremap x "_x
+noremap c "_c
+noremap C "_C
+noremap cc "_cc
 noremap d "_d
 noremap D "_D
 noremap dd "_dd
