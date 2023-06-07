@@ -99,5 +99,5 @@ Ngā mihi nui!
 ![GitHub streak stats](https://github-readme-streak-stats.herokuapp.com?user=jamesnzl&theme=react&hide_border=true&date_format=j%20M%5B%20Y%5D)
 
 ### 💬 Discord
-[![James#0021](https://lanyard.cnrad.dev/api/192181901065322496?idleMessage=Twiddling%20my%20thumbs...)](https://discord.com/users/192181901065322496)
+[![James#0021](https://lanyard.cnrad.dev/api/192181901065322496?hideDiscrim=true&idleMessage=Twiddling%20my%20thumbs...)](https://discord.com/users/192181901065322496)
 
