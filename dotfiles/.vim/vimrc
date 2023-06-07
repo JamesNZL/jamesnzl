@@ -148,6 +148,8 @@ Plug 'tpope/vim-repeat'
 Plug 'ggandor/leap.nvim'
 Plug 'ggandor/flit.nvim'
 
+Plug 'lervag/vimtex'
+
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
