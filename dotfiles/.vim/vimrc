@@ -141,6 +141,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'unblevable/quick-scope'       " Plug
 
 Plug 'machakann/vim-sandwich'
+Plug 'andymass/vim-matchup'
 
 Plug 'tpope/vim-repeat'
 
