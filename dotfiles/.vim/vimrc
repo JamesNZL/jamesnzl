@@ -145,8 +145,12 @@ Plug 'andymass/vim-matchup'
 
 Plug 'tpope/vim-repeat'
 
-Plug 'ggandor/leap.nvim'
-Plug 'ggandor/flit.nvim'
+if has('nvim')
+  Plug 'ggandor/leap.nvim'
+  Plug 'ggandor/flit.nvim'
+else
+  Plug 'justinmk/vim-sneak'
+endif
 
 Plug 'lervag/vimtex'
 
