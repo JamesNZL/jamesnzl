@@ -12,4 +12,4 @@
 
 - 📧 Email me at [`james@jamesnzl.xyz`](mailto:james@jamesnzl.xyz)
 - 🌏 Connect with me on [LinkedIn](https://www.linkedin.com/in/jamesnzl/)
-- 💬 Message me on [Discord](https://discord.com/users/192181901065322496)
+- 💬 Message me on Discord at `@nzl.james`
