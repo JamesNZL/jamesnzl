@@ -7,7 +7,7 @@ Kia ora! I'm a Part III Computer Systems Engineering student at The University o
 - 🤝 New Zealand Cadet Forces
 - 📧 Email me at [`james@jamesnzl.xyz`](mailto:james@jamesnzl.xyz)
 - 🌏 Connect with me on [LinkedIn](https://www.linkedin.com/in/jamesnzl/)
-- 📄 View my [Curriculum Vitae](./cv/cv.pdf)
+- 📄 View my [Curriculum Vitae](./cv)
 
 Ngā mihi nui!
 
