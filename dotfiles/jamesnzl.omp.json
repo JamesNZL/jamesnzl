@@ -71,7 +71,7 @@
 					"type": "sysinfo",
 					"style": "diamond",
 					"foreground": "#caffbe",
-					"template": " <#ffffff>\udb82\uddd1</> <#ffffff>RAM:</> {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB "
+					"template": " <#ffffff>\udb82\uddd1</> <#ffffff>RAM:</> {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB"
 				}
 			],
 			"overflow": "break"
@@ -84,7 +84,7 @@
 					"type": "path",
 					"style": "diamond",
 					"foreground": "#cff9ff",
-					"leading_diamond": "\b<#bfa8bf>~</>",
+					"leading_diamond": "<#bfa8bf>~</>",
 					"template": " \ue5ff  {{ .Path }} / ",
 					"properties": {
 						"folder_icon": "/",
@@ -93,7 +93,8 @@
 						"style": "agnoster_full"
 					}
 				}
-			]
+			],
+			"newline": true
 		},
 		{
 			"type": "prompt",
