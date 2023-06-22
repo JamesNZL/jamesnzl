@@ -95,14 +95,14 @@ Ngā mihi nui!
 ![Bash](https://img.shields.io/badge/GNU_Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 
 ### 📈 Statistics
-![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=default&layout=compact&langs_count=12&hide=tex&exclude_repo=softeng281-money,softeng281-blackjack#gh-light-mode-only)
-![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=react&layout=compact&langs_count=12&hide_border=true&hide=tex&exclude_repo=softeng281-money,softeng281-blackjack#gh-dark-mode-only)  
-![GitHub stats](https://github-readme-stats-sigma-sable.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=default&hide_rank=true#gh-light-mode-only)
-![GitHub stats](https://github-readme-stats-sigma-sable.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=react&hide_border=true&hide_rank=true#gh-dark-mode-only)  
-![GitHub streak stats](https://github-readme-streak-stats.herokuapp.com?user=jamesnzl&theme=default&fire=2f80ed&ring=2f80ed&currStreakLabel=2f80ed&sideNums=2f80ed&date_format=j%20M%5B%20Y%5D#gh-light-mode-only)
-![GitHub streak stats](https://github-readme-streak-stats.herokuapp.com?user=jamesnzl&theme=react&hide_border=true&date_format=j%20M%5B%20Y%5D#gh-dark-mode-only)
+[![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=default&layout=compact&langs_count=12&hide=tex&exclude_repo=softeng281-money,softeng281-blackjack#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
+[![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=react&layout=compact&langs_count=12&hide_border=true&hide=tex&exclude_repo=softeng281-money,softeng281-blackjack#gh-dark-mode-only)](https://jamesnzl.xyz#gh-dark-mode-only)  
+[![GitHub stats](https://github-readme-stats-sigma-sable.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=default&hide_rank=true#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
+[![GitHub stats](https://github-readme-stats-sigma-sable.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=react&hide_border=true&hide_rank=true#gh-dark-mode-only)](https://jamesnzl.xyz#gh-dark-mode-only)  
+[![GitHub streak stats](https://github-readme-streak-stats.herokuapp.com?user=jamesnzl&theme=default&fire=2f80ed&ring=2f80ed&currStreakLabel=2f80ed&sideNums=2f80ed&date_format=j%20M%5B%20Y%5D#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
+[![GitHub streak stats](https://github-readme-streak-stats.herokuapp.com?user=jamesnzl&theme=react&hide_border=true&date_format=j%20M%5B%20Y%5D#gh-dark-mode-only)](https://jamesnzl.xyz#gh-dark-mode-only)
 
 ### 💬 Discord
-[![nzl.james](https://lanyard.cnrad.dev/api/192181901065322496?theme=light&hideDiscrim=true&idleMessage=Twiddling%20my%20thumbs...#gh-light-mode-only)](https://discord.com/users/192181901065322496)
-[![nzl.james](https://lanyard.cnrad.dev/api/192181901065322496?bg=20232a&hideDiscrim=true&idleMessage=Twiddling%20my%20thumbs...#gh-dark-mode-only)](https://discord.com/users/192181901065322496)
+[![nzl.james](https://lanyard.cnrad.dev/api/192181901065322496?theme=light&hideDiscrim=true&idleMessage=Twiddling%20my%20thumbs...#gh-light-mode-only)](https://discord.com/users/192181901065322496#gh-light-mode-only)
+[![nzl.james](https://lanyard.cnrad.dev/api/192181901065322496?bg=20232a&hideDiscrim=true&idleMessage=Twiddling%20my%20thumbs...#gh-dark-mode-only)](https://discord.com/users/192181901065322496#gh-dark-mode-only)
 
