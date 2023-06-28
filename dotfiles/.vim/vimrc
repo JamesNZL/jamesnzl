@@ -151,6 +151,7 @@ Plug 'tpope/vim-repeat'
 if has('nvim')
   Plug 'ggandor/leap.nvim'
   Plug 'ggandor/flit.nvim'
+  Plug 'ggandor/leap-spooky.nvim'
 else
   Plug 'justinmk/vim-sneak'
 endif
@@ -172,4 +173,5 @@ runtime macros/sandwich/keymap/surround.vim
 if has('nvim')
   lua require('leap').add_default_mappings()
   lua require('flit').setup { labeled_modes = "nv" }
+  lua require('leap-spooky').setup { prefix = true }
 endif
