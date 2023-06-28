@@ -142,6 +142,7 @@ Plug 'unblevable/quick-scope'       " Plug
 
 Plug 'machakann/vim-sandwich'
 Plug 'andymass/vim-matchup'
+Plug 'AndrewRadev/splitjoin.vim'
 
 Plug 'tpope/vim-repeat'
 
