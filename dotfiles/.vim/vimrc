@@ -149,9 +149,10 @@ Plug 'tommcdo/vim-exchange'
 Plug 'tpope/vim-repeat'
 
 if has('nvim')
-  Plug 'ggandor/leap.nvim'
-  Plug 'ggandor/flit.nvim'
-  Plug 'ggandor/leap-spooky.nvim'
+  Plug 'rlane/pounce.nvim'
+  " Plug 'ggandor/leap.nvim'
+  " Plug 'ggandor/flit.nvim'
+  " Plug 'ggandor/leap-spooky.nvim'
 else
   Plug 'justinmk/vim-sneak'
 endif
@@ -171,7 +172,12 @@ highlight QuickScopeSecondary gui=bold cterm=bold
 runtime macros/sandwich/keymap/surround.vim
 
 if has('nvim')
-  lua require('leap').add_default_mappings()
-  lua require('flit').setup { labeled_modes = "nv" }
-  lua require('leap-spooky').setup { prefix = true }
+  nmap s <cmd>Pounce<CR>
+  nmap S <cmd>PounceRepeat<CR>
+  xmap s <cmd>Pounce<CR>
+  omap gs <cmd>Pounce<CR>  " 's' is used by vim-surround
+  nmap S :Pounce <C-r>/<cr> " note: if you want to use <C-r> you cannot use <cmd>
+  " lua require('leap').add_default_mappings()
+  " lua require('flit').setup { labeled_modes = "nv" }
+  " lua require('leap-spooky').setup { prefix = true }
 endif
