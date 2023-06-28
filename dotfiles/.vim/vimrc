@@ -154,7 +154,9 @@ if has('nvim')
   " Plug 'ggandor/flit.nvim'
   " Plug 'ggandor/leap-spooky.nvim'
 else
-  Plug 'justinmk/vim-sneak'
+  Plug 'vim-denops/denops.vim'
+  let g:denops_disable_version_check = 1
+  Plug 'yuki-yano/fuzzy-motion.vim'
 endif
 
 Plug 'lervag/vimtex'
@@ -180,4 +182,6 @@ if has('nvim')
   " lua require('leap').add_default_mappings()
   " lua require('flit').setup { labeled_modes = "nv" }
   " lua require('leap-spooky').setup { prefix = true }
+else
+  nmap s <cmd>FuzzyMotion<CR>
 endif
