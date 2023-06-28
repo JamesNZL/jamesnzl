@@ -144,6 +144,8 @@ Plug 'machakann/vim-sandwich'
 Plug 'andymass/vim-matchup'
 Plug 'AndrewRadev/splitjoin.vim'
 
+Plug 'tommcdo/vim-exchange'
+
 Plug 'tpope/vim-repeat'
 
 if has('nvim')
