@@ -10,9 +10,6 @@ if exists('g:vscode')
         let endLine = getpos(markEndLine)[1]
         let removeVsCodeSelectionAfterCommand = 1    " We set the visual selection manually after this command as otherwise it will use the line numbers that correspond to the old positions
         let linecount = getbufinfo('%')[0].linecount
-         
-
-
 
         if (a:direction == "Up" && startLine == 1) || (a:direction == "Down" && endLine == linecount) 
             let newStart = startLine
@@ -84,6 +81,10 @@ else
     endif
 
 endif
+
+" set cursor styles
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
 
 set ignorecase smartcase
 
