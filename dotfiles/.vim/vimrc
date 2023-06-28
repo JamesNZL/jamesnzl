@@ -180,10 +180,10 @@ if has('nvim')
   omap gs <cmd>Pounce<CR>  " 's' is used by vim-surround
   nmap S :Pounce <C-r>/<cr> " note: if you want to use <C-r> you cannot use <cmd>
   
-  highlight PounceMatch guibg=#3b3c39
-  highlight PounceGap guibg=#262724
-  highlight PounceAccept guifg=#000000 guibg=#99ccff
-  highlight PounceAcceptBest guifg=#000000 guibg=#ccff88
+  highlight PounceMatch ctermbg=darkgrey guibg=#3b3c39
+  highlight PounceGap ctermbg=darkgrey guibg=#262724
+  highlight PounceAccept ctermfg=black ctermbg=lightgreen guifg=#000000 guibg=#99ccff
+  highlight PounceAcceptBest ctermfg=black ctermbg=lightcyan guifg=#000000 guibg=#ccff88
   
   " lua require('leap').add_default_mappings()
   " lua require('flit').setup { labeled_modes = "nv" }
