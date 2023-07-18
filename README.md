@@ -96,6 +96,8 @@ Ngā mihi nui!
 ![Bash](https://img.shields.io/badge/GNU_Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 
 ### 📈 Statistics
+[![James' GitHub Contributions](https://github.pumbas.net/api/contributions/JamesNZL)](https://github.com/pumbas600/github-contributions)
+
 [![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=default&layout=compact&card_width=305&langs_count=12&hide=tex&exclude_repo=compsys301-line-following-robot,softeng281-money,softeng281-blackjack,Order-Bot,AoC-2020#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
 [![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=react&layout=compact&card_width=305&langs_count=12&hide_border=true&hide=tex&exclude_repo=compsys301-line-following-robot,softeng281-money,softeng281-blackjack,Order-Bot,AoC-2020#gh-dark-mode-only)](https://jamesnzl.xyz#gh-dark-mode-only)  
 [![GitHub stats](https://github-readme-stats-sigma-sable.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=default&card_width=305&hide_rank=true#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
