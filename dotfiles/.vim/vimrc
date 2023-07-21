@@ -177,6 +177,8 @@ highlight QuickScopeSecondary gui=bold cterm=bold
 runtime macros/sandwich/keymap/surround.vim
 
 if has('nvim')
+  set shada="NONE"
+  
   nmap s <cmd>Pounce<CR>
   nmap S <cmd>PounceRepeat<CR>
   xmap s <cmd>Pounce<CR>
