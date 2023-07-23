@@ -122,3 +122,4 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(oh-my-posh --init --shell bash --config ~/jamesnzl.omp.json)"
+export PAGER="most"
