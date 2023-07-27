@@ -91,6 +91,9 @@ set ignorecase smartcase
 " statusline indicates insert or normal mode
 set showmode showcmd
 
+" treat _ as a word boundary
+set iskeyword-=_
+
 " use system clipboard
 " https://anuragpeshne.github.io/essays/vim/7.html
 noremap y "*y
