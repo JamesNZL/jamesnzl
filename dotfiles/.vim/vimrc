@@ -83,6 +83,10 @@ noremap dd "_dd
 
 nnoremap <esc><esc> :noh<return><esc>
 
+highlight! link OperatorSandwichAdd NONE
+highlight! link OperatorSandwichDelete NONE
+highlight! link OperatorSandwichStuff NONE
+
 " Search for selected text, forwards or backwards.
 vnoremap <silent> * :<C-U>
   \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
