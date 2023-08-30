@@ -14,15 +14,15 @@ Ngā mihi nui!
 ### 🪀 Some Things I've Played With
 
 ###### Languages & Markup
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-306998?style=for-the-badge&logo=python&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![MATLAB](https://img.shields.io/badge/MATLAB-004B87?style=for-the-badge)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![MATLAB](https://img.shields.io/badge/MATLAB-004B87?style=for-the-badge)
 ![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E44D26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-264DE4?style=for-the-badge&logo=css3&logoColor=white)
@@ -31,17 +31,17 @@ Ngā mihi nui!
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
 
 ###### Electronics & Embedded Systems
+![LTspice](https://img.shields.io/badge/LTspice-8E0A26?style=for-the-badge)
+![Altium Designer](https://img.shields.io/badge/Altium_Designer-A5915F?style=for-the-badge&logo=altiumdesigner&logoColor=white)
+![EasyEDA](https://img.shields.io/badge/EasyEDA-5588ff?style=for-the-badge)
 ![Arduino](https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white)
 ![ATmega328PB](https://img.shields.io/badge/ATmega328PB-ed1b2d?style=for-the-badge)
-![LTspice](https://img.shields.io/badge/LTspice-8E0A26?style=for-the-badge)
-![Microchip Studio](https://img.shields.io/badge/Microchip_Studio-EE3233?style=for-the-badge)
 ![PlatformIO](https://img.shields.io/badge/PlatformIO-FF7F00?style=for-the-badge)
+![Microchip Studio](https://img.shields.io/badge/Microchip_Studio-EE3233?style=for-the-badge)
 ![Proteus VSM](https://img.shields.io/badge/Proteus_VSM-1C79B3?style=for-the-badge)
 ![Cyclone V](https://img.shields.io/badge/Cyclone_V_FPGA-0067a5?style=for-the-badge)
 ![Quartus](https://img.shields.io/badge/Quartus_Prime-00285A?style=for-the-badge)
 ![ModelSim](https://img.shields.io/badge/ModelSim-0000FF?style=for-the-badge)
-![Altium Designer](https://img.shields.io/badge/Altium_Designer-A5915F?style=for-the-badge&logo=altiumdesigner&logoColor=white)
-![EasyEDA](https://img.shields.io/badge/EasyEDA-5588ff?style=for-the-badge)
 
 ###### Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
