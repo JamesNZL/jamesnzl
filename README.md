@@ -33,7 +33,7 @@ Ngā mihi nui!
 ###### Electronics & Embedded Systems
 ![LTspice](https://img.shields.io/badge/LTspice-8E0A26?style=for-the-badge)
 ![Altium Designer](https://img.shields.io/badge/Altium_Designer-A5915F?style=for-the-badge&logo=altiumdesigner&logoColor=white)
-![EasyEDA](https://img.shields.io/badge/EasyEDA-5588ff?style=for-the-badge)
+![EasyEDA](https://img.shields.io/badge/EasyEDA-5588ff?style=for-the-badge&logo=easyeda&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white)
 ![ATmega328PB](https://img.shields.io/badge/ATmega328PB-ed1b2d?style=for-the-badge)
 ![PlatformIO](https://img.shields.io/badge/PlatformIO-FF7F00?style=for-the-badge)
