@@ -31,7 +31,7 @@ Ngā mihi nui!
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
 
 ###### Electronics & Embedded Systems
-![LTspice](https://img.shields.io/badge/LTspice-8E0A26?style=for-the-badge)
+![LTspice](https://img.shields.io/badge/LTspice-900028?style=for-the-badge&logo=ltspice&logoColor=white)
 ![Altium Designer](https://img.shields.io/badge/Altium_Designer-A5915F?style=for-the-badge&logo=altiumdesigner&logoColor=white)
 ![EasyEDA](https://img.shields.io/badge/EasyEDA-5588ff?style=for-the-badge&logo=easyeda&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white)
