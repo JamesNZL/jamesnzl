@@ -42,6 +42,7 @@ Ngā mihi nui!
 ![Cypress PSoC 5LP](https://img.shields.io/badge/PSoC_5LP-17202c?style=for-the-badge&logo=cypress&logoColor=white)
 ![Cypress PSoC Creator](https://img.shields.io/badge/PSoC_Creator-17202c?style=for-the-badge&logo=cypress&logoColor=white)
 ![STM32U585](https://img.shields.io/badge/STM32U585-03234b?style=for-the-badge&logo=stmicroelectronics&logoColor=white)
+![STM32Cube](https://img.shields.io/badge/STM32Cube-3cb4e6?style=for-the-badge&logo=stmicroelectronics&logoColor=white)
 ![Intel Cyclone V](https://img.shields.io/badge/Cyclone_V_FPGA-0067a5?style=for-the-badge&logo=intel&logoColor=white)
 ![Quartus](https://img.shields.io/badge/Quartus_Prime-00285A?style=for-the-badge&logo=intel&logoColor=white)
 ![ModelSim](https://img.shields.io/badge/ModelSim-0000FF?style=for-the-badge)
