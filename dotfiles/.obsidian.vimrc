@@ -22,8 +22,8 @@ map S` :surround_backticks
 map Sb :surround_brackets
 map S( :surround_brackets
 map S) :surround_brackets
-map S[ :surround_square_brackets
-map S[ :surround_square_brackets
+map S[ :surround_wiki
+map S] :surround_square_brackets
 map S{ :surround_curly_brackets
 map S} :surround_curly_brackets
 
