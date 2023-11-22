@@ -1,0 +1,359 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+	{
+		"key": "ctrl+j",
+		"command": "workbench.action.togglePanel"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "workbench.action.debug.start",
+		"when": "!editorTextFocus && debuggersAvailable && !inDebugMode"
+	},
+	{
+		"key": "f5",
+		"command": "-workbench.action.debug.start",
+		"when": "debuggersAvailable && !inDebugMode"
+	},
+	{
+		"key": "ctrl+shift+/",
+		"command": "editor.action.blockComment",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+a",
+		"command": "-editor.action.blockComment",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "workbench.action.debug.restart",
+		"when": "inDebugMode"
+	},
+	{
+		"key": "ctrl+shift+f5",
+		"command": "-workbench.action.debug.restart",
+		"when": "inDebugMode"
+	},
+	{
+		"key": "ctrl+shift+b",
+		"command": "-workbench.action.tasks.build"
+	},
+	{
+		"key": "ctrl+shift+d",
+		"command": "editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+k",
+		"command": "-editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+alt+u",
+		"command": "workbench.action.tasks.runTask",
+		"args": "Update Pronto version"
+	},
+	{
+		"key": "ctrl+shift+b",
+		"command": "workbench.action.debug.selectandstart"
+	},
+	{
+		"key": "ctrl+shift+alt+d",
+		"command": "workbench.action.tasks.build"
+	},
+	{
+		"key": "f10",
+		"command": "-extension.node-debug.startWithStopOnEntry",
+		"when": "!inDebugMode && debugConfigurationType == 'node' || !inDebugMode && debugConfigurationType == 'pwa-extensionHost' || !inDebugMode && debugConfigurationType == 'pwa-node'"
+	},
+	{
+		"key": "ctrl+alt+c",
+		"command": "-latex-workshop.clean",
+		"when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$/"
+	},
+	{
+		"key": "ctrl+alt+c",
+		"command": "extension.conventionalCommits"
+	},
+	{
+		"key": "alt+v alt+i",
+		"command": "toggleVim"
+	},
+	{
+		"key": "ctrl+alt+j",
+		"command": "-liveshare.join",
+		"when": "liveshare:state != 'Joined' && liveshare:state != 'Shared'"
+	},
+	{
+		"key": "shift+alt+win+j",
+		"command": "-notebook.cell.joinAbove",
+		"when": "notebookEditorFocused"
+	},
+	{
+		"key": "ctrl+alt+k",
+		"command": "editor.action.insertCursorAbove",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+j",
+		"command": "editor.action.insertCursorBelow",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+alt+j",
+		"command": "editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+down",
+		"command": "-editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+k",
+		"command": "editor.action.copyLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+up",
+		"command": "-editor.action.copyLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+down",
+		"command": "editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+up",
+		"command": "editor.action.copyLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"command": "vscode-neovim.send",
+		"key": "ctrl+n",
+		"when": "editorTextFocus && neovim.mode != insert",
+		"args": "<c-n>"
+	},
+	{
+		"key": "alt+j",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+k",
+		"command": "editor.action.moveLinesUpAction",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+v alt+i",
+		"command": "vscode-neovim.toggle"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "list.focusPageDown",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "-list.focusPageDown",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "shift+escape",
+		"command": "workbench.action.focusActiveEditorGroup"
+	},
+	{
+		"key": "ctrl+=",
+		"command": "-workbench.action.zoomIn"
+	},
+	{
+		"key": "ctrl+=",
+		"command": "editor.action.fontZoomIn"
+	},
+	{
+		"key": "ctrl+-",
+		"command": "editor.action.fontZoomOut"
+	},
+	{
+		"key": "ctrl+-",
+		"command": "-workbench.action.zoomOut"
+	},
+	{
+		"key": "ctrl+alt+0",
+		"command": "editor.action.fontZoomReset"
+	},
+	{
+		"key": "ctrl+shift+alt+b",
+		"command": "workbench.action.tasks.reRunTask"
+	},
+	{
+		"key": "alt+1",
+		"command": "workbench.action.focusFirstEditorGroup"
+	},
+	{
+		"key": "ctrl+1",
+		"command": "-workbench.action.focusFirstEditorGroup"
+	},
+	{
+		"key": "alt+2",
+		"command": "workbench.action.focusSecondEditorGroup"
+	},
+	{
+		"key": "ctrl+2",
+		"command": "-workbench.action.focusSecondEditorGroup"
+	},
+	{
+		"key": "ctrl+3",
+		"command": "-workbench.action.focusThirdEditorGroup"
+	},
+	{
+		"key": "alt+4",
+		"command": "workbench.action.focusFourthEditorGroup"
+	},
+	{
+		"key": "ctrl+4",
+		"command": "-workbench.action.focusFourthEditorGroup"
+	},
+	{
+		"key": "alt+5",
+		"command": "workbench.action.focusFifthEditorGroup"
+	},
+	{
+		"key": "ctrl+5",
+		"command": "-workbench.action.focusFifthEditorGroup"
+	},
+	{
+		"key": "alt+6",
+		"command": "workbench.action.focusSixthEditorGroup"
+	},
+	{
+		"key": "ctrl+6",
+		"command": "-workbench.action.focusSixthEditorGroup"
+	},
+	{
+		"key": "alt+7",
+		"command": "workbench.action.focusSeventhEditorGroup"
+	},
+	{
+		"key": "ctrl+7",
+		"command": "-workbench.action.focusSeventhEditorGroup"
+	},
+	{
+		"key": "alt+8",
+		"command": "workbench.action.focusEighthEditorGroup"
+	},
+	{
+		"key": "ctrl+8",
+		"command": "-workbench.action.focusEighthEditorGroup"
+	},
+	{
+		"key": "ctrl+9",
+		"command": "-workbench.action.lastEditorInGroup"
+	},
+	{
+		"key": "alt+0",
+		"command": "workbench.action.focusSideBar"
+	},
+	{
+		"key": "ctrl+0",
+		"command": "-workbench.action.focusSideBar"
+	},
+	{
+		"key": "alt+0",
+		"command": "-workbench.action.lastEditorInGroup"
+	},
+	{
+		"key": "ctrl+1",
+		"command": "workbench.action.openEditorAtIndex1"
+	},
+	{
+		"key": "alt+1",
+		"command": "-workbench.action.openEditorAtIndex1"
+	},
+	{
+		"key": "ctrl+2",
+		"command": "workbench.action.openEditorAtIndex2"
+	},
+	{
+		"key": "alt+2",
+		"command": "-workbench.action.openEditorAtIndex2"
+	},
+	{
+		"key": "ctrl+3",
+		"command": "workbench.action.openEditorAtIndex3"
+	},
+	{
+		"key": "alt+3",
+		"command": "-workbench.action.openEditorAtIndex3"
+	},
+	{
+		"key": "ctrl+4",
+		"command": "workbench.action.openEditorAtIndex4"
+	},
+	{
+		"key": "alt+4",
+		"command": "-workbench.action.openEditorAtIndex4"
+	},
+	{
+		"key": "ctrl+5",
+		"command": "workbench.action.openEditorAtIndex5"
+	},
+	{
+		"key": "alt+5",
+		"command": "-workbench.action.openEditorAtIndex5"
+	},
+	{
+		"key": "ctrl+6",
+		"command": "workbench.action.openEditorAtIndex6"
+	},
+	{
+		"key": "alt+6",
+		"command": "-workbench.action.openEditorAtIndex6"
+	},
+	{
+		"key": "ctrl+7",
+		"command": "workbench.action.openEditorAtIndex7"
+	},
+	{
+		"key": "alt+7",
+		"command": "-workbench.action.openEditorAtIndex7"
+	},
+	{
+		"key": "ctrl+8",
+		"command": "workbench.action.openEditorAtIndex8"
+	},
+	{
+		"key": "alt+8",
+		"command": "-workbench.action.openEditorAtIndex8"
+	},
+	{
+		"key": "alt+9",
+		"command": "-workbench.action.openEditorAtIndex9"
+	},
+	{
+		"key": "alt+3",
+		"command": "workbench.action.focusThirdEditorGroup"
+	},
+	{
+		"key": "ctrl+9",
+		"command": "workbench.action.lastEditorInGroup"
+	},
+	{
+		"key": "alt+9",
+		"command": "workbench.action.focusLastEditorGroup"
+	},
+	{
+		"key": "alt+k",
+		"command": "-keybindings.editor.recordSearchKeys",
+		"when": "inKeybindings && inKeybindingsSearch"
+	}
+]
