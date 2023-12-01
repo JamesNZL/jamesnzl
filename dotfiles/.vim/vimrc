@@ -81,6 +81,12 @@ noremap d "_d
 noremap D "_D
 noremap dd "_dd
 
+" Disable autoselect
+set clipboard-=autoselect
+set guioptions-=a
+set guioptions-=A
+set guioptions-=aA
+
 nnoremap <esc><esc> :noh<return><esc>
 
 highlight! link OperatorSandwichAdd NONE
