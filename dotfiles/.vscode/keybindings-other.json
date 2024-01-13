@@ -355,5 +355,69 @@
 		"key": "alt+k",
 		"command": "-keybindings.editor.recordSearchKeys",
 		"when": "inKeybindings && inKeybindingsSearch"
+	},
+	{
+		"key": "f11",
+		"command": "-workbench.action.toggleFullScreen",
+		"when": "!isIOS"
+	},
+	{
+		"key": "f11",
+		"command": "workbench.action.toggleMaximizeEditorGroup",
+		"when": "maximizedEditorGroup || multipleEditorGroups"
+	},
+	{
+		"key": "ctrl+w ctrl+w",
+		"command": "-workbench.action.focusNextGroup",
+		"when": "!editorTextFocus && !filesExplorerFocus && !inSearchEditor && !replaceInputBoxFocus && !searchViewletFocus && !terminalFocus"
+	},
+	{
+		"key": "ctrl+w ctrl+w",
+		"command": "workbench.action.closeEditorsAndGroup"
+	},
+	{
+		"key": "alt+1",
+		"command": "workbench.action.toggleMaximizeEditorGroup",
+		"when": "(maximizedEditorGroup || multipleEditorGroups) && (activeEditorGroupIndex == 1)"
+	},
+	{
+		"key": "alt+2",
+		"command": "workbench.action.toggleMaximizeEditorGroup",
+		"when": "(maximizedEditorGroup || multipleEditorGroups) && (activeEditorGroupIndex == 2)"
+	},
+	{
+		"key": "alt+3",
+		"command": "workbench.action.toggleMaximizeEditorGroup",
+		"when": "(maximizedEditorGroup || multipleEditorGroups) && (activeEditorGroupIndex == 3)"
+	},
+	{
+		"key": "alt+4",
+		"command": "workbench.action.toggleMaximizeEditorGroup",
+		"when": "(maximizedEditorGroup || multipleEditorGroups) && (activeEditorGroupIndex == 4)"
+	},
+	{
+		"key": "alt+5",
+		"command": "workbench.action.toggleMaximizeEditorGroup",
+		"when": "(maximizedEditorGroup || multipleEditorGroups) && (activeEditorGroupIndex == 5)"
+	},
+	{
+		"key": "alt+6",
+		"command": "workbench.action.toggleMaximizeEditorGroup",
+		"when": "(maximizedEditorGroup || multipleEditorGroups) && (activeEditorGroupIndex == 6)"
+	},
+	{
+		"key": "alt+7",
+		"command": "workbench.action.toggleMaximizeEditorGroup",
+		"when": "(maximizedEditorGroup || multipleEditorGroups) && (activeEditorGroupIndex == 7)"
+	},
+	{
+		"key": "alt+8",
+		"command": "workbench.action.toggleMaximizeEditorGroup",
+		"when": "(maximizedEditorGroup || multipleEditorGroups) && (activeEditorGroupIndex == 8)"
+	},
+	{
+		"key": "alt+9",
+		"command": "workbench.action.toggleMaximizeEditorGroup",
+		"when": "(maximizedEditorGroup || multipleEditorGroups) && activeEditorGroupLast"
 	}
 ]
