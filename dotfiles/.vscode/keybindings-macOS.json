@@ -285,5 +285,35 @@
 		"key": "alt+9",
 		"command": "workbench.action.toggleMaximizeEditorGroup",
 		"when": "(maximizedEditorGroup || multipleEditorGroups) && activeEditorGroupLast"
+	},
+	{
+		"key": "cmd+[",
+		"command": "workbench.action.navigateBack",
+		"when": "canNavigateBack"
+	},
+	{
+		"key": "ctrl+-",
+		"command": "-workbench.action.navigateBack",
+		"when": "canNavigateBack"
+	},
+	{
+		"key": "cmd+[",
+		"command": "workbench.action.quickInputBack",
+		"when": "inQuickOpen"
+	},
+	{
+		"key": "ctrl+-",
+		"command": "-workbench.action.quickInputBack",
+		"when": "inQuickOpen"
+	},
+	{
+		"key": "cmd+]",
+		"command": "workbench.action.navigateForward",
+		"when": "canNavigateForward"
+	},
+	{
+		"key": "ctrl+shift+-",
+		"command": "-workbench.action.navigateForward",
+		"when": "canNavigateForward"
 	}
 ]
