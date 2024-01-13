@@ -9,6 +9,7 @@ fn - s : yabai -m window --focus south
 fn - w : yabai -m window --focus north
 
 # moving windows
+# TODO: 3 column?
 fn + cmd - a : yabai -m window --swap west
 fn + cmd - d : yabai -m window --swap east
 fn + cmd - s : yabai -m window --swap south
@@ -67,7 +68,11 @@ fn + cmd - x : yabai -m query --spaces --display | \
           xargs -I % sh -c 'yabai -m space % --destroy'
 
 # fullscreen window
+# TODO: bring to top
 fn - f : yabai -m window --toggle zoom-fullscreen
+
+# toggle gaps
+fn - g : yabai -m space --toggle padding --toggle gap
 
 # float window
 fn - space : yabai -m window --toggle float
