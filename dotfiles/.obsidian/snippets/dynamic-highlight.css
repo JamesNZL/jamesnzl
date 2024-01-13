@@ -1,0 +1,4 @@
+.cm-matched-string {
+	background: var(--color-base-25);
+	text-decoration: none;
+}

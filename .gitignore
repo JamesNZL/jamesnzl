@@ -8,3 +8,9 @@ dotfiles/.config/nvim/init.vim
 
 dotfiles/.config/raycast/extensions
 dotfiles/.config/raycast/config.json
+
+dotfiles/.obsidian/icons
+dotfiles/.obsidian/plugins
+dotfiles/.obsidian/bookmarks.json
+dotfiles/.obsidian/core-plugins-migration.json
+dotfiles/.obsidian/workspace.json

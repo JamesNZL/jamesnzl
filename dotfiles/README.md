@@ -34,3 +34,15 @@ nvim
 # Inside nvim
 :PlugInstall
 ```
+
+## Obsidian
+
+- Sync vault with Obsidian Sync—the `.obsidian` directory serves as a version-controlled backup of a subset of vault configuration files.
+- This is set up as
+	```sh
+	# Move .obsidian vault configuration to dotfiles repository
+	mv $VAULT_DIR/.obsidian $REPO_DIR/dotfiles/.obsidian
+
+	# Symbolic link back to vault
+	ln -s $REPO_DIR/dotfiles/.obsidian $VAULT_DIR/.obsidian
+	```

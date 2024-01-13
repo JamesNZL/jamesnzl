@@ -1,0 +1,15 @@
+{
+  "accentColor": "",
+  "theme": "system",
+  "monospaceFontFamily": "Consolas,Menlo",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "dynamic-highlight",
+    "tags"
+  ],
+  "nativeMenus": false,
+  "showViewHeader": true,
+  "baseFontSize": 16,
+  "baseFontSizeAction": false,
+  "cssTheme": ""
+}

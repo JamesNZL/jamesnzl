@@ -1,0 +1,12 @@
+table {
+	border-collapse: collapse !important;
+}
+
+body:not(.obsidian-app) .document-container>.markdown-preview-view>.markdown-preview-sizer {
+	padding: 1.5em !important;
+	background-color: unset !important;
+}
+
+body:not(.loading) .document-container.show {
+	animation: show .1s forwards ease-in-out !important;
+}
