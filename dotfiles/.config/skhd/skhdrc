@@ -35,6 +35,8 @@ fn + alt - k : yabai -m window --resize top:0:-100 ; yabai -m window --resize bo
 # toggle split
 fn + alt - t : yabai -m window --toggle split
 fn + alt - tab : yabai -m window --toggle split
+fn + cmd - t : yabai -m window --toggle split
+fn + cmd - tab : yabai -m window --toggle split
 
 # fullscreen window
 fn - f : yabai -m window --toggle zoom-fullscreen --focus
