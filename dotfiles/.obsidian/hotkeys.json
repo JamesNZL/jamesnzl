@@ -76,14 +76,6 @@
   "obsidian-excalidraw-plugin:insert-link": [],
   "editor:toggle-checklist-status": [],
   "obsidian-reminder-plugin:toggle-checklist-status": [],
-  "obsidian-tasks-plugin:toggle-done": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Enter"
-    }
-  ],
   "editor:open-link-in-new-leaf": [
     {
       "modifiers": [
@@ -212,14 +204,6 @@
     }
   ],
   "mrj-jump-to-link:activate-jump-to-anywhere": [],
-  "app:toggle-left-sidebar": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "K"
-    }
-  ],
   "editor:insert-link": [],
   "app:toggle-right-sidebar": [
     {
@@ -242,6 +226,12 @@
         "Alt"
       ],
       "key": "ArrowLeft"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "["
     }
   ],
   "app:go-forward": [
@@ -257,6 +247,12 @@
         "Alt"
       ],
       "key": "ArrowRight"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "]"
     }
   ],
   "editor:toggle-source": [
@@ -265,6 +261,14 @@
         "Ctrl"
       ],
       "key": "V"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "B"
     }
   ]
 }
