@@ -1,5 +1,10 @@
+.DS_Store
+
 dotfiles/.vim/plugged
 dotfiles/.vim/.netrwhist
 dotfiles/.vim/.vimrc.swp
 
-.DS_Store
+dotfiles/.config/nvim/init.vim
+
+dotfiles/.config/raycast/extensions
+dotfiles/.config/raycast/config.json
