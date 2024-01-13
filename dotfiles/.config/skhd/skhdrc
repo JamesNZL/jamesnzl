@@ -7,6 +7,10 @@ fn - a : yabai -m window --focus west
 fn - d : yabai -m window --focus east
 fn - s : yabai -m window --focus south
 fn - w : yabai -m window --focus north
+fn - h : yabai -m window --focus west
+fn - l : yabai -m window --focus east
+fn - j : yabai -m window --focus south
+fn - k : yabai -m window --focus north
 
 # moving windows
 # TODO: 3 column?
@@ -14,12 +18,20 @@ fn + cmd - a : yabai -m window --swap west
 fn + cmd - d : yabai -m window --swap east
 fn + cmd - s : yabai -m window --swap south
 fn + cmd - w : yabai -m window --swap north
+fn + cmd - h : yabai -m window --swap west
+fn + cmd - l : yabai -m window --swap east
+fn + cmd - j : yabai -m window --swap south
+fn + cmd - k : yabai -m window --swap north
 
 # resize windows
 fn + alt - a : yabai -m window --resize left:-100:0 ; yabai -m window --resize right:-100:0
+fn + alt - d : yabai -m window --resize right:100:0 ; yabai -m window --resize left:100:0
 fn + alt - s : yabai -m window --resize bottom:0:100 ; yabai -m window --resize top:0:100
 fn + alt - w : yabai -m window --resize top:0:-100 ; yabai -m window --resize bottom:0:-100
-fn + alt - d : yabai -m window --resize right:100:0 ; yabai -m window --resize left:100:0
+fn + alt - h : yabai -m window --resize left:-100:0 ; yabai -m window --resize right:-100:0
+fn + alt - l : yabai -m window --resize right:100:0 ; yabai -m window --resize left:100:0
+fn + alt - j : yabai -m window --resize bottom:0:100 ; yabai -m window --resize top:0:100
+fn + alt - k : yabai -m window --resize top:0:-100 ; yabai -m window --resize bottom:0:-100
 
 # rotate layout
 fn - r : yabai -m space --rotate 270
