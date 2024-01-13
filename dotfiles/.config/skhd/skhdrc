@@ -1,0 +1,82 @@
+# hot reload
+fn + shift - s : skhd --reload
+fn + shift - y : yabai --restart-service
+
+# navigating through windows
+fn - a : yabai -m window --focus west
+fn - d : yabai -m window --focus east
+fn - s : yabai -m window --focus south
+fn - w : yabai -m window --focus north
+
+# moving windows
+fn + cmd - a : yabai -m window --swap west
+fn + cmd - d : yabai -m window --swap east
+fn + cmd - s : yabai -m window --swap south
+fn + cmd - w : yabai -m window --swap north
+
+# resize windows
+fn + alt - a : yabai -m window --resize left:-100:0 ; yabai -m window --resize right:-100:0
+fn + alt - s : yabai -m window --resize bottom:0:100 ; yabai -m window --resize top:0:100
+fn + alt - w : yabai -m window --resize top:0:-100 ; yabai -m window --resize bottom:0:-100
+fn + alt - d : yabai -m window --resize right:100:0 ; yabai -m window --resize left:100:0
+
+# rotate layout
+fn - r : yabai -m space --rotate 270
+
+# balance layout
+fn - b : yabai -m space --balance
+
+# move focus container to display
+fn + alt - 1 : yabai -m window --display 1 --focus
+fn + alt - 2 : yabai -m window --display 2 --focus
+
+# move focus container to space
+fn + cmd - 1 : yabai -m window --space 1 
+fn + cmd - 2 : yabai -m window --space 2 
+fn + cmd - 3 : yabai -m window --space 3 
+fn + cmd - 4 : yabai -m window --space 4 
+fn + cmd - 5 : yabai -m window --space 5 
+fn + cmd - 6 : yabai -m window --space 6 
+fn + cmd - 7 : yabai -m window --space 7 
+fn + cmd - 8 : yabai -m window --space 8 
+fn + cmd - 9 : yabai -m window --space 9 
+fn + cmd - 0 : yabai -m window --space 10
+
+# change space
+fn - 1 : yabai -m space --focus 1
+fn - 2 : yabai -m space --focus 2
+fn - 3 : yabai -m space --focus 3
+fn - 4 : yabai -m space --focus 4
+fn - 5 : yabai -m space --focus 5
+fn - 6 : yabai -m space --focus 6
+fn - 7 : yabai -m space --focus 7
+fn - 8 : yabai -m space --focus 8
+fn - 9 : yabai -m space --focus 9
+fn - 0 : yabai -m space --focus 10
+
+# create space on current display
+fn - n : yabai -m space --create
+
+# destroy focussed space
+fn - x : yabai -m space --destroy
+# destroy empty spaces
+fn + cmd - x : yabai -m query --spaces --display | \
+     jq -re 'map(select(."is-native-fullscreen" == false)) | length > 1' \
+     && yabai -m query --spaces | \
+          jq -re 'map(select(."windows" == [] and ."has-focus" == false).index) | reverse | .[] ' | \
+          xargs -I % sh -c 'yabai -m space % --destroy'
+
+# fullscreen window
+fn - f : yabai -m window --toggle zoom-fullscreen
+
+# float window
+fn - space : yabai -m window --toggle float
+
+# toggle bsp/float
+fn - t : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "float" else "bsp" end')
+
+# toggle mouse autofocus
+fn - m : yabai -m config focus_follows_mouse $(if [[ $(yabai -m config focus_follows_mouse) == "autofocus" ]]; then echo "off"; else echo "autofocus"; fi)
+
+# toggle opacity
+fn - o : yabai -m config window_opacity $(if [[ $(yabai -m config window_opacity) == "on" ]]; then echo "off"; else echo "on"; fi)

@@ -71,7 +71,9 @@ nvim
 
 ### Obsidian
 
-- Sync vault with Obsidian Sync—the `.obsidian` directory serves as a version-controlled backup of a subset of vault configuration files.
+### Configuration
+
+- Sync vault with Obsidian Sync—the `.obsidian` directory serves as a version-controlled backup of a subset of vault configuration files
 - This is set up as
 	```sh
 	# Move .obsidian vault configuration to dotfiles repository
@@ -80,3 +82,35 @@ nvim
 	# Symbolic link back to vault
 	ln -sFf $REPO_DIR/dotfiles/.obsidian $VAULT_DIR/.obsidian
 	```
+
+### yabai
+
+### Prerequisites
+
+- [Disable System Integrity Protection](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection) for full functionality, and
+- [Configure Scripting Addition](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition)
+
+### Configuration
+
+```sh
+# Symbolic link the base .config directory
+ln -s $REPO_DIR/dotfiles/.config ~/
+
+# Mark yabairc as executable
+chmod +x ~/.config/yabairc
+
+# Run yabai
+yabai --start-service
+```
+
+### skhd
+
+### Configuration
+
+```sh
+# Symbolic link the base .config directory
+ln -s $REPO_DIR/dotfiles/.config ~/
+
+# Run skhd
+skhd --start-service
+```

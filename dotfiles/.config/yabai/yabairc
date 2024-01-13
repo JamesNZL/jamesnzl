@@ -1,0 +1,45 @@
+# run yabai
+# ! note: must have configured sudo for this to work!
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# enable debug output
+yabai -m config debug_output on
+
+# label spaces
+yabai -m space 1 --label home
+
+# space rules
+yabai -m rule --add app="^Discord$" space=home
+yabai -m rule --add app="^Slack$" space=home
+yabai -m rule --add app="^Spotify$" space=home
+
+# application rules
+yabai -m rule --add app="^(Calculator|System Preferences|System Settings|Archive Utility|Finder|Timery)$" manage=off
+
+# windows tiled (bsp), or left alone (float)
+yabai -m config layout bsp
+
+yabai -m config --space 1 layout float
+
+# spawn windows to the right
+yabai -m config window_placement second_child
+
+# auto balance when layout changes
+yabai -m config auto_balance on
+
+# set padding and gaps
+yabai -m config top_padding 10
+yabai -m config bottom_padding 10
+yabai -m config left_padding 10
+yabai -m config right_padding 10
+yabai -m config window_gap 10
+
+# focus follows mouse, unless holding mouse modifier
+yabai -m config mouse_modifier fn
+yabai -m config focus_follows_mouse autofocus
+
+# dim unfocused windows
+yabai -m config window_opacity on
+yabai -m config active_window_opacity 1.0
+yabai -m config normal_window_opacity 0.8
