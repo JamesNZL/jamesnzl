@@ -80,8 +80,7 @@ fn + cmd - x : yabai -m query --spaces --display | \
           xargs -I % sh -c 'yabai -m space % --destroy'
 
 # fullscreen window
-# TODO: bring to top
-fn - f : yabai -m window --toggle zoom-fullscreen
+fn - f : yabai -m window --toggle zoom-fullscreen --focus
 
 # toggle gaps
 fn - g : yabai -m space --toggle padding --toggle gap
