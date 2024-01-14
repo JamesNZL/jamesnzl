@@ -13,6 +13,7 @@ yabai -m space 1 --label home
 yabai -m rule --add app="^Discord$" space=home
 yabai -m rule --add app="^Slack$" space=home
 yabai -m rule --add app="^Spotify$" space=home
+yabai -m rule --add app="^NordPass$" space=home
 
 # application rules
 yabai -m rule --add app="^(Calculator|System Preferences|System Settings|Archive Utility|Finder|Timery)$" manage=off
