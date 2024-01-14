@@ -23,7 +23,7 @@
 					"foreground": "#fdd0ff",
 					"template": " {{ .CurrentDate | date .Format }} ",
 					"properties": {
-						"time_format": "Monday <#ffffff>at</> 3:04 PM"
+						"time_format": "Monday <#ffffff>at</> 15:04:05"
 					}
 				},
 				{
