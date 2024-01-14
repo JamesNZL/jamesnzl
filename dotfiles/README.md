@@ -10,6 +10,42 @@ This allows each software to use the file as usual, with any changes (including 
 
 ## Usage
 
+### Bash
+
+#### Configuration
+
+```sh
+# Symbolic link .bashrc
+ln -sf $REPO_DIR/dotfiles/bash/.bashrc ~/.bashrc
+```
+
+### Zsh
+
+#### Configuration
+
+```sh
+# Symbolic link .zshrc
+ln -sf $REPO_DIR/dotfiles/zsh/.zshrc ~/.zshrc
+```
+
+### Oh My Posh
+
+#### Prerequisites
+
+- `bash` configured with `.bashrc`, or
+- `zsh` configured with `.zshrc` to use `oh-my-posh` (rather than `oh-my-zsh`)
+	```sh
+	eval "$(oh-my-posh completion zsh)"
+	eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/jamesnzl.omp.json)"
+	```
+
+#### Configuration
+
+```sh
+# Symbolic link the base .config directory
+ln -sFi $REPO_DIR/dotfiles/.config ~/
+```
+
 ### Vim
 
 #### Prerequisites
@@ -35,7 +71,7 @@ vim
 
 ```sh
 # Symbolic link the base .config directory
-ln -s $REPO_DIR/dotfiles/.config ~/
+ln -sFi $REPO_DIR/dotfiles/.config ~/
 
 # Link vimrc (aka init.vim for nvim)
 ln -sf $REPO_DIR/dotfiles/.vim/vimrc ~/.config/nvim/init.vim
@@ -94,7 +130,7 @@ nvim
 
 ```sh
 # Symbolic link the base .config directory
-ln -s $REPO_DIR/dotfiles/.config ~/
+ln -sFi $REPO_DIR/dotfiles/.config ~/
 
 # Mark yabairc as executable
 chmod +x ~/.config/yabairc
@@ -109,7 +145,7 @@ yabai --start-service
 
 ```sh
 # Symbolic link the base .config directory
-ln -s $REPO_DIR/dotfiles/.config ~/
+ln -sFi $REPO_DIR/dotfiles/.config ~/
 
 # Run skhd
 skhd --start-service

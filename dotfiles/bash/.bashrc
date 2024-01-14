@@ -121,7 +121,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-eval "$(oh-my-posh --init --shell bash --config ~/jamesnzl.omp.json)"
+eval "$(oh-my-posh --init --shell bash --config ~/.config/oh-my-posh/jamesnzl.omp.json)"
 
 export LESS_TERMCAP_mb=$'\e[1;32m'
 export LESS_TERMCAP_md=$'\e[1;32m'
