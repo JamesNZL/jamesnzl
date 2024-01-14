@@ -22,6 +22,16 @@ fn + cmd - l : yabai -m window --swap east
 fn + cmd - j : yabai -m window --swap south
 fn + cmd - k : yabai -m window --swap north
 
+# define insert position
+fn + shift + cmd - a : yabai -m window --insert west
+fn + shift + cmd - d : yabai -m window --insert east
+fn + shift + cmd - s : yabai -m window --insert south
+fn + shift + cmd - w : yabai -m window --insert north
+fn + shift + cmd - h : yabai -m window --insert west
+fn + shift + cmd - l : yabai -m window --insert east
+fn + shift + cmd - j : yabai -m window --insert south
+fn + shift + cmd - k : yabai -m window --insert north
+
 # resize windows
 fn + alt - a : yabai -m window --resize left:-100:0 ; yabai -m window --resize right:-100:0
 fn + alt - d : yabai -m window --resize right:100:0 ; yabai -m window --resize left:100:0
