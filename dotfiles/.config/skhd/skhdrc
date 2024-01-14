@@ -97,7 +97,7 @@ fn - g : yabai -m space --toggle padding --toggle gap
 fn - t : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "float" else "bsp" end')
 
 # toggle mouse autofocus
-fn - m : yabai -m config focus_follows_mouse $(if [[ $(yabai -m config focus_follows_mouse) == "autofocus" ]]; then echo "off"; else echo "autofocus"; fi)
+fn - m : yabai -m config focus_follows_mouse $(if [[ $(yabai -m config focus_follows_mouse) == "autofocus" ]]; then echo "off"; else echo "autofocus"; fi) ; yabai -m config mouse_follows_focus $(if [[ $(yabai -m config mouse_follows_focus) == "on" ]]; then echo "off"; else echo "on"; fi)
 
 # toggle opacity
 fn - o : yabai -m config window_opacity $(if [[ $(yabai -m config window_opacity) == "on" ]]; then echo "off"; else echo "on"; fi)

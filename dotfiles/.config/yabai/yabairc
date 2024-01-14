@@ -38,6 +38,7 @@ yabai -m config window_gap 10
 # focus follows mouse, unless holding mouse modifier
 yabai -m config mouse_modifier fn
 yabai -m config focus_follows_mouse autofocus
+yabai -m config mouse_follows_focus on
 
 # dim unfocused windows
 yabai -m config window_opacity on
