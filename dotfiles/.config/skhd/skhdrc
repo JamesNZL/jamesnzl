@@ -55,16 +55,16 @@ fn + alt - 1 : yabai -m window --display 1 --focus
 fn + alt - 2 : yabai -m window --display 2 --focus
 
 # move focus container to space
-fn + cmd - 1 : yabai -m window --space 1 
-fn + cmd - 2 : yabai -m window --space 2 
-fn + cmd - 3 : yabai -m window --space 3 
-fn + cmd - 4 : yabai -m window --space 4 
-fn + cmd - 5 : yabai -m window --space 5 
-fn + cmd - 6 : yabai -m window --space 6 
-fn + cmd - 7 : yabai -m window --space 7 
-fn + cmd - 8 : yabai -m window --space 8 
-fn + cmd - 9 : yabai -m window --space 9 
-fn + cmd - 0 : yabai -m window --space 10
+fn + cmd - 1 : yabai -m window --space 1 --focus
+fn + cmd - 2 : yabai -m window --space 2 --focus
+fn + cmd - 3 : yabai -m window --space 3 --focus
+fn + cmd - 4 : yabai -m window --space 4 --focus
+fn + cmd - 5 : yabai -m window --space 5 --focus
+fn + cmd - 6 : yabai -m window --space 6 --focus
+fn + cmd - 7 : yabai -m window --space 7 --focus
+fn + cmd - 8 : yabai -m window --space 8 --focus
+fn + cmd - 9 : yabai -m window --space 9 --focus
+fn + cmd - 0 : yabai -m window --space 10 --focus
 
 # change space
 fn - 1 : yabai -m space --focus 1
