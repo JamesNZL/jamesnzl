@@ -36,7 +36,7 @@
 					"foreground": "#fdd0ff",
 					"template": " {{ .CurrentDate | date .Format }} ",
 					"properties": {
-						"time_format": "<#ffffff>at</> Monday 15:04:05"
+						"time_format": "<#ffffff>on</> Monday <#ffffff>at</> 15:04:05"
 					}
 				}
 			],
