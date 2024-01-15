@@ -12,6 +12,10 @@ This allows each software to use the file as usual, with any changes (including 
 
 ### Bash
 
+#### Prerequisites
+
+- `oh-my-posh`
+
 #### Configuration
 
 ```sh
@@ -19,16 +23,26 @@ This allows each software to use the file as usual, with any changes (including 
 ln -sFi $REPO_DIR/dotfiles/.config ~/
 
 # Symbolic link .profile
-ln -sf $REPO_DIR/dotfiles/.config/bash/profile ~/.profile
+ln -sf ~/.config/bash/profile ~/.profile
 ```
 
 ### Zsh
 
+#### Prerequisites
+
+- `oh-my-posh`
+- `brew install zsh-autosuggestions`
+- `brew install zsh-syntax-highlighting`
+- `brew install zsh-vi-mode`
+
 #### Configuration
 
 ```sh
-# Symbolic link .zshrc
-ln -sf $REPO_DIR/dotfiles/zsh/.zshrc ~/.zshrc
+# Symbolic link the base .config directory
+ln -sFi $REPO_DIR/dotfiles/.config ~/
+
+# Symbolic link .zshenv
+ln -sf ~/.config/zsh/.zshenv ~/.zshenv
 ```
 
 ### Oh My Posh
