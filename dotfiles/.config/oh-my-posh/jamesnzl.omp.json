@@ -89,7 +89,7 @@
 			"alignment": "left",
 			"segments": [
 				{
-					"type": "exit",
+					"type": "status",
 					"style": "plain",
 					"foreground": "#8eff7f",
 					"foreground_templates": [
