@@ -41,7 +41,13 @@ alias l='ls -CF'
 
 alias python='python3'
 
+alias .='echo && exec zsh'
 alias ..='cd ..'
+
+hash -d d=~/Documents
+hash -d r=~/Documents/Repositories
+hash -d o=~/Documents/Obsidian
+hash -d j=~/Downloads
 
 # plugins
 
