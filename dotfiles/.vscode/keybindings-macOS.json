@@ -223,7 +223,7 @@
 	},
 	{
 		"key": "cmd+9",
-		"command": "workbench.action.openEditorAtIndex9"
+		"command": "workbench.action.lastEditorInGroup"
 	},
 	{
 		"key": "ctrl+9",
@@ -235,10 +235,6 @@
 	},
 	{
 		"key": "ctrl+0",
-		"command": "-workbench.action.lastEditorInGroup"
-	},
-	{
-		"key": "cmd+9",
 		"command": "-workbench.action.lastEditorInGroup"
 	},
 	{
