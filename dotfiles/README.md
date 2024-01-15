@@ -15,8 +15,11 @@ This allows each software to use the file as usual, with any changes (including 
 #### Configuration
 
 ```sh
-# Symbolic link .bashrc
-ln -sf $REPO_DIR/dotfiles/bash/.bashrc ~/.bashrc
+# Symbolic link the base .config directory
+ln -sFi $REPO_DIR/dotfiles/.config ~/
+
+# Symbolic link .profile
+ln -sf $REPO_DIR/dotfiles/.config/bash/profile ~/.profile
 ```
 
 ### Zsh
