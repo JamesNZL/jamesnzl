@@ -12,7 +12,7 @@
 					"style": "diamond",
 					"foreground": "#caffbe",
 					"leading_diamond": "<#bfa8bf>~</> ",
-					"template": "{{ .HostName }}",
+					"template": "{{ if .Root }}<#ef5350>{{ end }}{{ .HostName }}",
 					"properties": {
 						"display_host": true
 					}
@@ -47,18 +47,25 @@
 			"alignment": "right",
 			"segments": [
 				{
-					"type": "text",
+					"type": "root",
 					"style": "plain",
-					"foreground": "#caffbe"
+					"foreground": "#ef5350",
+					"template": "\udb85\udc0b "
+				},
+				{
+					"type": "upgrade",
+					"style": "plain",
+					"foreground": "#caffbe",
+					"template": "\uf019  "
 				},
 				{
 					"type": "executiontime",
 					"style": "diamond",
 					"foreground": "#caffbe",
-					"template": "<#ffffff>\udb81\udcc5</> {{ .FormattedMs }}s ",
+					"template": "<#ffffff>\udb81\udcc5</> {{ .FormattedMs }}",
 					"properties": {
-						"style": "dallas",
-						"threshold": 0
+						"style": "austin",
+						"always_enabled": true
 					}
 				}
 			],
