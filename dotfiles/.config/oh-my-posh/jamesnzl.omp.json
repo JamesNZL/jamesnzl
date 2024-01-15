@@ -73,7 +73,7 @@
 					"style": "diamond",
 					"foreground": "#cff9ff",
 					"leading_diamond": "<#bfa8bf>~</>",
-					"template": " \ue5ff  {{ .Path }} / ",
+					"template": " {{ .Path }} / ",
 					"properties": {
 						"folder_icon": "/",
 						"folder_separator_icon": " / ",
