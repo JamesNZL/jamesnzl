@@ -45,7 +45,7 @@ alias .='echo && exec zsh'
 alias ..='cd ..'
 
 hash -d d=~/Documents
-hash -d r=~/Documents/Repositories
+hash -d r=~/Developer
 hash -d o=~/Documents/Obsidian
 hash -d j=~/Downloads
 
