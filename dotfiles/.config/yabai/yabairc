@@ -15,7 +15,7 @@ yabai -m rule --add app="^Slack$" space=home
 yabai -m rule --add app="^Spotify$" space=home
 
 # application rules
-yabai -m rule --add app="^(Calculator|System Preferences|System Settings|Archive Utility|Finder|Timery|Discord|Slack|Raycast)$" manage=off
+yabai -m rule --add app="^(Calculator|System Preferences|System Settings|Archive Utility|Finder|Raycast)$" manage=off
 
 # windows tiled (bsp), or left alone (float)
 yabai -m config layout bsp
@@ -43,4 +43,4 @@ yabai -m config mouse_follows_focus on
 # dim unfocused windows
 yabai -m config window_opacity on
 yabai -m config active_window_opacity 1.0
-yabai -m config normal_window_opacity 0.8
+yabai -m config normal_window_opacity 0.95
