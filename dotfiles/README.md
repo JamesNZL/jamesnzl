@@ -1,5 +1,7 @@
 # My Dotfiles
 
+![A screenshot of my set up](../assets/yabai.png)
+
 This directory contains my dot/configuration files for many of the tools I use.
 These are version-controlled here to streamline the migration/onboarding process when spinning up a new device, and allow me to track configuration changes over time.
 
