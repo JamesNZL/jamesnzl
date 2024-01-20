@@ -52,7 +52,7 @@ ln -sf ~/.config/zsh/.zshenv ~/.zshenv
 #### Prerequisites
 
 - `bash` configured with `.bashrc`, or
-- `zsh` configured with `.zshrc` to use `oh-my-posh` (rather than `oh-my-zsh`)
+- `zsh` configured with `.zshrc` to use `oh-my-posh`
 	```sh
 	eval "$(oh-my-posh completion zsh)"
 	eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/jamesnzl.omp.json)"

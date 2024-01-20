@@ -7,10 +7,12 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 eval "$(oh-my-posh completion zsh)"
 eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/jamesnzl.omp.json)"
 
-# run fastfetch
-echo ''
-eval fastfetch
-echo ''
+# run fastfetch if installed
+if type fastfetch >/dev/null; then
+	echo ''
+	eval fastfetch
+	echo ''
+fi
 
 # coloured man pages
 export LESS_TERMCAP_mb=$'\e[1;32m'
