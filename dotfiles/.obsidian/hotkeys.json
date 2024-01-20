@@ -205,14 +205,6 @@
   ],
   "mrj-jump-to-link:activate-jump-to-anywhere": [],
   "editor:insert-link": [],
-  "app:toggle-right-sidebar": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "`"
-    }
-  ],
   "app:go-back": [
     {
       "modifiers": [
@@ -266,6 +258,15 @@
   "app:toggle-left-sidebar": [
     {
       "modifiers": [
+        "Mod"
+      ],
+      "key": "B"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Alt",
         "Mod"
       ],
       "key": "B"
