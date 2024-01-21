@@ -15,7 +15,7 @@ yabai -m rule --add app="^Slack$" space=home
 yabai -m rule --add app="^Spotify$" space=home
 
 # application rules
-yabai -m rule --add app="^(Calculator|System Preferences|System Settings|Archive Utility|Finder|Raycast)$" manage=off
+yabai -m rule --add app="^(Calculator|System Preferences|System Settings|Archive Utility|Finder|Raycast|CleanShot X)$" manage=off
 
 # windows tiled (bsp), or left alone (float)
 yabai -m config layout bsp
