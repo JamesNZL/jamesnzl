@@ -88,6 +88,10 @@ fn - 8 : yabai -m space --focus 8
 fn - 9 : yabai -m space --focus 9
 fn - 0 : yabai -m space --focus 10
 
+# change display
+fn + ctrl - 1 : yabai -m display --focus 1
+fn + ctrl - 2 : yabai -m display --focus 2
+
 # create space on current display
 fn - n : yabai -m space --create
 
