@@ -13,6 +13,8 @@ dotfiles/.config/nvim/init.vim
 dotfiles/.config/raycast/extensions
 dotfiles/.config/raycast/config.json
 
+dotfiles/.config/karabiner/automatic_backups/
+
 dotfiles/.config/iterm2/AppSupport
 
 dotfiles/.obsidian/icons
