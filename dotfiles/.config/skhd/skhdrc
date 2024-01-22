@@ -91,6 +91,14 @@ fn - 0 : yabai -m space --focus 10
 # change display
 fn + ctrl - 1 : yabai -m display --focus 1
 fn + ctrl - 2 : yabai -m display --focus 2
+fn + ctrl - a : yabai -m display --focus west
+fn + ctrl - d : yabai -m display --focus east
+fn + ctrl - s : yabai -m display --focus south
+fn + ctrl - w : yabai -m display --focus north
+fn + ctrl - h : yabai -m display --focus west
+fn + ctrl - l : yabai -m display --focus east
+fn + ctrl - j : yabai -m display --focus south
+fn + ctrl - k : yabai -m display --focus north
 
 # create space on current display
 fn - n : yabai -m space --create
