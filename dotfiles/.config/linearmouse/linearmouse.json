@@ -1,32 +1,32 @@
 {
   "schemes" : [
     {
-      "scrolling" : {
-        "acceleration" : {
-          "vertical" : 1
-        },
-        "distance" : {
-          "vertical" : 2
-        },
-        "speed" : {
-          "vertical" : 0
-        },
-        "reverse" : {
-          "vertical" : true
-        }
-      },
       "if" : {
         "device" : {
-          "vendorID" : "0x46d",
-          "category" : "mouse",
+          "productName" : "USB Receiver",
           "productID" : "0xc547",
-          "productName" : "USB Receiver"
+          "vendorID" : "0x46d",
+          "category" : "mouse"
+        }
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 32.5
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "acceleration" : {
+          "vertical" : 0.75
         }
       },
       "pointer" : {
         "disableAcceleration" : false,
         "acceleration" : 0,
-        "speed" : 0.075
+        "speed" : 0.085
       }
     }
   ],
