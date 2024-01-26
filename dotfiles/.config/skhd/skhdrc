@@ -70,6 +70,7 @@ fn + alt - 1 : yabai -m window --display 1 --focus
 fn + alt - 2 : yabai -m window --display 2 --focus
 
 # move focus container to space
+fn + cmd - 0x32 : yabai -m window --space recent --focus
 fn + cmd - 1 : yabai -m window --space 1 --focus
 fn + cmd - 2 : yabai -m window --space 2 --focus
 fn + cmd - 3 : yabai -m window --space 3 --focus
@@ -79,9 +80,10 @@ fn + cmd - 6 : yabai -m window --space 6 --focus
 fn + cmd - 7 : yabai -m window --space 7 --focus
 fn + cmd - 8 : yabai -m window --space 8 --focus
 fn + cmd - 9 : yabai -m window --space 9 --focus
-fn + cmd - 0 : yabai -m window --space 10 --focus
+fn + cmd - 0 : yabai -m window --space last --focus
 
 # change space
+fn - 0x32 : yabai -m space --focus recent # tilde
 fn - 1 : yabai -m space --focus 1
 fn - 2 : yabai -m space --focus 2
 fn - 3 : yabai -m space --focus 3
@@ -91,7 +93,7 @@ fn - 6 : yabai -m space --focus 6
 fn - 7 : yabai -m space --focus 7
 fn - 8 : yabai -m space --focus 8
 fn - 9 : yabai -m space --focus 9
-fn - 0 : yabai -m space --focus 10
+fn - 0 : yabai -m space --focus last
 
 # change display
 fn + ctrl - 1 : yabai -m display --focus 1
