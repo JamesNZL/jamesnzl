@@ -17,10 +17,10 @@ fn + cmd - a : yabai -m window --swap west
 fn + cmd - d : yabai -m window --swap east
 fn + cmd - s : yabai -m window --swap south
 fn + cmd - w : yabai -m window --swap north
-fn + cmd - h : yabai -m window --swap west
-fn + cmd - l : yabai -m window --swap east
-fn + cmd - j : yabai -m window --swap south
-fn + cmd - k : yabai -m window --swap north
+fn + cmd - h : yabai -m window --warp west
+fn + cmd - l : yabai -m window --warp east
+fn + cmd - j : yabai -m window --warp south
+fn + cmd - k : yabai -m window --warp north
 
 # define insert position
 fn + shift + cmd - a : yabai -m window --insert west
