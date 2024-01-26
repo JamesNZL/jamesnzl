@@ -58,6 +58,10 @@ fn + cmd - t : yabai -m window --layer auto
 # rotate layout
 fn - r : yabai -m space --rotate 270
 
+# mirror layout
+fn - y : yabai -m space --mirror x-axis
+fn - i : yabai -m space --mirror y-axis
+
 # balance layout
 fn - b : yabai -m space --balance
 
