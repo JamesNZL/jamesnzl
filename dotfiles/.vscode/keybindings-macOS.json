@@ -341,5 +341,14 @@
 		"key": "cmd+k cmd+n",
 		"command": "-git.unstageSelectedRanges",
 		"when": "isInDiffEditor && !operationInProgress"
+	},
+	{
+		"key": "cmd+k ctrl+r",
+		"command": "git.revertSelectedRanges"
+	},
+	{
+		"key": "cmd+k cmd+r",
+		"command": "-git.revertSelectedRanges",
+		"when": "isInDiffEditor && !operationInProgress"
 	}
 ]
