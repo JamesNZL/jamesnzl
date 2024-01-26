@@ -51,6 +51,10 @@ fn - f : yabai -m window --toggle zoom-fullscreen --focus
 # float window
 fn - space : yabai -m window --toggle float
 
+# toggle window layer (in effect, always-on-top)
+fn + cmd - b : yabai -m window --layer below
+fn + cmd - t : yabai -m window --layer auto
+
 # rotate layout
 fn - r : yabai -m space --rotate 270
 
