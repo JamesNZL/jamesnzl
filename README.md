@@ -27,6 +27,8 @@ Ngā mihi nui!
 ![HTML5](https://img.shields.io/badge/HTML5-E44D26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-264DE4?style=for-the-badge&logo=css3&logoColor=white)
 ![VHDL](https://img.shields.io/badge/VHDL-616161?style=for-the-badge)
+![MIPS ASM](https://img.shields.io/badge/MIPS_ASM-2D6AB0?style=for-the-badge)
+![SCCharts](https://img.shields.io/badge/SCCharts-AB4D68?style=for-the-badge)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
 
@@ -98,8 +100,10 @@ Ngā mihi nui!
 ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
 ![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
-![Powershell](https://img.shields.io/badge/Powershell-2671BE?style=for-the-badge&logo=powershell&logoColor=white)
+![Zsh](https://img.shields.io/badge/Zsh-E06437?style=for-the-badge&logo=zsh&logoColor=white)
 ![Bash](https://img.shields.io/badge/GNU_Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![Powershell](https://img.shields.io/badge/Powershell-2671BE?style=for-the-badge&logo=powershell&logoColor=white)
+![yabai](https://img.shields.io/badge/yabai-E27069?style=for-the-badge&logoColor=white)
 
 ### 📈 Statistics
 [![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=default&layout=compact&card_width=305&langs_count=12&hide=tex&exclude_repo=softeng281-money,softeng281-blackjack,Order-Bot,AoC-2020#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
