@@ -350,5 +350,13 @@
 		"key": "cmd+k cmd+r",
 		"command": "-git.revertSelectedRanges",
 		"when": "isInDiffEditor && !operationInProgress"
+	},
+	{
+		"key": "shift+alt+cmd+0",
+		"command": "workbench.action.zoomReset"
+	},
+	{
+		"key": "cmd+numpad0",
+		"command": "-workbench.action.zoomReset"
 	}
 ]
