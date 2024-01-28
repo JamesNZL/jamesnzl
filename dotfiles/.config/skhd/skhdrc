@@ -66,6 +66,7 @@ fn - i : yabai -m space --mirror y-axis
 fn - b : yabai -m space --balance
 
 # move focus container to display
+fn + alt - 0x32 : yabai -m window --display recent --focus
 fn + alt - 1 : yabai -m window --display 1 --focus
 fn + alt - 2 : yabai -m window --display 2 --focus
 
@@ -82,6 +83,11 @@ fn + cmd - 8 : yabai -m window --space 8 --focus
 fn + cmd - 9 : yabai -m window --space 9 --focus
 fn + cmd - 0 : yabai -m window --space last --focus
 
+# move focus space to display
+fn + ctrl + alt - 0x32 : yabai -m space --display recent --focus
+fn + ctrl + alt - 1 : yabai -m space --display 1 --focus
+fn + ctrl + alt - 2 : yabai -m space --display 2 --focus
+
 # change space
 fn - 0x32 : yabai -m space --focus recent # tilde
 fn - 1 : yabai -m space --focus 1
@@ -96,6 +102,7 @@ fn - 9 : yabai -m space --focus 9
 fn - 0 : yabai -m space --focus last
 
 # change display
+fn + ctrl - 0x32 : yabai -m display --focus recent
 fn + ctrl - 1 : yabai -m display --focus 1
 fn + ctrl - 2 : yabai -m display --focus 2
 fn + ctrl - a : yabai -m display --focus west
