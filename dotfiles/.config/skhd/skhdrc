@@ -3,7 +3,7 @@ fn + shift - s : skhd --reload
 fn + shift - y : yabai --restart-service
 
 # navigating through windows
-fn - tab : yabai -m window --focus last
+fn - tab : yabai -m window --focus recent
 fn - a : yabai -m window --focus west
 fn - d : yabai -m window --focus east
 fn - s : yabai -m window --focus south
