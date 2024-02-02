@@ -3,6 +3,7 @@ fn + shift - s : skhd --reload
 fn + shift - y : yabai --restart-service
 
 # navigating through windows
+fn - tab : yabai -m window --focus last
 fn - a : yabai -m window --focus west
 fn - d : yabai -m window --focus east
 fn - s : yabai -m window --focus south
@@ -116,6 +117,7 @@ fn + ctrl - k : yabai -m display --focus north
 
 # create space on current display
 fn - n : yabai -m space --create
+fn - c : yabai -m space --create
 
 # destroy focussed space
 fn - x : yabai -m space --destroy
@@ -149,6 +151,8 @@ fn - t : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .
 
 # toggle mouse autofocus
 fn - m : yabai -m config focus_follows_mouse $(if [[ $(yabai -m config focus_follows_mouse) == "autofocus" ]]; then echo "off"; else echo "autofocus"; fi) ; yabai -m config mouse_follows_focus $(if [[ $(yabai -m config mouse_follows_focus) == "on" ]]; then echo "off"; else echo "on"; fi)
+fn - q : yabai -m config focus_follows_mouse $(if [[ $(yabai -m config focus_follows_mouse) == "autofocus" ]]; then echo "off"; else echo "autofocus"; fi) ; yabai -m config mouse_follows_focus $(if [[ $(yabai -m config mouse_follows_focus) == "on" ]]; then echo "off"; else echo "on"; fi)
 
 # toggle opacity
 fn - o : yabai -m config window_opacity $(if [[ $(yabai -m config window_opacity) == "on" ]]; then echo "off"; else echo "on"; fi)
+fn - v : yabai -m config window_opacity $(if [[ $(yabai -m config window_opacity) == "on" ]]; then echo "off"; else echo "on"; fi)
