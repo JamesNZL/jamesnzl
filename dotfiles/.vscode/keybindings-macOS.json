@@ -358,5 +358,9 @@
 	{
 		"key": "cmd+numpad0",
 		"command": "-workbench.action.zoomReset"
+	},
+	{
+		"key": "cmd+k cmd+p",
+		"command": "workbench.profiles.actions.switchProfile"
 	}
 ]
