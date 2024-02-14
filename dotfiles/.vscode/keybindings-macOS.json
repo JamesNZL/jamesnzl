@@ -362,5 +362,15 @@
 	{
 		"key": "cmd+k cmd+p",
 		"command": "workbench.profiles.actions.switchProfile"
+	},
+	{
+		"key": "alt+cmd+v",
+		"command": "markdown.showPreview",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "shift+cmd+v",
+		"command": "-markdown.showPreview",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
 	}
 ]
