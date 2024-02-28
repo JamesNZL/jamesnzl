@@ -5,6 +5,7 @@
   "translucency": false,
   "enabledCssSnippets": [
     "dynamic-highlight",
+    "exporter",
     "tags"
   ],
   "nativeMenus": false,
