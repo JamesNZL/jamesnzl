@@ -81,7 +81,6 @@ Ngā mihi nui!
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F48120?style=for-the-badge&logo=cloudflare&logoColor=white)
 ![Google Analytics](https://img.shields.io/badge/Google_Analytics-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white)
-
 ###### Tools
 ![Git](https://img.shields.io/badge/Git-F05133?style=for-the-badge&logo=git&logoColor=white)
 ![SVN](https://img.shields.io/badge/SVN-809CC9?style=for-the-badge&logo=subversion&logoColor=white)
@@ -106,8 +105,8 @@ Ngā mihi nui!
 ![yabai](https://img.shields.io/badge/yabai-E27069?style=for-the-badge&logoColor=white)
 
 ### 📈 Statistics
-[![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=default&layout=compact&card_width=305&langs_count=12&hide=tex&exclude_repo=softeng281-money,softeng281-blackjack,Order-Bot,AoC-2020#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
-[![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=react&layout=compact&card_width=305&langs_count=12&hide_border=true&hide=tex&exclude_repo=softeng281-money,softeng281-blackjack,Order-Bot,AoC-2020#gh-dark-mode-only)](https://jamesnzl.xyz#gh-dark-mode-only)  
+[![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=default&layout=compact&card_width=305&langs_count=12&hide=tex,html&exclude_repo=softeng281-money,softeng281-blackjack,Order-Bot,AoC-2020#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
+[![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=react&layout=compact&card_width=305&langs_count=12&hide_border=true&hide=tex,html&exclude_repo=softeng281-money,softeng281-blackjack,Order-Bot,AoC-2020#gh-dark-mode-only)](https://jamesnzl.xyz#gh-dark-mode-only)  
 [![GitHub stats](https://github-readme-stats-sigma-sable.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=default&card_width=305&hide_rank=true#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
 [![GitHub stats](https://github-readme-stats-sigma-sable.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=react&card_width=305&hide_border=true&hide_rank=true#gh-dark-mode-only)](https://jamesnzl.xyz#gh-dark-mode-only)  
 [![GitHub streak stats](https://github-readme-streak-stats.herokuapp.com?user=jamesnzl&theme=default&fire=2f80ed&ring=2f80ed&currStreakLabel=2f80ed&sideNums=2f80ed&date_format=j%20M%5B%20Y%5D#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
