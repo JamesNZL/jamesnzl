@@ -4,14 +4,14 @@ fn + shift - y : yabai --restart-service
 
 # navigating through windows
 fn - tab : yabai -m window --focus recent ; yabai -m window --focus stack.recent
-fn - a : yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus recent
-fn - d : yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus recent
-fn - s : yabai -m window --focus south || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus recent
-fn - w : yabai -m window --focus north || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus recent
-fn - h : yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus recent
-fn - l : yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus recent
-fn - j : yabai -m window --focus south || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus recent
-fn - k : yabai -m window --focus north || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus recent
+fn - a : yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus first
+fn - d : yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus last
+fn - s : yabai -m window --focus south || yabai -m window --focus stack.next || yabai -m window --focus stack.first
+fn - w : yabai -m window --focus north || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+fn - h : yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus first
+fn - l : yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus last
+fn - j : yabai -m window --focus south || yabai -m window --focus stack.next || yabai -m window --focus stack.first
+fn - k : yabai -m window --focus north || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
 # moving windows
 fn + cmd - a : yabai -m window --swap west
