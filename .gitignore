@@ -17,6 +17,8 @@ dotfiles/.config/karabiner/automatic_backups/
 
 dotfiles/.config/iterm2/AppSupport
 
+dotfiles/.config/octave/qt-settings
+
 dotfiles/.obsidian/icons
 dotfiles/.obsidian/plugins
 dotfiles/.obsidian/bookmarks.json
