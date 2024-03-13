@@ -116,8 +116,8 @@ fn + ctrl - j : yabai -m display --focus south
 fn + ctrl - k : yabai -m display --focus north
 
 # create space on current display
-fn - n : yabai -m space --create
-fn - c : yabai -m space --create
+fn - n : yabai -m space --create ; yabai -m space --focus last
+fn - c : yabai -m space --create ; yabai -m space --focus last
 
 # destroy focussed space
 fn - x : yabai -m space --destroy
