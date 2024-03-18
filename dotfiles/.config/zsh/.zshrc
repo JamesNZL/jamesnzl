@@ -62,6 +62,7 @@ hash -d p1=~/OneDrive/Documents/The\ University\ of\ Auckland/Engineering\ \(Par
 hash -d p2=~/OneDrive/Documents/The\ University\ of\ Auckland/Engineering\ \(Part\ II\)
 hash -d p3=~/OneDrive/Documents/The\ University\ of\ Auckland/Engineering\ \(Part\ III\)
 hash -d p4=~/OneDrive/Documents/The\ University\ of\ Auckland/Engineering\ \(Part\ IV\)
+hash -d p4p=~/Developer/uoa/p4/p4p
 
 # plugins
 
