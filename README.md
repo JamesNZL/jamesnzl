@@ -1,6 +1,10 @@
 ## 👋 Tēnā koe! I'm `JamesNZL`.
 
-Kia ora! I'm a Part IV Computer Systems Engineering student at The University of Auckland. I'm interested in all things tech, from analogue electronics to full-stack web development. I'm passionate about youth development, and leaving things in a better state than I found them.
+Kia ora!  
+I'm a Part IV Computer Systems Engineering student at The University of Auckland.
+I'm also a Student Representative and a Teaching Assistant in the Department of Electrical, Computer, and Software Engineering.  
+I'm interested in all things tech, from analogue electronics to full-stack web development.
+I'm passionate about youth development, and leaving things in a better state than I found them.
 
 - 📍 Tāmaki Makaurau, Aotearoa
 - 🎓 Computer Systems Engineering @ [The University of Auckland](https://www.auckland.ac.nz/en/engineering/about-the-faculty/electrical-computer-and-software-engineering.html)
@@ -12,6 +16,9 @@ Kia ora! I'm a Part IV Computer Systems Engineering student at The University of
 Ngā mihi nui!
 
 ### 🪀 Some Things I've Played With
+
+<details>
+<summary>Click to expand</summary>
 
 ###### Languages & Markup
 ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
@@ -36,6 +43,7 @@ Ngā mihi nui!
 ![LTspice](https://img.shields.io/badge/LTspice-900028?style=for-the-badge&logo=ltspice&logoColor=white)
 ![Altium Designer](https://img.shields.io/badge/Altium_Designer-A5915F?style=for-the-badge&logo=altiumdesigner&logoColor=white)
 ![EasyEDA](https://img.shields.io/badge/EasyEDA-5588ff?style=for-the-badge&logo=easyeda&logoColor=white)
+![FreeRTOS](https://img.shields.io/badge/FreeRTOS-89bc54?style=for-the-badge&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white)
 ![ATmega328PB](https://img.shields.io/badge/ATmega328PB-ed1b2d?style=for-the-badge)
 ![PlatformIO](https://img.shields.io/badge/PlatformIO-FF7F00?style=for-the-badge)
@@ -47,6 +55,8 @@ Ngā mihi nui!
 ![Arm Cortex-M33](https://img.shields.io/badge/Arm_Cortex--M33-0091bd?style=for-the-badge&logo=arm&logoColor=white)
 ![STM32U585](https://img.shields.io/badge/STM32U585-03234b?style=for-the-badge&logo=stmicroelectronics&logoColor=white)
 ![STM32Cube](https://img.shields.io/badge/STM32Cube-3cb4e6?style=for-the-badge&logo=stmicroelectronics&logoColor=white)
+![Raspberry Pi 5](https://img.shields.io/badge/Raspberry_Pi_5-a22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
+![Raspberry Pi Pico](https://img.shields.io/badge/Raspberry_Pi_Pico-a22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
 ![Intel Cyclone V](https://img.shields.io/badge/Cyclone_V_FPGA-0067a5?style=for-the-badge&logo=intel&logoColor=white)
 ![Quartus](https://img.shields.io/badge/Quartus_Prime-00285A?style=for-the-badge&logo=intel&logoColor=white)
 ![ModelSim](https://img.shields.io/badge/ModelSim-0000FF?style=for-the-badge)
@@ -81,6 +91,7 @@ Ngā mihi nui!
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F48120?style=for-the-badge&logo=cloudflare&logoColor=white)
 ![Google Analytics](https://img.shields.io/badge/Google_Analytics-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white)
+
 ###### Tools
 ![Git](https://img.shields.io/badge/Git-F05133?style=for-the-badge&logo=git&logoColor=white)
 ![SVN](https://img.shields.io/badge/SVN-809CC9?style=for-the-badge&logo=subversion&logoColor=white)
@@ -103,6 +114,8 @@ Ngā mihi nui!
 ![Bash](https://img.shields.io/badge/GNU_Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 ![Powershell](https://img.shields.io/badge/Powershell-2671BE?style=for-the-badge&logo=powershell&logoColor=white)
 ![yabai](https://img.shields.io/badge/yabai-E27069?style=for-the-badge&logoColor=white)
+
+</details>
 
 ### 📈 Statistics
 [![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=default&layout=compact&card_width=305&langs_count=12&hide=tex,html&exclude_repo=softeng281-money,softeng281-blackjack,Order-Bot,AoC-2020#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
