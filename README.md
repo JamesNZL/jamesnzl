@@ -11,7 +11,7 @@ I'm passionate about youth development, and leaving things in a better state tha
 - 🤝 New Zealand Cadet Forces
 - 📧 Email me at [`james@jamesnzl.xyz`](mailto:james@jamesnzl.xyz)
 - 🌏 Connect with me on [LinkedIn](https://www.linkedin.com/in/jamesnzl/)
-- 📄 View my [Curriculum Vitae](./cv/README.md)
+- 📄 View my [Curriculum Vitae](./cv/cv-embedded.pdf)
 
 Ngā mihi nui!
 
