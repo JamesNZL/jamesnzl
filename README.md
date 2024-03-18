@@ -1,8 +1,8 @@
 ## 👋 Tēnā koe! I'm `JamesNZL`.
 
-Kia ora!  
+Kia ora!
 I'm a Part IV Computer Systems Engineering student at The University of Auckland.
-I'm also a Student Representative and a Teaching Assistant in the Department of Electrical, Computer, and Software Engineering.  
+I'm also a Student Representative and a Teaching Assistant in the Department of Electrical, Computer, and Software Engineering.
 I'm interested in all things tech, from analogue electronics to full-stack web development.
 I'm passionate about youth development, and leaving things in a better state than I found them.
 
