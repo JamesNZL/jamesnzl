@@ -61,7 +61,7 @@ yabai -m rule --add app="^Discord$" title!="^Discord Updater$" scratchpad=discor
 yabai -m rule --add app="^Obsidian$" title="jamesnzl" scratchpad=obsidian grid=64:64:1:1:62:62
 yabai -m rule --add app="^Mimestream$" scratchpad=mimestream grid=16:16:1:1:14:14
 yabai -m rule --add app="^Calendar$" scratchpad=calendar grid=16:16:1:1:14:14
-yabai -m rule --add app="^Timery$" scratchpad=timery grid=16:16:1:1:14:14
+yabai -m rule --add app="^Timery$" scratchpad=timery grid=8:8:1:1:6:6
 yabai -m rule --add app="^Arc$" scratchpad=arc grid=64:64:1:1:62:62
 yabai -m rule --add app="^DevUtils$" scratchpad=devutils grid=16:16:1:1:14:14
 

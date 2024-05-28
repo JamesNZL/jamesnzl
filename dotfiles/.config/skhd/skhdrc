@@ -3,15 +3,15 @@ fn + shift - s : skhd --reload
 fn + shift - y : yabai --restart-service
 
 # navigating through windows
-fn - tab : yabai -m window --focus recent ; yabai -m window --focus stack.recent
-fn - a : yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus first
-fn - d : yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus last
-fn - s : yabai -m window --focus south || yabai -m window --focus stack.next || yabai -m window --focus stack.first
-fn - w : yabai -m window --focus north || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
-fn - h : yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus first
-fn - l : yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus last
-fn - j : yabai -m window --focus south || yabai -m window --focus stack.next || yabai -m window --focus stack.first
-fn - k : yabai -m window --focus north || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+fn - tab : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus recent ; yabai -m window --focus stack.recent
+fn - a : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus first
+fn - d : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus last
+fn - s : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus south || yabai -m window --focus stack.next || yabai -m window --focus stack.first
+fn - w : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus north || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+fn - h : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus first
+fn - l : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus last
+fn - j : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus south || yabai -m window --focus stack.next || yabai -m window --focus stack.first
+fn - k : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus north || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
 # moving windows
 fn + cmd - a : yabai -m window --swap west
@@ -158,14 +158,14 @@ fn - o : yabai -m config window_opacity $(if [[ $(yabai -m config window_opacity
 fn - v : yabai -m config window_opacity $(if [[ $(yabai -m config window_opacity) == "on" ]]; then echo "off"; else echo "on"; fi)
 
 # scratchpad windows
-rcmd - f : yabai -m window --toggle finder || open -a Finder
-rcmd - p : yabai -m window --toggle nordpass || open -a NordPass
-rcmd - t : yabai -m window --toggle warp || open -a Warp
-rcmd - s : yabai -m window --toggle slack || open -a Slack
-rcmd - d : yabai -m window --toggle discord || open -a Discord
-rcmd - o : yabai -m window --toggle obsidian || open -a Obsidian
-rcmd - m : yabai -m window --toggle mimestream || open -a Mimestream
-rcmd - c : yabai -m window --toggle calendar || open -a Calendar
-rcmd - g : yabai -m window --toggle timery || open -a Timery
-rcmd - b : yabai -m window --toggle arc || open -a Arc
-rcmd - u : yabai -m window --toggle devutils || open -a DevUtils
+rcmd - f : yabai -m window --grid 16:16:1:1:14:14 --toggle finder || open -a Finder
+rcmd - p : yabai -m window --grid 16:16:1:1:14:14 --toggle nordpass || open -a NordPass
+rcmd - t : yabai -m window --grid 16:16:1:1:14:14 --toggle warp || open -a Warp
+rcmd - s : yabai -m window --grid 16:16:1:1:14:14 --toggle slack || open -a Slack
+rcmd - d : yabai -m window --grid 16:16:1:1:14:14 --toggle discord || open -a Discord
+rcmd - o : yabai -m window --grid 64:64:1:1:62:62 --toggle obsidian || open -a Obsidian
+rcmd - m : yabai -m window --grid 16:16:1:1:14:14 --toggle mimestream || open -a Mimestream
+rcmd - c : yabai -m window --grid 16:16:1:1:14:14 --toggle calendar || open -a Calendar
+rcmd - g : yabai -m window --grid 8:8:1:1:6:6 --toggle timery || open -a Timery
+rcmd - b : yabai -m window --grid 64:64:1:1:62:62 --toggle arc || open -a Arc
+rcmd - u : yabai -m window --grid 16:16:1:1:14:14 --toggle devutils || open -a DevUtils
