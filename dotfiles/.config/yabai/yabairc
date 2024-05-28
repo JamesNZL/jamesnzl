@@ -1,18 +1,13 @@
+# Unload the macOS WindowManager process
+launchctl unload -F /System/Library/LaunchAgents/com.apple.WindowManager.plist >/dev/null 2>&1 &
+
 # run yabai
 # ! note: must have configured sudo for this to work!
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
 # enable debug output
-yabai -m config debug_output on
-
-# label spaces
-yabai -m space 1 --label home
-
-# space rules
-yabai -m rule --add app="^Discord$" space=home
-yabai -m rule --add app="^Slack$" space=home
-yabai -m rule --add app="^Spotify$" space=home
+# yabai -m config debug_output on
 
 # application rules
 yabai -m rule --add app="^(Calculator|System Preferences|System Settings|Archive Utility|Finder|Raycast|CleanShot X)$" manage=off
@@ -47,7 +42,7 @@ yabai -m config mouse_drop_action stack
 yabai -m config window_shadow float
 
 # dim unfocused windows
-yabai -m config window_opacity on
+# yabai -m config window_opacity on
 yabai -m config active_window_opacity 1.0
 yabai -m config normal_window_opacity 0.875
 
@@ -56,3 +51,18 @@ yabai -m config normal_window_opacity 0.875
 
 # focus window after active display changes
 # yabai -m signal --add event=display_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
+
+# mark window as scratchpad using rule and set size (scratchpad windows are manage=off automatically)
+yabai -m rule --add app="^Finder$" scratchpad=finder grid=16:16:1:1:14:14
+yabai -m rule --add app="^Warp$" scratchpad=warp grid=16:16:1:1:14:14
+yabai -m rule --add app="^NordPass$" scratchpad=nordpass grid=16:16:1:1:14:14
+yabai -m rule --add app="^Slack$" scratchpad=slack grid=16:16:1:1:14:14
+yabai -m rule --add app="^Discord$" title!="^Discord Updater$" scratchpad=discord grid=16:16:1:1:14:14
+yabai -m rule --add app="^Obsidian$" scratchpad=obsidian grid=16:16:1:1:14:14
+yabai -m rule --add app="^Mimestream$" scratchpad=mimestream grid=16:16:1:1:14:14
+yabai -m rule --add app="^Calendar$" scratchpad=calendar grid=16:16:1:1:14:14
+yabai -m rule --add app="^Timery$" scratchpad=timery grid=16:16:1:1:14:14
+yabai -m rule --add app="^Arc$" scratchpad=arc grid=16:16:1:1:14:14
+yabai -m rule --add app="^DevUtils$" scratchpad=devutils grid=16:16:1:1:14:14
+
+yabai -m rule --apply

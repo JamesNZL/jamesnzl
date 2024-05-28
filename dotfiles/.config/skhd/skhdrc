@@ -156,3 +156,16 @@ fn - q : yabai -m config focus_follows_mouse $(if [[ $(yabai -m config focus_fol
 # toggle opacity
 fn - o : yabai -m config window_opacity $(if [[ $(yabai -m config window_opacity) == "on" ]]; then echo "off"; else echo "on"; fi)
 fn - v : yabai -m config window_opacity $(if [[ $(yabai -m config window_opacity) == "on" ]]; then echo "off"; else echo "on"; fi)
+
+# scratchpad windows
+rcmd - f : yabai -m window --toggle finder || open -a Finder
+rcmd - p : yabai -m window --toggle nordpass || open -a NordPass
+rcmd - t : yabai -m window --toggle warp || open -a Warp
+rcmd - s : yabai -m window --toggle slack || open -a Slack
+rcmd - d : yabai -m window --toggle discord || open -a Discord
+rcmd - o : yabai -m window --toggle obsidian || open -a Obsidian
+rcmd - m : yabai -m window --toggle mimestream || open -a Mimestream
+rcmd - c : yabai -m window --toggle calendar || open -a Calendar
+rcmd - g : yabai -m window --toggle timery || open -a Timery
+rcmd - b : yabai -m window --toggle arc || open -a Arc
+rcmd - u : yabai -m window --toggle devutils || open -a DevUtils
