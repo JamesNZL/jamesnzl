@@ -382,5 +382,10 @@
 		"key": "alt+cmd+v",
 		"command": "-latex-workshop.view",
 		"when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^doctex$|^rsweave$|^jlweave$|^pweave$/"
+	},
+	{
+		"key": "ctrl+shift+alt+u",
+		"command": "platformio-ide.uploadAndMonitor",
+		"when": "pioProjectReady && pioProjectTasksReady"
 	}
 ]
