@@ -3,15 +3,15 @@ fn + shift - s : skhd --reload
 fn + shift - y : yabai --restart-service
 
 # navigating through windows
-fn - tab : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus recent ; yabai -m window --focus stack.recent
-fn - a : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus first
-fn - d : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus last
-fn - s : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus south || yabai -m window --focus stack.next || yabai -m window --focus stack.first
-fn - w : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus north || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
-fn - h : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus first
-fn - l : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus last
-fn - j : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus south || yabai -m window --focus stack.next || yabai -m window --focus stack.first
-fn - k : $(yabai -m query --windows --window mouse | jq -r 'if .scratchpad != "" then "yabai -m window --toggle " + .scratchpad else 1 end') || yabai -m window --focus north || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+fn - tab : $(yabai -m query --windows --window | jq -r 'if .scratchpad != "" then "yabai -m window --toggle \(.scratchpad)" else 1 end') || yabai -m window --focus recent ; yabai -m window --focus stack.recent
+fn - a : $(yabai -m query --windows --window | jq -r 'if .scratchpad != "" then "yabai -m window --toggle \(.scratchpad)" else 1 end') || yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus first
+fn - d : $(yabai -m query --windows --window | jq -r 'if .scratchpad != "" then "yabai -m window --toggle \(.scratchpad)" else 1 end') || yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus last
+fn - s : $(yabai -m query --windows --window | jq -r 'if .scratchpad != "" then "yabai -m window --toggle \(.scratchpad)" else 1 end') || yabai -m window --focus south || yabai -m window --focus stack.next || yabai -m window --focus stack.first
+fn - w : $(yabai -m query --windows --window | jq -r 'if .scratchpad != "" then "yabai -m window --toggle \(.scratchpad)" else 1 end') || yabai -m window --focus north || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+fn - h : $(yabai -m query --windows --window | jq -r 'if .scratchpad != "" then "yabai -m window --toggle \(.scratchpad)" else 1 end') || yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last || yabai -m window --focus first
+fn - l : $(yabai -m query --windows --window | jq -r 'if .scratchpad != "" then "yabai -m window --toggle \(.scratchpad)" else 1 end') || yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first || yabai -m window --focus last
+fn - j : $(yabai -m query --windows --window | jq -r 'if .scratchpad != "" then "yabai -m window --toggle \(.scratchpad)" else 1 end') || yabai -m window --focus south || yabai -m window --focus stack.next || yabai -m window --focus stack.first
+fn - k : $(yabai -m query --windows --window | jq -r 'if .scratchpad != "" then "yabai -m window --toggle \(.scratchpad)" else 1 end') || yabai -m window --focus north || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
 # moving windows
 fn + cmd - a : yabai -m window --swap west
@@ -158,17 +158,25 @@ fn - o : yabai -m config window_opacity $(if [[ $(yabai -m config window_opacity
 fn - v : yabai -m config window_opacity $(if [[ $(yabai -m config window_opacity) == "on" ]]; then echo "off"; else echo "on"; fi)
 
 # scratchpad windows
-rcmd - f : $(yabai -m query --windows | jq -r 'if any(.scratchpad == "finder") then .[] | select(.scratchpad == "finder") | if ."is-visible" and (."has-focus" | not) then "yabai -m window --focus \(.id)" else "yabai -m window --toggle finder" end else 1 end') || open -a Finder
-rcmd - p : $(yabai -m query --windows | jq -r 'if any(.scratchpad == "nordpass") then .[] | select(.scratchpad == "nordpass") | if ."is-visible" and (."has-focus" | not) then "yabai -m window --focus \(.id)" else "yabai -m window --toggle nordpass" end else 1 end') || open -a NordPass
-rcmd - t : $(yabai -m query --windows | jq -r 'if any(.scratchpad == "warp") then .[] | select(.scratchpad == "warp") | if ."is-visible" and (."has-focus" | not) then "yabai -m window --focus \(.id)" else "yabai -m window --toggle warp" end else 1 end') || open -a Warp
-rcmd - s : $(yabai -m query --windows | jq -r 'if any(.scratchpad == "slack") then .[] | select(.scratchpad == "slack") | if ."is-visible" and (."has-focus" | not) then "yabai -m window --focus \(.id)" else "yabai -m window --toggle slack" end else 1 end') || open -a Slack
-rcmd - d : $(yabai -m query --windows | jq -r 'if any(.scratchpad == "discord") then .[] | select(.scratchpad == "discord") | if ."is-visible" and (."has-focus" | not) then "yabai -m window --focus \(.id)" else "yabai -m window --toggle discord" end else 1 end') || open -a Discord
-rcmd - o : $(yabai -m query --windows | jq -r 'if any(.scratchpad == "obsidian") then .[] | select(.scratchpad == "obsidian") | if ."is-visible" and (."has-focus" | not) then "yabai -m window --focus \(.id)" else "yabai -m window --toggle obsidian" end else 1 end') || open -a Obsidian
-rcmd - m : $(yabai -m query --windows | jq -r 'if any(.scratchpad == "mimestream") then .[] | select(.scratchpad == "mimestream") | if ."is-visible" and (."has-focus" | not) then "yabai -m window --focus \(.id)" else "yabai -m window --toggle mimestream" end else 1 end') || open -a Mimestream
-rcmd - c : $(yabai -m query --windows | jq -r 'if any(.scratchpad == "calendar") then .[] | select(.scratchpad == "calendar") | if ."is-visible" and (."has-focus" | not) then "yabai -m window --focus \(.id)" else "yabai -m window --toggle calendar" end else 1 end') || open -a Calendar
-rcmd - g : $(yabai -m query --windows | jq -r 'if any(.scratchpad == "timery") then .[] | select(.scratchpad == "timery") | if ."is-visible" and (."has-focus" | not) then "yabai -m window --focus \(.id)" else "yabai -m window --toggle timery" end else 1 end') || open -a Timery
-rcmd - b : $(yabai -m query --windows | jq -r 'if any(.scratchpad == "arc") then .[] | select(.scratchpad == "arc") | if ."is-visible" and (."has-focus" | not) then "yabai -m window --focus \(.id)" else "yabai -m window --toggle arc" end else 1 end') || open -a Arc
-rcmd - u : $(yabai -m query --windows | jq -r 'if any(.scratchpad == "devutils") then .[] | select(.scratchpad == "devutils") | if ."is-visible" and (."has-focus" | not) then "yabai -m window --focus \(.id)" else "yabai -m window --toggle devutils" end else 1 end') || open -a DevUtils
+# if ( noMatchScratchpadLabel || !isVisible || hasFocus )
+# {
+#      yabai -m window --toggle scratchpadLabel
+# }
+# else if ( isVisible && !hasFocus )
+# {
+#      yabai -m window --focus id
+# }
+rcmd - f : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "finder") | not) or (.[] | select(.scratchpad == "finder") | ((."is-visible" | not) or (."has-focus")))) then "yabai -m window --toggle finder" else "yabai -m window --focus \(.id)" end') || open -a Finder
+rcmd - p : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "nordpass") | not) or (.[] | select(.scratchpad == "nordpass") | ((."is-visible" | not) or (."has-focus")))) then "yabai -m window --toggle nordpass" else "yabai -m window --focus \(.id)" end') || open -a NordPass
+rcmd - t : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "warp") | not) or (.[] | select(.scratchpad == "warp") | ((."is-visible" | not) or (."has-focus")))) then "yabai -m window --toggle warp" else "yabai -m window --focus \(.id)" end') || open -a Warp
+rcmd - s : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "slack") | not) or (.[] | select(.scratchpad == "slack") | ((."is-visible" | not) or (."has-focus")))) then "yabai -m window --toggle slack" else "yabai -m window --focus \(.id)" end') || open -a Slack
+rcmd - d : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "discord") | not) or (.[] | select(.scratchpad == "discord") | ((."is-visible" | not) or (."has-focus")))) then "yabai -m window --toggle discord" else "yabai -m window --focus \(.id)" end') || open -a Discord
+rcmd - o : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "obsidian") | not) or (.[] | select(.scratchpad == "obsidian") | ((."is-visible" | not) or (."has-focus")))) then "yabai -m window --toggle obsidian" else "yabai -m window --focus \(.id)" end') || open -a Obsidian
+rcmd - m : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "mimestream") | not) or (.[] | select(.scratchpad == "mimestream") | ((."is-visible" | not) or (."has-focus")))) then "yabai -m window --toggle mimestream" else "yabai -m window --focus \(.id)" end') || open -a Mimestream
+rcmd - c : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "calendar") | not) or (.[] | select(.scratchpad == "calendar") | ((."is-visible" | not) or (."has-focus")))) then "yabai -m window --toggle calendar" else "yabai -m window --focus \(.id)" end') || open -a Calendar
+rcmd - g : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "timery") | not) or (.[] | select(.scratchpad == "timery") | ((."is-visible" | not) or (."has-focus")))) then "yabai -m window --toggle timery" else "yabai -m window --focus \(.id)" end') || open -a Timery
+rcmd - b : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "arc") | not) or (.[] | select(.scratchpad == "arc") | ((."is-visible" | not) or (."has-focus")))) then "yabai -m window --toggle arc" else "yabai -m window --focus \(.id)" end') || open -a Arc
+rcmd - u : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "devutils") | not) or (.[] | select(.scratchpad == "devutils") | ((."is-visible" | not) or (."has-focus")))) then "yabai -m window --toggle devutils" else "yabai -m window --focus \(.id)" end') || open -a DevUtils
 
 # restore scratchpad grids
 rcmd + ralt - s : yabai -m window --grid 8:8:1:1:6:6
