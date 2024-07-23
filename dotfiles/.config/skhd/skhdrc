@@ -175,6 +175,7 @@ rcmd - b : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "
 rcmd - u : $(yabai -m query --windows --space | jq -r 'if ((any(.scratchpad == "devutils") | not) or (.[] | select(.scratchpad == "devutils") | ((."is-visible" | not) or (."has-focus")))) then "yabai -m window --toggle devutils" else "yabai -m window --focus \(.id)" end') || open -a DevUtils
 
 # restore scratchpad grids
-rcmd + ralt - s : yabai -m window --grid 8:8:1:1:6:6
-rcmd + ralt - d : yabai -m window --grid 16:16:1:1:14:14
-rcmd + ralt - f : yabai -m window --grid 64:64:1:1:62:62
+rcmd + ralt - a : yabai -m window --grid 8:8:1:1:6:6
+rcmd + ralt - s : yabai -m window --grid 16:16:1:1:14:14
+rcmd + ralt - d : yabai -m window --grid 64:64:1:1:62:62
+rcmd + ralt - f : yabai -m window --grid 1:1:1:1:1:1
