@@ -57,16 +57,17 @@ smallGrid="8:8:1:1:6:6"
 mediumGrid="16:16:1:1:14:14"
 fullGrid="64:64:1:1:62:62"
 
-yabai -m rule --add app="^Finder$" scratchpad=finder grid=$mediumGrid
-yabai -m rule --add app="^Warp$" scratchpad=warp grid=$mediumGrid
+yabai -m rule --add app="^Finder$" scratchpad=finder grid=$smallGrid
+yabai -m rule --add app="^Warp$" scratchpad=warp grid=$smallGrid
 yabai -m rule --add app="^NordPass$" scratchpad=nordpass grid=$mediumGrid
+yabai -m rule --add app="^Messages$" scratchpad=messages grid=$smallGrid
 yabai -m rule --add app="^Slack$" scratchpad=slack grid=$mediumGrid
-yabai -m rule --add app="^Discord$" title!="^Discord Updater$" scratchpad=discord grid=$mediumGrid
+yabai -m rule --add app="^Discord$" title!="^Discord Updater$" scratchpad=discord grid=$smallGrid
 yabai -m rule --add app="^Obsidian$" title="jamesnzl" scratchpad=obsidian grid=$fullGrid
 yabai -m rule --add app="^Mimestream$" scratchpad=mimestream grid=$mediumGrid
 yabai -m rule --add app="^Calendar$" scratchpad=calendar grid=$mediumGrid
 yabai -m rule --add app="^Timery$" scratchpad=timery grid=$smallGrid
-yabai -m rule --add app="^Arc$" scratchpad=arc grid=$fullGrid
+yabai -m rule --add app="^Arc$" title!="Developer Tools" scratchpad=arc grid=$fullGrid
 yabai -m rule --add app="^DevUtils$" scratchpad=devutils grid=$mediumGrid
 
 yabai -m rule --apply
