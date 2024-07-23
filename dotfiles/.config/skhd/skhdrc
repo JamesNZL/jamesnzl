@@ -120,7 +120,7 @@ fn - n : yabai -m space --create ; yabai -m space --focus $(yabai -m query --dis
 fn - c : yabai -m space --create ; yabai -m space --focus $(yabai -m query --displays --display | jq '.spaces[-1]')
 
 # destroy focussed space
-fn - x : yabai -m space --destroy
+fn - x : SPACE_DESTROY=$(yabai -m query --spaces --space | jq '.index') && yabai -m space --focus recent && yabai -m space --destroy $SPACE_DESTROY
 # destroy empty spaces
 fn + cmd - x : $(yabai -m query --spaces | jq -re 'map("yabai -m space --destroy \(select(."windows" == [] and (."has-focus" | not)).index)") | reverse | join(" && ")') ; yabai -m space --focus $(yabai -m query --spaces --display | jq -r 'map(select(."has-focus" | not))[0].index') && sleep 0 && yabai -m space --focus recent || yabai -m space --focus last
 
