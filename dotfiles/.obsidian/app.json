@@ -41,8 +41,9 @@
     "margin": "0",
     "downscalePercent": 85
   },
-  "focusNewTab": false,
+  "focusNewTab": true,
   "autoPairMarkdown": false,
   "autoPairBrackets": false,
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "readableLineLength": true
 }

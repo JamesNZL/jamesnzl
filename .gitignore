@@ -24,3 +24,5 @@ dotfiles/.obsidian/plugins
 dotfiles/.obsidian/bookmarks.json
 dotfiles/.obsidian/core-plugins-migration.json
 dotfiles/.obsidian/workspace.json
+
+dotfiles/.config/eclipse-workspace/

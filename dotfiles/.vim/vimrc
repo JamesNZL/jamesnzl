@@ -116,10 +116,10 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
-Plug 'unblevable/quick-scope'       " Plug
+Plug 'unblevable/quick-scope'
 
 Plug 'machakann/vim-sandwich'
-Plug 'andymass/vim-matchup'
+" Plug 'andymass/vim-matchup'
 Plug 'AndrewRadev/splitjoin.vim'
 
 Plug 'tommcdo/vim-exchange'
