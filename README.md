@@ -1,8 +1,8 @@
 ## 👋 Tēnā koe! I'm `JamesNZL`.
 
 Kia ora!
-I'm a Part IV Computer Systems Engineering student at The University of Auckland.
-I'm also a Student Representative and a Teaching Assistant in the Department of Electrical, Computer, and Software Engineering.
+I'm a graduating Electrical and Computer Engineer from The University of Auckland.
+I was also a Student Representative and a Teaching Assistant in the Department of Electrical, Computer, and Software Engineering.
 I'm interested in all things tech, from analogue electronics to full-stack web development.
 I'm passionate about youth development, and leaving things in a better state than I found them.
 
@@ -122,11 +122,6 @@ Ngā mihi nui!
 [![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=react&layout=compact&card_width=305&langs_count=12&hide_border=true&hide=tex,html&exclude_repo=softeng281-money,softeng281-blackjack,Order-Bot,AoC-2020,compsys704-step-counter,compsys704-bottling-system#gh-dark-mode-only)](https://jamesnzl.xyz#gh-dark-mode-only)  
 [![GitHub stats](https://github-readme-stats-sigma-sable.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=default&card_width=305&hide_rank=true#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
 [![GitHub stats](https://github-readme-stats-sigma-sable.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=react&card_width=305&hide_border=true&hide_rank=true#gh-dark-mode-only)](https://jamesnzl.xyz#gh-dark-mode-only)  
-[![GitHub streak stats](https://github-readme-streak-stats.herokuapp.com?user=jamesnzl&theme=default&fire=2f80ed&ring=2f80ed&currStreakLabel=2f80ed&sideNums=2f80ed&date_format=j%20M%5B%20Y%5D#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
-[![GitHub streak stats](https://github-readme-streak-stats.herokuapp.com?user=jamesnzl&theme=react&hide_border=true&date_format=j%20M%5B%20Y%5D#gh-dark-mode-only)](https://jamesnzl.xyz#gh-dark-mode-only)  
-[![GitHub contributions graph](https://github.pumbas.net/api/contributions/JamesNZL?colour=2f80ed&bgColour=fffefe#gh-light-mode-only)](https://github.com/pumbas600/github-contributions#gh-light-mode-only)
-[![GitHub contributions graph](https://github.pumbas.net/api/contributions/JamesNZL?colour=61dafb&bgColour=20232a#gh-dark-mode-only)](https://github.com/pumbas600/github-contributions#gh-dark-mode-only)
-
 
 ### 💬 Discord
 [![nzl.james](https://lanyard.cnrad.dev/api/192181901065322496?theme=light&hideDiscrim=true&idleMessage=Twiddling%20my%20thumbs...#gh-light-mode-only)](https://discord.com/users/192181901065322496#gh-light-mode-only)
