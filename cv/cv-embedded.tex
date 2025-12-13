@@ -117,6 +117,16 @@
   }
 }
 
+% Entry with 2x titles, subheading, date(s), and location
+\newcommand{\resumeEntryTTSDL}[6]{
+  \vspace{-1pt}\item[]
+    \begin{tabularx}{0.97\textwidth}{X@{\hspace{60pt}}r}
+      \textbf{\color{primary}#1} & {\firabook\color{accent}\small#2}\vspace{1pt} \\
+      \textbf{\color{primary}#3} & {\firabook\color{accent}\small#4} \\
+      \textit{\color{accent}\small#5} & \textit{\color{accent}\small#6} \\
+    \end{tabularx}\vspace{-6pt}
+}
+
 % Entry with title, subheading, date(s), and location
 \newcommand{\resumeEntryTSDL}[4]{
   \vspace{-1pt}\item[]
@@ -245,12 +255,12 @@
 \resumeEntryTD
 {Firmware \& Embedded Systems}{}
 \resumeItemListStart
-\resumeItem {Experience writing \resumeBf{C and C++ firmware} for \resumeBf{Atmel megaAVR} and \resumeBf{ARM Cortex} processors}
-\resumeItem {Hands-on with \resumeBf{bare-metal}, \resumeBf{FreeRTOS}, and Freescale MXP RTOS}
+\resumeItem {Experience writing \resumeBf{C and C++ firmware} for \resumeBf{ARM Cortex} and \resumeBf{Atmel megaAVR} processors}
+% \resumeItem {Hands-on with \resumeBf{bare-metal}, \resumeBf{FreeRTOS}, and Freescale MXP RTOS}
 \resumeItem {Passion for \resumeBf{best practises}, robust \resumeBf{architecture}, and thorough \resumeBf{documentation}}
 \resumeItem {Strong debugging skills with extensive \resumeBf{oscilloscope} and \resumeBf{logic analyser} experience}
 \resumeItem {Experience writing \resumeBf{unit \& component tests}}
-\resumeItem {Development experience on \resumeBf{Linux, macOS, and Windows}}
+% \resumeItem {Development experience on \resumeBf{Linux, macOS, and Windows}}
 % \resumeItem {Familiarity with \resumeBf{digital processor design} and specification}
 \resumeItemListEnd
 \resumeItemListStartColumns[-0.5]{4}
@@ -300,7 +310,8 @@
 \section{\faBriefcase}{Industry Experience}
 
 \resumeEntryStart
-\resumeEntryTSDL
+\resumeEntryTTSDL
+{Embedded Firmware Engineer}{Jun 2025 -- Present}
 {Embedded Firmware Engineering Intern}{Dec 2024 -- Apr 2025}
 {Apple Inc}{Auckland, NZ}
 \resumeEntryEnd
