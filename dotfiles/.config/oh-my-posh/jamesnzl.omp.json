@@ -1,115 +1,138 @@
 {
-	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-	"version": 2,
-	"console_title_template": "{{ .UserName }}@{{ .HostName }} / {{ .Folder }}",
-	"blocks": [
-		{
-			"type": "prompt",
-			"alignment": "left",
-			"segments": [
-				{
-					"type": "session",
-					"style": "diamond",
-					"foreground": "#caffbe",
-					"leading_diamond": "<#bfa8bf>~</> ",
-					"template": "{{ if .Root }}<#ef5350>{{ end }}{{ .HostName }}",
-					"properties": {
-						"display_host": true
-					}
-				},
-				{
-					"type": "git",
-					"style": "diamond",
-					"foreground": "#fdd0ff",
-					"template": " <#ffffff>on</> {{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }} {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}",
-					"properties": {
-						"branch_icon": "\ue725 ",
-						"fetch_stash_count": true,
-						"fetch_status": true,
-						"fetch_upstream_icon": true,
-						"fetch_worktree_count": true
-					}
-				},
-				{
-					"type": "time",
-					"style": "diamond",
-					"foreground": "#fdd0ff",
-					"template": " {{ .CurrentDate | date .Format }} ",
-					"properties": {
-						"time_format": "<#ffffff>on</> Monday <#ffffff>at</> 15:04:05"
-					}
-				}
-			],
-			"newline": true
-		},
-		{
-			"type": "prompt",
-			"alignment": "right",
-			"segments": [
-				{
-					"type": "root",
-					"style": "plain",
-					"foreground": "#ef5350",
-					"template": "\udb85\udc0b "
-				},
-				{
-					"type": "upgrade",
-					"style": "plain",
-					"foreground": "#caffbe",
-					"template": "\uf019  "
-				},
-				{
-					"type": "executiontime",
-					"style": "diamond",
-					"foreground": "#caffbe",
-					"template": "<#ffffff>\udb81\udcc5</> {{ .FormattedMs }}",
-					"properties": {
-						"style": "austin",
-						"always_enabled": true
-					}
-				}
-			],
-			"overflow": "break"
-		},
-		{
-			"type": "prompt",
-			"alignment": "left",
-			"segments": [
-				{
-					"type": "path",
-					"style": "diamond",
-					"foreground": "#cff9ff",
-					"leading_diamond": "<#bfa8bf>~</>",
-					"template": " {{ .Path }} / ",
-					"properties": {
-						"folder_icon": "/",
-						"folder_separator_icon": " / ",
-						"home_icon": "home",
-						"style": "agnoster_full"
-					}
-				}
-			],
-			"newline": true
-		},
-		{
-			"type": "prompt",
-			"alignment": "left",
-			"segments": [
-				{
-					"type": "status",
-					"style": "plain",
-					"foreground": "#8eff7f",
-					"foreground_templates": [
-						"{{ if gt .Code 0 }}#ef5350{{ end }}"
-					],
-					"template": "~ ",
-					"properties": {
-						"always_enabled": true
-					}
-				}
-			],
-			"newline": true
-		}
-	],
-	"osc99": true
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "console_title_template": "{{ .UserName }}@{{ .HostName }} / {{ .Folder }}",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "cache": {
+            "duration": "10h",
+            "strategy": "session"
+          },
+          "leading_diamond": "<#bfa8bf>~</> ",
+          "template": "{{ if .Root }}<#ef5350>{{ end }}{{ .HostName }}",
+          "foreground": "#caffbe",
+          "type": "session",
+          "style": "diamond"
+        },
+        {
+          "cache": {
+            "duration": "1m",
+            "strategy": "folder"
+          },
+          "properties": {
+            "branch_icon": "\ue725 ",
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "fetch_worktree_count": true
+          },
+          "template": " <#ffffff>on</> {{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }} {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}",
+          "foreground": "#fdd0ff",
+          "type": "git",
+          "style": "diamond"
+        },
+        {
+          "cache": {
+            "duration": "none"
+          },
+          "properties": {
+            "time_format": "<#ffffff>on</> Monday <#ffffff>at</> 15:04:05"
+          },
+          "template": " {{ .CurrentDate | date .Format }} ",
+          "foreground": "#fdd0ff",
+          "type": "time",
+          "style": "diamond"
+        }
+      ],
+      "newline": true
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "overflow": "break",
+      "segments": [
+        {
+          "cache": {
+            "duration": "none"
+          },
+          "template": "\udb85\udc0b ",
+          "foreground": "#ef5350",
+          "type": "root",
+          "style": "plain"
+        },
+        {
+          "cache": {
+            "duration": "168h",
+            "strategy": "session"
+          },
+          "template": "\uf019  ",
+          "foreground": "#caffbe",
+          "type": "upgrade",
+          "style": "plain"
+        },
+        {
+          "cache": {
+            "duration": "none"
+          },
+          "properties": {
+            "always_enabled": true,
+            "style": "austin"
+          },
+          "template": "<#ffffff>\udb81\udcc5</> {{ .FormattedMs }}",
+          "foreground": "#caffbe",
+          "type": "executiontime",
+          "style": "diamond"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "cache": {
+            "duration": "none"
+          },
+          "properties": {
+            "folder_icon": "/",
+            "folder_separator_icon": " / ",
+            "home_icon": "home",
+            "style": "agnoster_full"
+          },
+          "leading_diamond": "<#bfa8bf>~</>",
+          "template": " {{ .Path }} / ",
+          "foreground": "#cff9ff",
+          "type": "path",
+          "style": "diamond"
+        }
+      ],
+      "newline": true
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "cache": {
+            "duration": "none"
+          },
+          "properties": {
+            "always_enabled": true
+          },
+          "template": "~ ",
+          "foreground": "#8eff7f",
+          "type": "status",
+          "style": "plain",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#ef5350{{ end }}"
+          ]
+        }
+      ],
+      "newline": true
+    }
+  ],
+  "version": 3
 }

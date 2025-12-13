@@ -1,10 +1,11 @@
 # autocompletion
+fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit
 compinit
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 
 # run oh-my-posh
-eval "$(oh-my-posh completion zsh)"
+# eval "$(oh-my-posh completion zsh)"
 eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/jamesnzl.omp.json)"
 
 # run fastfetch if installed
@@ -57,6 +58,7 @@ hash -d d=~/Documents
 hash -d r=~/Developer
 hash -d o=~/Documents/Obsidian
 hash -d j=~/Downloads
+hash -d p=~/Projects
 
 hash -d p1=~/OneDrive/Documents/The\ University\ of\ Auckland/Engineering\ \(Part\ I\)
 hash -d p2=~/OneDrive/Documents/The\ University\ of\ Auckland/Engineering\ \(Part\ II\)

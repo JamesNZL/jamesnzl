@@ -1,6 +1,8 @@
 if exists('g:vscode')
     " VSCode extension
 
+    set cmdheight=50
+
 else
     " ordinary vim
 
