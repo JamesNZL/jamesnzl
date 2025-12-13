@@ -2,47 +2,55 @@
   "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
   "schemes" : [
     {
-      "if" : {
-        "device" : {
-          "vendorID" : "0x46d",
-          "productID" : "0xc547",
-          "category" : "mouse",
-          "productName" : "USB Receiver"
-        }
-      },
       "scrolling" : {
+        "distance" : "auto",
+        "reverse" : {
+          "horizontal" : false,
+          "vertical" : true
+        },
         "acceleration" : {
+          "horizontal" : 1,
           "vertical" : 0.75
         },
         "speed" : {
+          "horizontal" : 0,
           "vertical" : 32.5
         },
-        "distance" : {
-          "vertical" : "auto"
-        },
-        "reverse" : {
-          "vertical" : true
+        "modifiers" : {
+          "vertical" : {
+            "shift" : {
+              "type" : "auto"
+            },
+            "command" : {
+              "type" : "auto"
+            },
+            "option" : {
+              "type" : "auto"
+            },
+            "control" : {
+              "type" : "auto"
+            }
+          }
         }
       },
       "pointer" : {
-        "disableAcceleration" : false,
+        "acceleration" : 0,
         "speed" : 0.1,
-        "acceleration" : 0
+        "disableAcceleration" : false
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "productName" : "USB Receiver",
+          "productID" : "0xc547",
+          "category" : "mouse"
+        }
       }
     },
     {
-      "if" : {
-        "device" : {
-          "productName" : "MX Master 3S",
-          "vendorID" : "0x46d",
-          "serialNumber" : "7A152F8E",
-          "productID" : "0xb034",
-          "category" : "mouse"
-        }
-      },
       "scrolling" : {
-        "acceleration" : {
-          "vertical" : 0.75
+        "speed" : {
+          "vertical" : 32.5
         },
         "distance" : {
           "vertical" : "auto"
@@ -50,13 +58,22 @@
         "reverse" : {
           "vertical" : true
         },
-        "speed" : {
-          "vertical" : 32.5
+        "acceleration" : {
+          "vertical" : 0.75
         }
       },
       "pointer" : {
         "disableAcceleration" : true,
         "acceleration" : 0.825
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "productID" : "0xb034",
+          "productName" : "MX Master 3S",
+          "serialNumber" : "7A152F8E",
+          "category" : "mouse"
+        }
       }
     }
   ]

@@ -1,5 +1,5 @@
 # Unload the macOS WindowManager process
-launchctl unload -F /System/Library/LaunchAgents/com.apple.WindowManager.plist >/dev/null 2>&1 &
+# launchctl unload -F /System/Library/LaunchAgents/com.apple.WindowManager.plist >/dev/null 2>&1 &
 
 # run yabai
 # ! note: must have configured sudo for this to work!
@@ -18,7 +18,7 @@ yabai -m config layout bsp
 # yabai -m config --space 1 layout float
 
 # spawn windows to the left
-yabai -m config window_placement first_child
+yabai -m config window_placement second_child
 
 # auto balance when layout changes
 # yabai -m config auto_balance on
@@ -32,7 +32,7 @@ yabai -m config window_gap 12
 
 # focus follows mouse, unless holding mouse modifier
 yabai -m config mouse_modifier fn
-yabai -m config focus_follows_mouse autofocus
+# yabai -m config focus_follows_mouse autofocus
 yabai -m config mouse_follows_focus on
 
 # mouse drop action stacks windows
@@ -64,6 +64,8 @@ yabai -m rule --add app="^Messages$" scratchpad=messages grid=$smallGrid
 yabai -m rule --add app="^Slack$" scratchpad=slack grid=$mediumGrid
 yabai -m rule --add app="^Discord$" title!="^Discord Updater$" scratchpad=discord grid=$smallGrid
 yabai -m rule --add app="^Obsidian$" title="jamesnzl" scratchpad=obsidian grid=$fullGrid
+yabai -m rule --add app="^Reminders$" scratchpad=reminders grid=$smallGrid
+yabai -m rule --add app="^Notes$" scratchpad=notes grid=$mediumGrid
 yabai -m rule --add app="^Mimestream$" scratchpad=mimestream grid=$mediumGrid
 yabai -m rule --add app="^Calendar$" scratchpad=calendar grid=$mediumGrid
 yabai -m rule --add app="^Timery$" scratchpad=timery grid=$smallGrid
