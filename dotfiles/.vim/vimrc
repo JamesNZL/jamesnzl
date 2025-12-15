@@ -3,6 +3,21 @@ if exists('g:vscode')
 
     set cmdheight=50
 
+    function! s:vscodeGoToDefinition(str)
+        if exists('b:vscode_controlled') && b:vscode_controlled
+            call VSCodeNotify('editor.action.' . a:str)
+        else
+            " Allow to function in help files
+            exe "normal! \<C-]>"
+        endif
+    endfunction
+    
+    nnoremap gh <Cmd>call <SID>vscodeGoToDefinition('goToTypeDefinition')<CR>
+    nnoremap gH <Cmd>call VSCodeNotify('editor.action.peekTypeDefinition')<CR>
+
+    xnoremap gh <Cmd>call <SID>vscodeGoToDefinition('goToTypeDefinition')<CR>
+    xnoremap gH <Cmd>call VSCodeNotify('editor.action.peekTypeDefinition')<CR>
+
 else
     " ordinary vim
 
