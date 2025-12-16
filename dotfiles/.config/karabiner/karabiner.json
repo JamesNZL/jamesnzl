@@ -6,7 +6,7 @@
                 "rules": [
                     {
                         "description": "Use standard function keys in specified applications",
-                        "enabled": false,
+                        "enabled": true,
                         "manipulators": [
                             {
                                 "conditions": [
@@ -22,7 +22,7 @@
                                     "key_code": "f1",
                                     "modifiers": { "mandatory": ["fn"] }
                                 },
-                                "to": [{ "consumer_key_code": "display_brightness_decrement" }],
+                                "to": [{ "key_code": "f1" }],
                                 "type": "basic"
                             },
                             {
@@ -37,9 +37,16 @@
                                 ],
                                 "from": {
                                     "key_code": "f1",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": {
+                                        "optional": ["command", "control", "option", "shift"]
+                                    }
                                 },
-                                "to": [{ "key_code": "f1" }],
+                                "to": [
+                                    {
+                                        "key_code": "f1",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -55,23 +62,6 @@
                                 "from": {
                                     "key_code": "f2",
                                     "modifiers": { "mandatory": ["fn"] }
-                                },
-                                "to": [{ "consumer_key_code": "display_brightness_increment" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com.microsoft.VSCode",
-                                            "com.analog.LTspice.App"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "f2",
-                                    "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "key_code": "f2" }],
                                 "type": "basic"
@@ -87,10 +77,17 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f3",
-                                    "modifiers": { "mandatory": ["fn"] }
+                                    "key_code": "f2",
+                                    "modifiers": {
+                                        "optional": ["command", "control", "option", "shift"]
+                                    }
                                 },
-                                "to": [{ "apple_vendor_keyboard_key_code": "mission_control" }],
+                                "to": [
+                                    {
+                                        "key_code": "f2",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -105,7 +102,7 @@
                                 ],
                                 "from": {
                                     "key_code": "f3",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": { "mandatory": ["fn"] }
                                 },
                                 "to": [{ "key_code": "f3" }],
                                 "type": "basic"
@@ -121,10 +118,17 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f4",
-                                    "modifiers": { "mandatory": ["fn"] }
+                                    "key_code": "f3",
+                                    "modifiers": {
+                                        "optional": ["command", "control", "option", "shift"]
+                                    }
                                 },
-                                "to": [{ "apple_vendor_keyboard_key_code": "spotlight" }],
+                                "to": [
+                                    {
+                                        "key_code": "f3",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -139,7 +143,7 @@
                                 ],
                                 "from": {
                                     "key_code": "f4",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": { "mandatory": ["fn"] }
                                 },
                                 "to": [{ "key_code": "f4" }],
                                 "type": "basic"
@@ -155,10 +159,17 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f5",
-                                    "modifiers": { "mandatory": ["fn"] }
+                                    "key_code": "f4",
+                                    "modifiers": {
+                                        "optional": ["command", "control", "option", "shift"]
+                                    }
                                 },
-                                "to": [{ "consumer_key_code": "dictation" }],
+                                "to": [
+                                    {
+                                        "key_code": "f4",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -173,9 +184,33 @@
                                 ],
                                 "from": {
                                     "key_code": "f5",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": { "mandatory": ["fn"] }
                                 },
                                 "to": [{ "key_code": "f5" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.microsoft.VSCode",
+                                            "com.analog.LTspice.App"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f5",
+                                    "modifiers": {
+                                        "optional": ["command", "control", "option", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f5",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -207,9 +242,16 @@
                                 ],
                                 "from": {
                                     "key_code": "f6",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": {
+                                        "optional": ["command", "control", "option", "shift"]
+                                    }
                                 },
-                                "to": [{ "key_code": "f6" }],
+                                "to": [
+                                    {
+                                        "key_code": "f6",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -225,23 +267,6 @@
                                 "from": {
                                     "key_code": "f7",
                                     "modifiers": { "mandatory": ["fn"] }
-                                },
-                                "to": [{ "consumer_key_code": "rewind" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com.microsoft.VSCode",
-                                            "com.analog.LTspice.App"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "f7",
-                                    "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "key_code": "f7" }],
                                 "type": "basic"
@@ -257,10 +282,17 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f8",
-                                    "modifiers": { "mandatory": ["fn"] }
+                                    "key_code": "f7",
+                                    "modifiers": {
+                                        "optional": ["command", "control", "option", "shift"]
+                                    }
                                 },
-                                "to": [{ "consumer_key_code": "play_or_pause" }],
+                                "to": [
+                                    {
+                                        "key_code": "f7",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -275,7 +307,7 @@
                                 ],
                                 "from": {
                                     "key_code": "f8",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": { "mandatory": ["fn"] }
                                 },
                                 "to": [{ "key_code": "f8" }],
                                 "type": "basic"
@@ -291,10 +323,17 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f9",
-                                    "modifiers": { "mandatory": ["fn"] }
+                                    "key_code": "f8",
+                                    "modifiers": {
+                                        "optional": ["command", "control", "option", "shift"]
+                                    }
                                 },
-                                "to": [{ "consumer_key_code": "fastforward" }],
+                                "to": [
+                                    {
+                                        "key_code": "f8",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -309,7 +348,7 @@
                                 ],
                                 "from": {
                                     "key_code": "f9",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": { "mandatory": ["fn"] }
                                 },
                                 "to": [{ "key_code": "f9" }],
                                 "type": "basic"
@@ -325,10 +364,17 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f10",
-                                    "modifiers": { "mandatory": ["fn"] }
+                                    "key_code": "f9",
+                                    "modifiers": {
+                                        "optional": ["command", "control", "option", "shift"]
+                                    }
                                 },
-                                "to": [{ "consumer_key_code": "mute" }],
+                                "to": [
+                                    {
+                                        "key_code": "f9",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -343,7 +389,7 @@
                                 ],
                                 "from": {
                                     "key_code": "f10",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": { "mandatory": ["fn"] }
                                 },
                                 "to": [{ "key_code": "f10" }],
                                 "type": "basic"
@@ -359,10 +405,17 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f11",
-                                    "modifiers": { "mandatory": ["fn"] }
+                                    "key_code": "f10",
+                                    "modifiers": {
+                                        "optional": ["command", "control", "option", "shift"]
+                                    }
                                 },
-                                "to": [{ "consumer_key_code": "volume_decrement" }],
+                                "to": [
+                                    {
+                                        "key_code": "f10",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -377,7 +430,7 @@
                                 ],
                                 "from": {
                                     "key_code": "f11",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": { "mandatory": ["fn"] }
                                 },
                                 "to": [{ "key_code": "f11" }],
                                 "type": "basic"
@@ -393,10 +446,17 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f12",
-                                    "modifiers": { "mandatory": ["fn"] }
+                                    "key_code": "f11",
+                                    "modifiers": {
+                                        "optional": ["command", "control", "option", "shift"]
+                                    }
                                 },
-                                "to": [{ "consumer_key_code": "volume_increment" }],
+                                "to": [
+                                    {
+                                        "key_code": "f11",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -411,9 +471,33 @@
                                 ],
                                 "from": {
                                     "key_code": "f12",
-                                    "modifiers": { "optional": ["any"] }
+                                    "modifiers": { "mandatory": ["fn"] }
                                 },
                                 "to": [{ "key_code": "f12" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.microsoft.VSCode",
+                                            "com.analog.LTspice.App"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f12",
+                                    "modifiers": {
+                                        "optional": ["command", "control", "option", "shift"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f12",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
