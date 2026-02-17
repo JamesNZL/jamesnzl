@@ -1,14 +1,15 @@
 ## 👋 Tēnā koe! I'm `JamesNZL`.
 
 Kia ora!
-I'm a graduating Electrical and Computer Engineer from The University of Auckland.
+I'm a graduate Electrical and Computer Engineer from The University of Auckland.
 I was also a Student Representative and a Teaching Assistant in the Department of Electrical, Computer, and Software Engineering.
-I'm interested in all things tech, from analogue electronics to full-stack web development.
-I'm passionate about youth development, and leaving things in a better state than I found them.
+I'm driven to enhance human lives through a beautiful combination of well-engineered hardware and firmware.
+I'm passionate about youth development and strive to leave things better than I found them.
 
 - 📍 Tāmaki Makaurau, Aotearoa
+- 💼 Firmware Engineer @ [Apple](https://www.apple.com/careers/nz)
 - 🎓 Computer Systems Engineering @ [The University of Auckland](https://www.auckland.ac.nz/en/engineering/about-the-faculty/electrical-computer-and-software-engineering.html)
-- 🤝 New Zealand Cadet Forces
+- 🤝 Second Lieutenant @ [New Zealand Cadet Forces](https://cadetforces.org.nz/)
 - 📧 Email me at [`james@jamesnzl.xyz`](mailto:james@jamesnzl.xyz)
 - 🌏 Connect with me on [LinkedIn](https://www.linkedin.com/in/jamesnzl/)
 - 📄 View my [Curriculum Vitae](./cv/cv-embedded.pdf)
@@ -117,7 +118,7 @@ Ngā mihi nui!
 
 </details>
 
-### 📈 Statistics
+<!-- ### 📈 Statistics
 [![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=default&layout=compact&card_width=305&langs_count=12&hide=tex,html&exclude_repo=softeng281-money,softeng281-blackjack,Order-Bot,AoC-2020,compsys704-step-counter,compsys704-bottling-system#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
 [![Top languages](https://github-readme-stats-sigma-sable.vercel.app/api/top-langs/?username=jamesnzl&count_private=true&theme=react&layout=compact&card_width=305&langs_count=12&hide_border=true&hide=tex,html&exclude_repo=softeng281-money,softeng281-blackjack,Order-Bot,AoC-2020,compsys704-step-counter,compsys704-bottling-system#gh-dark-mode-only)](https://jamesnzl.xyz#gh-dark-mode-only)  
 [![GitHub stats](https://github-readme-stats-sigma-sable.vercel.app/api?username=jamesnzl&count_private=true&show_icons=true&theme=default&card_width=305&hide_rank=true#gh-light-mode-only)](https://jamesnzl.xyz#gh-light-mode-only)
@@ -125,5 +126,5 @@ Ngā mihi nui!
 
 ### 💬 Discord
 [![nzl.james](https://lanyard.cnrad.dev/api/192181901065322496?theme=light&hideDiscrim=true&idleMessage=Twiddling%20my%20thumbs...#gh-light-mode-only)](https://discord.com/users/192181901065322496#gh-light-mode-only)
-[![nzl.james](https://lanyard.cnrad.dev/api/192181901065322496?bg=20232a&hideDiscrim=true&idleMessage=Twiddling%20my%20thumbs...#gh-dark-mode-only)](https://discord.com/users/192181901065322496#gh-dark-mode-only)
+[![nzl.james](https://lanyard.cnrad.dev/api/192181901065322496?bg=20232a&hideDiscrim=true&idleMessage=Twiddling%20my%20thumbs...#gh-dark-mode-only)](https://discord.com/users/192181901065322496#gh-dark-mode-only) -->
 
