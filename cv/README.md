@@ -10,6 +10,6 @@
 
 > 👋 Looking to get in touch? Use any of the links below!
 
-- 📧 Email me at [`james@jamesnzl.xyz`](mailto:james@jamesnzl.xyz)
+- 📧 Email me at [`james@bao.nz`](mailto:james@bao.nz)
 - 🌏 Connect with me on [LinkedIn](https://www.linkedin.com/in/jamesnzl/)
-- 💬 Message me on Discord at `@nzl.james`
+- 💬 iMessage me at `james@bao.nz`

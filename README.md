@@ -10,7 +10,7 @@ I'm passionate about youth development and strive to leave things better than I 
 - 💼 Firmware Engineer @ [Apple](https://www.apple.com/careers/nz)
 - 🎓 Computer Systems Engineering @ [The University of Auckland](https://www.auckland.ac.nz/en/engineering/about-the-faculty/electrical-computer-and-software-engineering.html)
 - 🤝 Second Lieutenant @ [New Zealand Cadet Forces](https://cadetforces.org.nz/)
-- 📧 Email me at [`james@jamesnzl.xyz`](mailto:james@jamesnzl.xyz)
+- 📧 Email me at [`james@bao.nz`](mailto:james@bao.nz)
 - 🌏 Connect with me on [LinkedIn](https://www.linkedin.com/in/jamesnzl/)
 - 📄 View my [Curriculum Vitae](./cv/cv-embedded.pdf)
 
